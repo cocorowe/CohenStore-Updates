@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "channel": "testing",
-  "generated_at": "2026-10-30T22:10:00Z",
+  "generated_at": "2026-10-30T22:30:00Z",
   "content_version": 1,
-  "app_version": "0.5.6",
+  "app_version": "0.5.8",
   "announcements": [
-    "0.5.6 tests downloading a store update from 0.5.5 without USB. Retried downloads now use current catalog metadata. Console download and installation testing is pending."
+    "Install the 0.5.7 USB updater repair first if 0.5.5 reports a package mismatch. Then download 0.5.8 to test the repaired size check. Console confirmation pending."
   ],
   "catalog_updates": [],
   "app_update": {
-    "version": "0.5.6",
-    "version_code": 56,
+    "version": "0.5.8",
+    "version_code": 58,
     "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/release.json"
   }
 }

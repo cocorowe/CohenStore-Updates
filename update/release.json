@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":2,\"schema\":1,\"sha256\":\"401068973529e3096fc590574458ec4918eaf54e837f66089d49b69b4eaf8a89\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/67f456045aacadff9112e5c00ec84e60e4e3d17e/update/packages/CohenStore-0.5.6-UPDATER-TEST.pkg\",\"version\":\"0.5.6\",\"version_code\":56}",
-  "signature": "f23844846dbb0a8fb0dae4a6bf31d3e4dedf63de0404544a80d16d9408b4222a89534d521a808a2cb8a57cbb8de0081f6694ad1bf785cadafe1af543b0ea9c0e"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":3,\"schema\":1,\"sha256\":\"941b65e3825bf4daf32503dfeb0e0181de1aa257c1cd08ddb4b644096df8ce71\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/476b4892d9c1d85f37f46225c571efa80f33283e/update/packages/CohenStore-0.5.8-UPDATER-TEST.pkg\",\"version\":\"0.5.8\",\"version_code\":58}",
+  "signature": "e2536b735eed606f46170ef547caeeddb5685e7de07c8b635da8e6565d211be1df9b4a91891c538e70506f81b1be40303c2a5533dc7d1afdefff500607afed0c"
 }

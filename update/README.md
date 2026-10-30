@@ -1,30 +1,27 @@
-# CohenStore app updates
+# CohenStore 0.5.8 update test after 0.5.7 repair
 
-0.5.5 opens and checks this feed on the user's PS4. Version 0.5.6 is the first newer package offered for testing the complete update download and installation.
+The user’s 0.5.5 client checks the feed but reports a package mismatch during
+update download. The exact failing validation sub-check is not yet confirmed.
+Inspection found a concrete ABI hazard in the installed OpenOrbis headers:
+mode_t is first defined as unsigned int, hiding a later unsigned-short
+compatibility definition. The compiled stat.st_size access is at offset 80.
+The size validator now measures the file with fseeko/ftello instead of stat,
+matching the download engine’s existing file-size method. Size, signed
+publisher identity, SHA-256, PKG magic and content ID remain mandatory.
 
-1. In Store Updates on 0.5.5, press R3, then X to download 0.5.6.
-2. Wait for "Update ready", then close CohenStore.
-3. In GoldHEN Package Installer, set the source to /data/pkg and install CohenStore-56.pkg.
-4. Open the store. The footer should show 0.5.6. R3 on Store Updates should report up to date.
+Install CohenStore-0.5.7-UPDATER-REPAIR.pkg once through USB because the old
+client rejects an update before corrected code can execute. Then check Store
+Updates with R3 and download 0.5.8 with X. Close the app when Update ready is
+shown. Install /data/pkg/CohenStore-58.pkg through GoldHEN Package Installer.
+No package is installed automatically.
 
-A USB installer is only required to bootstrap from an older version without the updater or to recover after a failed test. No update installs automatically.
+Errors now distinguish UPD-OPEN, UPD-SEEK, UPD-SIZE and UPD-HASH, and include
+the measured/expected byte counts for a size failure. Update staging errors
+are recorded in the diagnostics log. Old queue/download data is preserved.
+The stale-catalog-link retry fix and HTTP header-size fix remain included.
 
-## Game downloads
-
-0.5.6 keeps the native response-header fix from 0.5.4. Retrying a paused or failed item now uses the current catalog URLs, size and SHA-256 instead of keeping stale saved metadata. HTTP errors identify the failing host without exposing signed query tokens.
-
-Refresh Games with R3 and test 2048 v1.0. Square opens the download queue; X retries an old failed item. Game packages remain under /data/CohenStore/downloads and require manual installation. Successful desktop transfer does not establish PS4 networking or game compatibility.
-
-## Feed and publisher trust
-
-The client reads update/release.json directly. It verifies the Ed25519 signature of the exact signed_payload bytes against its embedded public key. It validates release channel, revision, version, official HTTPS repository URL, size, SHA-256 and package identity before staging.
-
-The active package URL is pinned to a Git commit. manifest.json retains the older catalog planning fields and points to the active signed feed.
-
-Keep the existing private signing key outside this repository and outside the PS4. Increase APP_VERSION_CODE and APP_VER for each client release, and increase the signed revision. Use tools/publish_update.py from the source archive with the exact package and a commit-pinned official URL.
-
-## Sources and validation
-
-The 0.5.6 source archive is in update/sources/. All 74 local app tests pass. The PS4 executable compiles and its PKG passes package hash/signature checks. Publication reconstructed the new PKG from a compressed difference against 0.5.5 and verified its exact full SHA-256 before committing.
-
-The full game download workflow uses the desktop engine to download all of 2048 and compare its size and publisher SHA-256. Console update download, installation and game download completion are still awaiting the user's test.
+Validation: all 74 app tests pass. Update tests deliberately make stat fail
+and still require valid signed packages to verify and stage. Changed size,
+hash, publisher signature and PKG identity remain rejected. Native repair
+and test packages compile and pass package validation. The console cause
+and successful repaired update download remain to be confirmed on PS4.
