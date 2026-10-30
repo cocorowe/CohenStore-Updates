@@ -1,5 +1,9 @@
 name: Refresh developer game catalog
 on:
+  push:
+    paths:
+      - 'tools/update_developer_games.py'
+      - '.github/workflows/refresh-developer-games.yml'
   workflow_dispatch:
   schedule:
     - cron: '23 9 * * *'
