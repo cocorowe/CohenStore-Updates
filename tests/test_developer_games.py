@@ -25,3 +25,13 @@ class DeveloperGamesTests(unittest.TestCase):
         for field,value in [('browser_download_url','https://archive.org/game.pkg'),('size','15GB')]:
             r=copy.deepcopy(self.release);r['assets'][0][field]=value
             with self.assertRaises(ValueError):m.merge_release(copy.deepcopy(self.cat),'dev/game','Game','games',r)
+
+    def test_emulator_assets_have_distinct_names_and_exclude_unknown_platforms(self):
+        r=copy.deepcopy(self.release)
+        r['assets']=[]
+        for index,title_id in enumerate(['PFBN00001','PGBA00001','UNKNOWN01']):
+            r['assets'].append({'id':index+1,'name':'IV0001-'+title_id+'_00-TEST.pkg','size':4096,'browser_download_url':'https://github.com/Cpasjuste/pemu/releases/download/v1/test'+str(index)+'.pkg'})
+        m.merge_release(self.cat,'Cpasjuste/pemu','pEMU','emulators',r)
+        self.assertEqual(len(self.cat['items']),3)
+        self.assertNotEqual(self.cat['items'][1]['title'],self.cat['items'][2]['title'])
+        self.assertTrue(all(x['category']=='emulators' for x in self.cat['items'][1:]))

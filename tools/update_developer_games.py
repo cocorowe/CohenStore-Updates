@@ -7,7 +7,16 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 PROJECTS=[('skidgfx/PS4-2048','2048','games'),
-          ('MDashK/Relic-Hunters-Zero-PS4','Relic Hunters Zero','games')]
+          ('MDashK/Relic-Hunters-Zero-PS4','Relic Hunters Zero','games'),
+          ('MDashK/Sonic-Time-Twisted-PS4','Sonic Time Twisted','games'),
+          ('MDashK/sonic-1-sms-remake-ps4','Sonic 1 SMS Remake','games'),
+          ('MDashK/Sonic-2-SMS-Remake-PS4','Sonic 2 SMS Remake','games'),
+          ('Cpasjuste/pemu','pEMU','emulators'),
+          ('cy33hc/ps4-ezremote-client','ezRemote Client','apps')]
+
+PEMU_NAMES={'PFBN00001':'pFBN (Arcade)', 'PGBA00001':'pGBA (Game Boy Advance)',
+            'PGEN00001':'pGEN (Genesis / Mega Drive)', 'PNES00001':'pNES (NES)',
+            'PSNE00001':'pSNES (Super Nintendo)'}
 
 def merge_release(catalog, repo, title, category, release):
     assets=release.get('assets',[])
@@ -29,7 +38,11 @@ def merge_release(catalog, repo, title, category, release):
         sha=digest[7:] if digest.startswith('sha256:') else ''
         if sha and not re.fullmatch('[0-9a-f]{64}',sha): raise ValueError('Invalid publisher digest')
         match=re.search(r'-([A-Z0-9]{9})_00-',name)
-        item={'id':item_id,'title':title+' '+release.get('tag_name',''),'category':category,
+        display_title=title
+        if repo=='Cpasjuste/pemu':
+            if not match or match[1] not in PEMU_NAMES: continue
+            display_title=PEMU_NAMES[match[1]]
+        item={'id':item_id,'title':display_title+' '+release.get('tag_name',''),'category':category,
               'format':'pkg','app_version':release.get('tag_name','').removeprefix('v'),
               'title_ids':[match[1]] if match else [],'source_url':release.get('html_url') or 'https://github.com/'+repo+'/releases',
               'size_bytes':size,'sha256':sha,'urls':[url],

@@ -67,7 +67,157 @@
         "https://github.com/nueex/ps-mtp-explorer/releases/download/v1.01/PS-MTP-Explorer-1.01.pkg"
       ],
       "note": "Developer release. Publisher SHA-256 digest supplied. Upstream reports testing on firmware 9.00, 10.01, and 11.00; firmware 13.52 compatibility has not been verified."
+    },
+    {
+      "id": "MDashK/Sonic-Time-Twisted-PS4/71563714",
+      "title": "Sonic Time Twisted v1.1.2.1-ps4",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "1.1.2.1-ps4",
+      "title_ids": [
+        "OVBD00001"
+      ],
+      "source_url": "https://github.com/MDashK/Sonic-Time-Twisted-PS4/releases/tag/v1.1.2.1-ps4",
+      "size_bytes": 170196992,
+      "sha256": "",
+      "urls": [
+        "https://github.com/MDashK/Sonic-Time-Twisted-PS4/releases/download/v1.1.2.1-ps4/IV0001-OVBD00001_00-SONICTIMETWISTED-A0100-V0112.pkg"
+      ],
+      "note": "Developer-published homebrew. No publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "MDashK/sonic-1-sms-remake-ps4/86585265",
+      "title": "Sonic 1 SMS Remake v1.9.2-ps4",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "1.9.2-ps4",
+      "title_ids": [
+        "SMSR00001"
+      ],
+      "source_url": "https://github.com/MDashK/sonic-1-sms-remake-ps4/releases/tag/v1.9.2-ps4",
+      "size_bytes": 47972352,
+      "sha256": "",
+      "urls": [
+        "https://github.com/MDashK/sonic-1-sms-remake-ps4/releases/download/v1.9.2-ps4/IV0000-SMSR00001_00-SONIC1SMSREMAKE0.PKG"
+      ],
+      "note": "Developer-published homebrew. No publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "MDashK/Sonic-2-SMS-Remake-PS4/86589666",
+      "title": "Sonic 2 SMS Remake v2.9.2-ps4",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "2.9.2-ps4",
+      "title_ids": [
+        "SMSR00002"
+      ],
+      "source_url": "https://github.com/MDashK/Sonic-2-SMS-Remake-PS4/releases/tag/v2.9.2-ps4",
+      "size_bytes": 65863680,
+      "sha256": "",
+      "urls": [
+        "https://github.com/MDashK/Sonic-2-SMS-Remake-PS4/releases/download/v2.9.2-ps4/IV0000-SMSR00002_00-SONIC2SMSREMAKE0.PKG"
+      ],
+      "note": "Developer-published homebrew. No publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Cpasjuste/pemu/519931584",
+      "title": "pFBN (Arcade) v7.2",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "7.2",
+      "title_ids": [
+        "PFBN00001"
+      ],
+      "source_url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+      "size_bytes": 108986368,
+      "sha256": "94a2c8db68d8e3688a0b89ec901096481701aaea67b74802728dccb98dc13e1c",
+      "urls": [
+        "https://github.com/Cpasjuste/pemu/releases/download/v7.2/IV0001-PFBN00001_00-PFBN000017020000.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Cpasjuste/pemu/519931587",
+      "title": "pGBA (Game Boy Advance) v7.2",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "7.2",
+      "title_ids": [
+        "PGBA00001"
+      ],
+      "source_url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+      "size_bytes": 35979264,
+      "sha256": "df3d9055765a1dffb99e7fa249da38ed72d9c951280123bc508b23d0a33aa2ec",
+      "urls": [
+        "https://github.com/Cpasjuste/pemu/releases/download/v7.2/IV0001-PGBA00001_00-PGBA000017020000.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Cpasjuste/pemu/519931586",
+      "title": "pGEN (Genesis / Mega Drive) v7.2",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "7.2",
+      "title_ids": [
+        "PGEN00001"
+      ],
+      "source_url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+      "size_bytes": 43581440,
+      "sha256": "037d458c83a0a69ca5abecc3455df29a807039291181c48c5d9bba5d3fedb0a7",
+      "urls": [
+        "https://github.com/Cpasjuste/pemu/releases/download/v7.2/IV0001-PGEN00001_00-PGEN000017020000.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Cpasjuste/pemu/519931585",
+      "title": "pNES (NES) v7.2",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "7.2",
+      "title_ids": [
+        "PNES00001"
+      ],
+      "source_url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+      "size_bytes": 37748736,
+      "sha256": "b09074bb154b91ffc9c01f64dc20899286829bb880c27ae6ee0b009804b4fd56",
+      "urls": [
+        "https://github.com/Cpasjuste/pemu/releases/download/v7.2/IV0001-PNES00001_00-PNES000017020000.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Cpasjuste/pemu/519931590",
+      "title": "pSNES (Super Nintendo) v7.2",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "7.2",
+      "title_ids": [
+        "PSNE00001"
+      ],
+      "source_url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+      "size_bytes": 37814272,
+      "sha256": "55e3544a4f30f1cb49b8514771b6a173f0a3c852fb7155cda4751c60e228210b",
+      "urls": [
+        "https://github.com/Cpasjuste/pemu/releases/download/v7.2/IV0001-PSNE00001_00-PSNE000017020000.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "cy33hc/ps4-ezremote-client/658034669",
+      "title": "ezRemote Client 2.08",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "2.08",
+      "title_ids": [],
+      "source_url": "https://github.com/cy33hc/ps4-ezremote-client/releases/tag/2.08",
+      "size_bytes": 52822016,
+      "sha256": "8c05370922547e3b33a55338d67e6845e59dae22592ca1d89d31d632813443be",
+      "urls": [
+        "https://github.com/cy33hc/ps4-ezremote-client/releases/download/2.08/ezremote_client.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
     }
   ]
 }
-

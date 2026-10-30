@@ -6,12 +6,20 @@ Live feed: https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/ca
 
 ## Current listings
 
-The feed contains two developer-published homebrew games, 2048 and Relic Hunters
-Zero, plus the existing three homebrew/application entries. These are not a
-commercial PS4 game catalog. Download URLs and exact sizes come from publisher
-release metadata. A published hash is retained when available; unknown hashes
-are left empty. Full transfers and PS4 firmware 13.52 launch are not established
-by a catalog entry.
+The feed contains five homebrew games, five emulators, and four apps/tools.
+Games: 2048, Relic Hunters Zero, Sonic Time Twisted, Sonic 1 SMS Remake,
+and Sonic 2 SMS Remake. Emulators: pFBN, pGBA, pGEN, pNES and pSNES.
+Apps/tools: Apollo Save Tool, PS4 Cheats Manager, PS MTP Explorer and ezRemote Client.
+
+Download URLs and exact sizes come from publisher release metadata. Published
+hashes are retained when available; unknown hashes stay empty. Release metadata
+checks do not establish full transfer reliability or PS4 firmware 13.52 support.
+Emulators require separately supplied compatible game files.
+
+Commercial games, game updates, DLC and GTA menus have not been populated.
+No verified GTA 1.56/CUSA00419 plugin binary is currently available in this feed.
+Shattered Pixel Dungeon was held back because its release description and API
+asset digest disagree, and it needs additional Sony modules.
 
 ## Automatic catalog maintenance
 
