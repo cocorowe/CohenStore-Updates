@@ -233,6 +233,51 @@
         "https://github.com/Ninedark9/PS4PackageLink/releases/download/v0.6.4/ps4packagelink_en.pkg"
       ],
       "note": "Developer-published PS4 homebrew app with Windows PC companion for user-authorized PKG libraries and LAN installs. Publisher SHA-256 supplied. Polish build has been hardware-tested; English build has not been separately hardware-tested. Latest remote queue features need end-to-end PS4 verification."
+    },
+    {
+      "id": "diasurgical/DevilutionX/ps4-1.5.5",
+      "title": "DevilutionX PS4 v1.5.5",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "1.5.5",
+      "title_ids": [],
+      "source_url": "https://github.com/diasurgical/DevilutionX/releases/tag/1.5.5",
+      "size_bytes": 14614528,
+      "sha256": "33e5d47f45c594ff071a52987d6be937d0123509a4d67022e20b3d5cb75713be",
+      "urls": [
+        "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-ps4.pkg"
+      ],
+      "note": "Official upstream PS4 port release with publisher SHA-256. Requires legally obtained original Diablo game data; package alone is not a complete playable game. PS4 firmware 13.52 launch has not been tested."
+    },
+    {
+      "id": "arturofuentes1988/EmuSuNi/00.22",
+      "title": "EmuSuNi Multi-System Emulator Suite v00.22",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "00.22",
+      "title_ids": [],
+      "source_url": "https://github.com/arturofuentes1988/EmuSuNi/releases/tag/v00.22",
+      "size_bytes": 189005824,
+      "sha256": "1a52507dbcfc2dc18ac429526cfa49941661e5dff285918987bffcb50de7f354",
+      "urls": [
+        "https://github.com/arturofuentes1988/EmuSuNi/releases/download/v00.22/EmuSuNi-v00.22.pkg"
+      ],
+      "note": "Developer-published multi-system emulator package with publisher SHA-256. Game ROMs and BIOS files are not included and must be legally supplied separately. PS4 firmware 13.52 launch has not been tested."
+    },
+    {
+      "id": "ChiricoG/OneFamily/companion-1.1.6",
+      "title": "OneFamily Companion v1.1.6",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "1.1.6",
+      "title_ids": [],
+      "source_url": "https://github.com/ChiricoG/OneFamily/releases/tag/v1.1.6",
+      "size_bytes": 8585216,
+      "sha256": "6a189319ccd0de91ef89ac18ee3d1731a3410fc013ad6c5a94cad534c8e706f7",
+      "urls": [
+        "https://github.com/ChiricoG/OneFamily/releases/download/v1.1.6/onefamily_companion.pkg"
+      ],
+      "note": "Developer-published companion app with publisher SHA-256. Companion functionality and firmware 13.52 compatibility have not been tested on console."
     }
   ]
 }
