@@ -52,6 +52,14 @@ Relic Hunters Zero (71,696,384 bytes) completed. 2048 matched the publisher's
 SHA-256. Relic Hunters Zero has no publisher digest to compare. Console testing
 on firmware 13.52 is still pending.
 
+Optional full verification is available through the manual workflow input
+`full_transfer=true`. It downloads eligible files only when a publisher SHA-256
+is present and the advertised size is at most 256 MiB, then checks the exact
+byte count and complete SHA-256. Larger files and entries without a publisher
+digest are explicitly skipped. This mode is not part of the daily schedule,
+to avoid repeatedly transferring large packages. Neither mode establishes
+PS4 installation or launch compatibility.
+
 ## Catalog rules
 
 - Use developer-published or authorized direct HTTPS downloads.
