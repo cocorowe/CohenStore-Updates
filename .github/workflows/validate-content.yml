@@ -16,3 +16,6 @@ jobs:
           python-version: "3.x"
       - name: Validate catalog and manifest JSON
         run: python tools/validate_feed.py
+
+      - name: Test developer-release merger
+        run: python -m unittest discover -s tests -v

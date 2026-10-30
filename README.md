@@ -1,27 +1,45 @@
 # CohenStore Updates
 
-This public repository hosts the **content catalog** used by CohenStore. It is separate from the CohenStore PS4 application source and does not itself build or update the installed app.
+Content feed for CohenStore, separate from its PS4 application source.
 
-## Live catalog
+Live feed: https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/catalog/catalog.json
 
-- Catalog JSON: [catalog/catalog.json](catalog/catalog.json)
-- Raw HTTPS URL used by the current development frontend:
+## Current listings
 
-  `https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/catalog/catalog.json`
+The feed contains two developer-published homebrew games, 2048 and Relic Hunters
+Zero, plus the existing three homebrew/application entries. These are not a
+commercial PS4 game catalog. Download URLs and exact sizes come from publisher
+release metadata. A published hash is retained when available; unknown hashes
+are left empty. Full transfers and PS4 firmware 13.52 launch are not established
+by a catalog entry.
 
-The current source can fetch this catalog over HTTPS, validate schema 1, and keep its previous local catalog if a refresh fails. The source currently supports catalog refresh; it does **not** yet parse `update/manifest.json`, verify a signed manifest, apply artwork/announcement deltas, or update the CohenStore application PKG.
+## Automatic catalog maintenance
 
-## Update manifest
+The Refresh developer game catalog workflow checks an explicit allowlist of
+developer repositories daily and supports manual runs. It tests its merger,
+fetches release metadata, validates the complete feed, and commits changes only
+when the catalog changes. A failed fetch does not overwrite the existing feed.
+Unchanged asset IDs keep curated notes and metadata.
 
-`update/manifest.json` is a scaffold for future update support. Do not treat it as an active app updater until the PS4 client implements trusted publisher-signature verification, version/rollback checks, and a tested content-update workflow.
+The new mint client checks the configured feed at startup by default and keeps
+its cache on errors. The user can also enable checks every 15 minutes while the
+app is open. Older clients retain their own refresh settings.
+
+The workflow updates listings, not game binaries or the installed store app.
+The installed app still needs a new PKG for code/interface changes. The update
+manifest remains a scaffold; signed app updates are not implemented.
 
 ## Catalog rules
 
-- Only add downloads published by the developer or another source authorized to distribute the file.
-- Do not add commercial game PKGs unless distribution is explicitly authorized. A listing is not permission to redistribute.
-- Use direct HTTPS package URLs, not file-hosting share pages.
-- Keep exact byte sizes. Use an empty SHA-256 only when the publisher does not provide a digest; label it clearly.
-- Record unknown compatibility as unknown. Never claim PS4 firmware compatibility without testing.
-- Do not add PRX plugins as PKGs. Plugin payloads require a separate plugin-install workflow.
+- Use developer-published or authorized direct HTTPS downloads.
+- Exclude Internet Archive, share-page URLs, embedded credentials and invented
+  sizes, hashes or compatibility claims.
+- Do not add commercial game downloads without distribution authorization.
+- Treat firmware/game-version compatibility as unknown until tested.
+- PKG and PRX are separate formats. Plugin activation and package installation
+  remain manual in the client.
+- Version, title-ID and parent-game metadata must describe the actual package.
 
-See [catalog/README.md](catalog/README.md) and [update/README.md](update/README.md).
+The feed remains compatible with the older schema-1 client. Optional metadata
+is ignored by older clients. No reference-only cards with empty download arrays
+are published to this live feed, because older clients reject them.

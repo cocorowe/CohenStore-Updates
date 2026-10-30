@@ -2,6 +2,40 @@
   "schema": 1,
   "items": [
     {
+      "id": "MDashK/Relic-Hunters-Zero-PS4/73177339",
+      "title": "Relic Hunters Zero v1.0.0",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "1.0.0",
+      "title_ids": [
+        "RHZR00001"
+      ],
+      "source_url": "https://github.com/MDashK/Relic-Hunters-Zero-PS4/releases/tag/v1.0.0",
+      "size_bytes": 71696384,
+      "sha256": "",
+      "urls": [
+        "https://github.com/MDashK/Relic-Hunters-Zero-PS4/releases/download/v1.0.0/IV0000-RHZR00001_00-RELICHUNTERSZER0-A0100-V0100.pkg"
+      ],
+      "note": "Developer-published homebrew game. No publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "skidgfx/PS4-2048/321177781",
+      "title": "2048 v1.0",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "1.0",
+      "title_ids": [
+        "SKID02048"
+      ],
+      "source_url": "https://github.com/skidgfx/PS4-2048/releases/tag/v1.0",
+      "size_bytes": 35454976,
+      "sha256": "c53d517bb4ff86c62638edf03548bc94c9bd4b2b21c618c69770469a809c2e4a",
+      "urls": [
+        "https://github.com/skidgfx/PS4-2048/releases/download/v1.0/IV0000-SKID02048_00-GAME204800000000.pkg"
+      ],
+      "note": "Developer-published homebrew game. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
       "id": "bucanero/apollo-ps4/648516222",
       "title": "Apollo Save Tool v2.4.0",
       "category": "homebrew",
@@ -36,3 +70,4 @@
     }
   ]
 }
+

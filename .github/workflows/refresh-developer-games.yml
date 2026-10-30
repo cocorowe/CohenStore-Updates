@@ -1,0 +1,29 @@
+name: Refresh developer game catalog
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: developer-game-catalog
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/update_developer_games.py
+      - run: python tools/validate_feed.py
+      - name: Commit validated changes
+        run: |
+          if git diff --quiet -- catalog/catalog.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog/catalog.json
+          git commit -m 'Refresh developer-published PS4 game listings'
+          git push
