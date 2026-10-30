@@ -1,10 +1,16 @@
 {
   "schema": 1,
-  "channel": "stable",
+  "channel": "testing",
   "generated_at": "2026-10-30T00:00:00Z",
   "content_version": 1,
-  "app_version": "0.2.0",
-  "announcements": [],
+  "app_version": "0.5.5",
+  "announcements": [
+    "CohenStore 0.5.5 updater test. One USB install is required to add Store Updates. PS4 network and installation testing is pending."
+  ],
   "catalog_updates": [],
-  "app_update": null
+  "app_update": {
+    "version": "0.5.5",
+    "version_code": 55,
+    "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/release.json"
+  }
 }
