@@ -1,29 +1,30 @@
 # CohenStore app updates
 
-CohenStore 0.5.5 adds the Store Updates tab. Install the saved 0.5.5 UPDATER-TEST package once through USB. Older builds do not have this updater.
+0.5.5 opens and checks this feed on the user's PS4. Version 0.5.6 is the first newer package offered for testing the complete update download and installation.
 
-- Open Store Updates with L1/R1.
-- Press R3 to check for a release.
-- Press X to download a newer release after checking.
-- Close CohenStore and install the verified package through GoldHEN Package Installer, with its source set to /data/pkg.
-- Circle pauses an update download. R2 refreshes the content catalog.
+1. In Store Updates on 0.5.5, press R3, then X to download 0.5.6.
+2. Wait for "Update ready", then close CohenStore.
+3. In GoldHEN Package Installer, set the source to /data/pkg and install CohenStore-56.pkg.
+4. Open the store. The footer should show 0.5.6. R3 on Store Updates should report up to date.
 
-The published release is 0.5.5. An installed 0.5.5 should report up to date. It will download a package when a newer signed version is published.
+A USB installer is only required to bootstrap from an older version without the updater or to recover after a failed test. No update installs automatically.
 
-## Active feed
+## Game downloads
 
-The client reads `update/release.json`. It verifies the Ed25519 signature of the exact `signed_payload` string using the public key embedded in the installed app. It checks the release channel, revision, version, official repository URL, package size, SHA-256 and CohenStore package identity before staging it.
+0.5.6 keeps the native response-header fix from 0.5.4. Retrying a paused or failed item now uses the current catalog URLs, size and SHA-256 instead of keeping stale saved metadata. HTTP errors identify the failing host without exposing signed query tokens.
 
-`manifest.json` retains the older catalog planning fields and points at the active release feed. The 0.5.5 updater reads `release.json` directly.
+Refresh Games with R3 and test 2048 v1.0. Square opens the download queue; X retries an old failed item. Game packages remain under /data/CohenStore/downloads and require manual installation. Successful desktop transfer does not establish PS4 networking or game compatibility.
 
-The package URL is pinned to an immutable Git commit. GitHub publication verified the full saved package size, SHA-256, magic and content ID before committing it. No update installs automatically.
+## Feed and publisher trust
 
-## Future publication
+The client reads update/release.json directly. It verifies the Ed25519 signature of the exact signed_payload bytes against its embedded public key. It validates release channel, revision, version, official HTTPS repository URL, size, SHA-256 and package identity before staging.
 
-Keep the existing private signing key outside the public repository and outside the PS4. Increase APP_VERSION_CODE and PS4 APP_VER when building a new release. Publish the PKG, then use the source's `tools/publish_update.py` with the existing private key, exact package, increased revision and commit-pinned HTTPS URL. Publish its output as `update/release.json`.
+The active package URL is pinned to a Git commit. manifest.json retains the older catalog planning fields and points to the active signed feed.
 
-The recovery publication workflow assembled the already-built package from small uploads and removed the staging files. It does not build the PS4 app or hold its private signing key.
+Keep the existing private signing key outside this repository and outside the PS4. Increase APP_VERSION_CODE and APP_VER for each client release, and increase the signed revision. Use tools/publish_update.py from the source archive with the exact package and a commit-pinned official URL.
 
-## Validation limits
+## Sources and validation
 
-The recovered source passed 72 desktop app tests. The repository checks pass. Console HTTPS, controller interaction, real download and GoldHEN installation still require a PS4 test.
+The 0.5.6 source archive is in update/sources/. All 74 local app tests pass. The PS4 executable compiles and its PKG passes package hash/signature checks. Publication reconstructed the new PKG from a compressed difference against 0.5.5 and verified its exact full SHA-256 before committing.
+
+The full game download workflow uses the desktop engine to download all of 2048 and compare its size and publisher SHA-256. Console update download, installation and game download completion are still awaiting the user's test.

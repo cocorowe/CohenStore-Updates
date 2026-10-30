@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "channel": "testing",
-  "generated_at": "2026-10-30T00:00:00Z",
+  "generated_at": "2026-10-30T22:10:00Z",
   "content_version": 1,
-  "app_version": "0.5.5",
+  "app_version": "0.5.6",
   "announcements": [
-    "CohenStore 0.5.5 updater test. One USB install is required to add Store Updates. PS4 network and installation testing is pending."
+    "0.5.6 tests downloading a store update from 0.5.5 without USB. Retried downloads now use current catalog metadata. Console download and installation testing is pending."
   ],
   "catalog_updates": [],
   "app_update": {
-    "version": "0.5.5",
-    "version_code": 55,
+    "version": "0.5.6",
+    "version_code": 56,
     "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/release.json"
   }
 }

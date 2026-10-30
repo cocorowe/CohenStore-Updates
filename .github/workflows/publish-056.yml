@@ -38,26 +38,3 @@ jobs:
           git rm -r update/staging/0.5.6
           git commit -m "Publish verified CohenStore 0.5.6 updater test package"
           git push origin HEAD:main
-  game-download:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build desktop download engine
-        run: |
-          unzip -q update/sources/CohenStore-0.5.6-Source.zip -d /tmp/cohen-source
-          make -C /tmp/cohen-source/CohenStore all
-      - name: Download complete 2048 package and verify publisher SHA-256
-        timeout-minutes: 5
-        run: |
-          /tmp/cohen-source/CohenStore/build/cohen-store download catalog/catalog.json skidgfx/PS4-2048/321177781 /tmp/cohen-game-test 1 1000 > /tmp/cohen-game-result.json
-          cat /tmp/cohen-game-result.json
-          python3 - <<'PY'
-          import json,hashlib
-          from pathlib import Path
-          r=json.loads(Path('/tmp/cohen-game-result.json').read_text())
-          assert r['ok'] and r['bytes']==35454976
-          assert hashlib.sha256(Path(r['path']).read_bytes()).hexdigest()=='c53d517bb4ff86c62638edf03548bc94c9bd4b2b21c618c69770469a809c2e4a'
-          print('Full 2048 download matches publisher SHA-256. PS4 transport still requires console testing.')
-          PY

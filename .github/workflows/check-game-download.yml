@@ -1,0 +1,37 @@
+name: Check full game download
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/release.json'
+      - 'update/sources/**'
+      - '.github/workflows/check-game-download.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  game-download:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install desktop download build dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --no-install-recommends g++ make libcurl4-openssl-dev unzip
+      - name: Build desktop download engine
+        run: |
+          unzip -q update/sources/CohenStore-0.5.6-Source.zip -d /tmp/cohen-source
+          make -C /tmp/cohen-source/CohenStore all
+      - name: Download 2048 and check publisher SHA-256
+        timeout-minutes: 5
+        run: |
+          /tmp/cohen-source/CohenStore/build/cohen-store download catalog/catalog.json skidgfx/PS4-2048/321177781 /tmp/cohen-game-test 1 1000 > /tmp/cohen-game-result.json
+          cat /tmp/cohen-game-result.json
+          python3 - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          r=json.loads(Path('/tmp/cohen-game-result.json').read_text())
+          assert r['ok'] and r['bytes']==35454976
+          assert hashlib.sha256(Path(r['path']).read_bytes()).hexdigest()=='c53d517bb4ff86c62638edf03548bc94c9bd4b2b21c618c69770469a809c2e4a'
+          print('Full download matches publisher SHA-256. PS4 testing is still required.')
+          PY
