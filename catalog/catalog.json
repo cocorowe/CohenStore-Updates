@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "bucanero/apollo-ps4/648516222",
+      "title": "Apollo Save Tool v2.4.0",
+      "category": "homebrew",
+      "size_bytes": 22806528,
+      "sha256": "ec34add4d2857fa3c947ed5666735a5c35ddb3e47d8be925b36e9ad408f7c090",
+      "urls": [
+        "https://github.com/bucanero/apollo-ps4/releases/download/v2.4.0/IV0000-APOL00004_00-APOLLO0000000PS4.pkg"
+      ],
+      "note": "Developer release. Console compatibility has not been tested."
+    },
+    {
+      "id": "bucanero/PS4CheatsManager/173853431",
+      "title": "PS4 Cheats Manager v1.2.2",
+      "category": "homebrew",
+      "size_bytes": 19202048,
+      "sha256": "",
+      "urls": [
+        "https://github.com/bucanero/PS4CheatsManager/releases/download/v1.2.2/IV0000-CHTM00777_00-PS4CHEATSMANAGER.pkg"
+      ],
+      "note": "Developer release. Console compatibility has not been tested."
+    }
+  ]
+}
