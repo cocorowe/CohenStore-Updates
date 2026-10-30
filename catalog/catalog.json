@@ -22,6 +22,17 @@
         "https://github.com/bucanero/PS4CheatsManager/releases/download/v1.2.2/IV0000-CHTM00777_00-PS4CHEATSMANAGER.pkg"
       ],
       "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested."
+    },
+    {
+      "id": "nueex/ps-mtp-explorer/669436832",
+      "title": "PS MTP Explorer 1.01",
+      "category": "apps",
+      "size_bytes": 6619136,
+      "sha256": "14954543aa2a25bb0a4e74c80eeb99bff1d4f96ab81728c5ae2b8aa74e1c31c2",
+      "urls": [
+        "https://github.com/nueex/ps-mtp-explorer/releases/download/v1.01/PS-MTP-Explorer-1.01.pkg"
+      ],
+      "note": "Developer release. Publisher SHA-256 digest supplied. Upstream reports testing on firmware 9.00, 10.01, and 11.00; firmware 13.52 compatibility has not been verified."
     }
   ]
 }
