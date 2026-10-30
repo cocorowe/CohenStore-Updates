@@ -12,7 +12,8 @@ PROJECTS=[('skidgfx/PS4-2048','2048','games'),
           ('MDashK/sonic-1-sms-remake-ps4','Sonic 1 SMS Remake','games'),
           ('MDashK/Sonic-2-SMS-Remake-PS4','Sonic 2 SMS Remake','games'),
           ('Cpasjuste/pemu','pEMU','emulators'),
-          ('cy33hc/ps4-ezremote-client','ezRemote Client','apps')]
+          ('cy33hc/ps4-ezremote-client','ezRemote Client','apps'),
+          ('Ninedark9/PS4PackageLink','PS4 Package Link','apps')]
 
 PEMU_NAMES={'PFBN00001':'pFBN (Arcade)', 'PGBA00001':'pGBA (Game Boy Advance)',
             'PGEN00001':'pGEN (Genesis / Mega Drive)', 'PNES00001':'pNES (NES)',
