@@ -13,7 +13,10 @@ PROJECTS=[('skidgfx/PS4-2048','2048','games'),
           ('MDashK/Sonic-2-SMS-Remake-PS4','Sonic 2 SMS Remake','games'),
           ('Cpasjuste/pemu','pEMU','emulators'),
           ('cy33hc/ps4-ezremote-client','ezRemote Client','apps'),
-          ('Ninedark9/PS4PackageLink','PS4 Package Link','apps')]
+          ('Ninedark9/PS4PackageLink','PS4 Package Link','apps'),
+          ('diasurgical/DevilutionX','DevilutionX','games'),
+          ('arturofuentes1988/EmuSuNi','EmuSuNi','emulators'),
+          ('ChiricoG/OneFamily','OneFamily Companion','apps')]
 
 PEMU_NAMES={'PFBN00001':'pFBN (Arcade)', 'PGBA00001':'pGBA (Game Boy Advance)',
             'PGEN00001':'pGEN (Genesis / Mega Drive)', 'PNES00001':'pNES (NES)',
@@ -26,6 +29,8 @@ def merge_release(catalog, repo, title, category, release):
     for asset in assets:
         name=asset.get('name','')
         if not isinstance(name,str) or not name.lower().endswith('.pkg'): continue
+        # The English and Polish Package Link assets share one application identity.
+        if repo=='Ninedark9/PS4PackageLink' and name!='ps4packagelink_en.pkg': continue
         url=asset.get('browser_download_url','')
         if not url.startswith('https://github.com/'+repo+'/releases/download/'):
             raise ValueError('Release asset must be served from its developer repository')
