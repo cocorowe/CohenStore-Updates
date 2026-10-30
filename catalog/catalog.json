@@ -10,7 +10,7 @@
       "urls": [
         "https://github.com/bucanero/apollo-ps4/releases/download/v2.4.0/IV0000-APOL00004_00-APOLLO0000000PS4.pkg"
       ],
-      "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested."
+      "note": "Developer release. Publisher SHA-256 digest supplied; console compatibility has not been tested."
     },
     {
       "id": "bucanero/PS4CheatsManager/173853431",
@@ -21,7 +21,7 @@
       "urls": [
         "https://github.com/bucanero/PS4CheatsManager/releases/download/v1.2.2/IV0000-CHTM00777_00-PS4CHEATSMANAGER.pkg"
       ],
-      "note": "Developer release. Console compatibility has not been tested."
+      "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested."
     }
   ]
 }
