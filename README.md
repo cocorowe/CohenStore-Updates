@@ -37,6 +37,21 @@ The workflow updates listings, not game binaries or the installed store app.
 The installed app still needs a new PKG for code/interface changes. The update
 manifest remains a scaffold; signed app updates are not implemented.
 
+## Download link monitoring
+
+The Check catalog download links workflow checks the current feed daily and on
+catalog changes. It requests only the first four bytes, checks the PKG/PRX
+header and advertised size, and records whether the host supports byte ranges.
+Its JSON report is retained as a GitHub Actions artifact for 14 days. A failure
+does not erase the catalog. Internet Archive and HTTPS downgrade redirects are
+refused. Header checks do not establish complete-file integrity, PS4 launch
+support or future reliability.
+
+During the 0.5.2 repair, full desktop downloads of 2048 (35,454,976 bytes) and
+Relic Hunters Zero (71,696,384 bytes) completed. 2048 matched the publisher's
+SHA-256. Relic Hunters Zero has no publisher digest to compare. Console testing
+on firmware 13.52 is still pending.
+
 ## Catalog rules
 
 - Use developer-published or authorized direct HTTPS downloads.
