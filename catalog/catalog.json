@@ -218,6 +218,21 @@
         "https://github.com/cy33hc/ps4-ezremote-client/releases/download/2.08/ezremote_client.pkg"
       ],
       "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
+    },
+    {
+      "id": "Ninedark9/PS4PackageLink/604110099",
+      "title": "PS4 Package Link v0.6.4 (English)",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "0.6.4",
+      "title_ids": [],
+      "source_url": "https://github.com/Ninedark9/PS4PackageLink/releases/tag/v0.6.4",
+      "size_bytes": 6619136,
+      "sha256": "6a0475d027638421faa1b2e03ac85b1578c55ce84743e0ae5dd0b01a04e09e8d",
+      "urls": [
+        "https://github.com/Ninedark9/PS4PackageLink/releases/download/v0.6.4/ps4packagelink_en.pkg"
+      ],
+      "note": "Developer-published PS4 homebrew app with Windows PC companion for user-authorized PKG libraries and LAN installs. Publisher SHA-256 supplied. Polish build has been hardware-tested; English build has not been separately hardware-tested. Latest remote queue features need end-to-end PS4 verification."
     }
   ]
 }
