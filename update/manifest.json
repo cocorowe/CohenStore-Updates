@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "generated_at": "2026-10-30T00:00:00Z",
+  "content_version": 1,
+  "app_version": "0.2.0",
+  "announcements": [],
+  "catalog_updates": [],
+  "app_update": null
+}
