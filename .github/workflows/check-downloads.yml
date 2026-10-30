@@ -7,6 +7,12 @@ on:
       - 'tests/test_download_checks.py'
       - '.github/workflows/check-downloads.yml'
   workflow_dispatch:
+    inputs:
+      full_transfer:
+        description: Download eligible files and verify publisher SHA-256 (up to 256 MiB each)
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: '30 9 * * *'
 permissions:
@@ -14,7 +20,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,10 +28,14 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python tools/validate_feed.py
-      - run: python tools/check_downloads.py
+      - name: Check catalog headers
+        run: python tools/check_downloads.py
+      - name: Verify complete files when requested
+        if: \${{ inputs.full_transfer == true }}
+        run: python tools/check_downloads.py --full --report reports/full-download-check.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: catalog-link-check
-          path: reports/download-check.json
+          path: reports/*.json
           retention-days: 14
