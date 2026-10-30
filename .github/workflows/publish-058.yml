@@ -1,0 +1,37 @@
+name: Publish CohenStore 0.5.8
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.8/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct and verify package
+        shell: python
+        run: |
+          import gzip,hashlib
+          from pathlib import Path
+          parts=sorted(Path('update/staging/0.5.8').glob('*.gzpart'))
+          assert [p.name for p in parts]==[f'{i:03}.gzpart' for i in range(6)]
+          old=Path('update/packages/CohenStore-0.5.6-UPDATER-TEST.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='401068973529e3096fc590574458ec4918eaf54e837f66089d49b69b4eaf8a89'
+          delta=gzip.decompress(b''.join(p.read_bytes() for p in parts))
+          assert len(delta)==len(old)==6619136
+          data=bytes(a^b for a,b in zip(old,delta))
+          assert hashlib.sha256(data).hexdigest()=='941b65e3825bf4daf32503dfeb0e0181de1aa257c1cd08ddb4b644096df8ce71'
+          assert data[:4]==b'\x7fCNT'
+          assert data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          Path('update/packages/CohenStore-0.5.8-UPDATER-TEST.pkg').write_bytes(data)
+      - name: Publish verified package
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.8-UPDATER-TEST.pkg
+          git rm -r update/staging/0.5.8
+          git commit -m "Publish verified CohenStore 0.5.8 update test package"
+          git push origin HEAD:main
