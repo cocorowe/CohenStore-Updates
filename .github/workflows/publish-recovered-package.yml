@@ -1,0 +1,40 @@
+name: Publish recovered CohenStore package
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.5/**'
+      - '.github/workflows/publish-recovered-package.yml'
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-package-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble and verify saved 0.5.5 package
+        shell: python
+        run: |
+          import hashlib
+          from pathlib import Path
+          parts = sorted(Path('update/staging/0.5.5').glob('*.bin'))
+          assert [p.name for p in parts] == [f'{i:03}.bin' for i in range(26)], 'Missing package pieces'
+          data = b''.join(p.read_bytes() for p in parts)
+          assert len(data) == 6619136, 'Incorrect package size'
+          assert hashlib.sha256(data).hexdigest() == '4a8b6e80dc1d3f2225c9cda8bcdd6aee380a250c31e335edf49d54172dc31f03', 'Package hash mismatch'
+          assert data[:4] == b'\x7fCNT', 'Incorrect package magic'
+          assert data[0x40:0x64] == b'IV0000-CHST00001_00-COHENSTORE000000', 'Incorrect content ID'
+          target = Path('update/packages/CohenStore-0.5.5-UPDATER-TEST.pkg')
+          target.parent.mkdir(parents=True, exist_ok=True)
+          target.write_bytes(data)
+      - name: Publish verified package and remove staging pieces
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.5-UPDATER-TEST.pkg
+          git rm -r update/staging/0.5.5
+          git commit -m "Publish verified CohenStore 0.5.5 updater test package"
+          git push origin HEAD:main
