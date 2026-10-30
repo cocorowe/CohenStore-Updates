@@ -6,10 +6,10 @@ Live feed: https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/ca
 
 ## Current listings
 
-The feed contains five homebrew games, five emulators, and four apps/tools.
+The feed contains five homebrew games, five emulators, and five apps/tools.
 Games: 2048, Relic Hunters Zero, Sonic Time Twisted, Sonic 1 SMS Remake,
 and Sonic 2 SMS Remake. Emulators: pFBN, pGBA, pGEN, pNES and pSNES.
-Apps/tools: Apollo Save Tool, PS4 Cheats Manager, PS MTP Explorer and ezRemote Client.
+Apps/tools: Apollo Save Tool, PS4 Cheats Manager, PS MTP Explorer, ezRemote Client and PS4 Package Link.
 
 Download URLs and exact sizes come from publisher release metadata. Published
 hashes are retained when available; unknown hashes stay empty. Release metadata
@@ -33,7 +33,7 @@ The new mint client checks the configured feed at startup by default and keeps
 its cache on errors. The user can also enable checks every 15 minutes while the
 app is open. Older clients retain their own refresh settings.
 
-The workflow updates listings, not game binaries or the installed store app.
+The allowlist includes PS4 Package Link, a developer-published PS4/Windows companion for managing and installing user-authorized PKGs over a local network. The English PS4 package is listed; its Polish counterpart shares the same app identity and is not duplicated in the catalog.\n\nThe workflow updates listings, not game binaries or the installed store app.
 The installed app still needs a new PKG for code/interface changes. The update
 manifest remains a scaffold; signed app updates are not implemented.
 
