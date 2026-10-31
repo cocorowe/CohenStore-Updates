@@ -1,16 +1,10 @@
 # CohenStore Updates
 
-**Current app repair: 0.5.13.** This release uses an existing installer folder
-without relying on the error returned by mkdir. It also shows the actual
-installed version and a specific catalog rejection reason.
+**Current release: 0.5.14.** Adds R2 cancel/remove in the download queue and readable game package filenames. Circle pauses; completed packages are kept when removing a task.
 
-If an older updater cannot stage this repair, download it, close CohenStore,
-and copy `/data/CohenStore/downloads/ffdcbf88b1f14835.pkg` into `/data/pkg` with
-PS4-Xplorer. Install that copied package in GoldHEN's HDD Package Installer,
-then reopen and refresh Games with R3. See [update instructions](update/README.md).
+Install through Store Updates (R3, then X), close CohenStore, and install CohenStore-514.pkg using GoldHEN Package Installer, source HDD. See [update instructions](update/README.md).
 
-The current application source and private signing key are not part of the
-public upload. Older source archives are still present in this public updates repository.
+The current application source and private signing key are not included in this public upload. Older source archives remain in repository history.
 
 ## Current listings
 
