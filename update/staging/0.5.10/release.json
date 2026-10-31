@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":5,\"schema\":1,\"sha256\":\"fe9beadb5635bf68440954252b9769218ab21ff263628991a35273eb29d6f568\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.10-INSTALLER-FIX.pkg\",\"version\":\"0.5.10\",\"version_code\":60}",
+  "signature": "6a54b8f81f79c6d35f4f7c50075f1a0512aaf1c9e90c819768c9da00d9553f6ed59e995a8518ef1033c15f95807feffd2d2719be705183ef493d608592672905"
+}
