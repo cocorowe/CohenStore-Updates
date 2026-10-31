@@ -1,37 +1,42 @@
-name: Check full game download
+name: Manual publisher-file verification (2048)
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'update/release.json'
-      - 'update/sources/**'
-      - '.github/workflows/check-game-download.yml'
   workflow_dispatch:
+    inputs:
+      full_transfer:
+        description: Download the creator's 2048 package and verify its pinned SHA-256
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: read
 jobs:
-  game-download:
+  publisher-file:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_transfer == true }}
     runs-on: ubuntu-24.04
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
-      - name: Install desktop download build dependencies
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Select the pinned creator package
+        shell: python
         run: |
-          sudo apt-get update -q
-          sudo apt-get install -y --no-install-recommends g++ make libcurl4-openssl-dev unzip
-      - name: Build desktop download engine
-        run: |
-          unzip -q update/sources/CohenStore-0.5.8-Source.zip -d /tmp/cohen-source
-          make -C /tmp/cohen-source/CohenStore all
-      - name: Download 2048 and check publisher SHA-256
-        timeout-minutes: 5
-        run: |
-          /tmp/cohen-source/CohenStore/build/cohen-store download catalog/catalog.json skidgfx/PS4-2048/321177781 /tmp/cohen-game-test 1 1000 > /tmp/cohen-game-result.json
-          cat /tmp/cohen-game-result.json
-          python3 - <<'PY'
-          import json,hashlib
+          import json
           from pathlib import Path
-          r=json.loads(Path('/tmp/cohen-game-result.json').read_text())
-          assert r['ok'] and r['bytes']==35454976
-          assert hashlib.sha256(Path(r['path']).read_bytes()).hexdigest()=='c53d517bb4ff86c62638edf03548bc94c9bd4b2b21c618c69770469a809c2e4a'
-          print('Full download matches publisher SHA-256. PS4 testing is still required.')
-          PY
+          from urllib.parse import urlsplit
+          items=json.loads(Path('catalog/catalog.json').read_text())['items']
+          item=next(i for i in items if i['id']=='skidgfx/PS4-2048/321177781')
+          assert item['size_bytes']==35454976
+          assert item['sha256']=='c53d517bb4ff86c62638edf03548bc94c9bd4b2b21c618c69770469a809c2e4a'
+          url=urlsplit(item['urls'][0])
+          assert url.scheme=='https' and url.hostname=='github.com' and url.path.startswith('/skidgfx/PS4-2048/releases/download/')
+          Path('/tmp/cohen-2048-catalog.json').write_text(json.dumps({'schema':1,'items':[item]}))
+      - name: Verify the complete creator file (not a native PS4 test)
+        run: python tools/check_downloads.py --full --require-manual-dispatch --strict-host-health --catalog /tmp/cohen-2048-catalog.json --report reports/2048-full-check.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: publisher-2048-transfer-check
+          path: reports/2048-full-check.json
+          retention-days: 14
