@@ -1,0 +1,58 @@
+name: Publish CohenStore 0.5.12
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.12/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install package verification dependencies
+        run: python -m pip install cryptography==46.0.3 bsdiff4==1.2.6
+      - name: Reconstruct and verify the new signed package
+        shell: python
+        run: |
+          import bsdiff4,hashlib,json,shutil
+          from pathlib import Path
+          from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+          stage=Path('update/staging/0.5.12')
+          old=Path('update/packages/CohenStore-0.5.11-ARCHIVE-TEST.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='5e6f59d9a72c2b8f1c4b3f6a1a402105a44dfccca1f3863e84bff77e78a377fa'
+          patch=(stage/'package.bsdiff').read_bytes()
+          assert hashlib.sha256(patch).hexdigest()=='32f5a4ff66236a2711a0c224827feccdcfc5636453abe7c7a8213b779e29ba4b'
+          data=bsdiff4.patch(old,patch)
+          assert len(data)==6619136
+          assert hashlib.sha256(data).hexdigest()=='7bbb6d73dd2d1d923e211ba943c9435fca0a71c0fd458eeac63f7c209d3f3162'
+          manifest=json.loads((stage/'release.json').read_text())
+          Ed25519PublicKey.from_public_bytes(bytes.fromhex('6d7df4c99728545705a58cb75c6e15aa097f03ab452c86726da359668bbfec41')).verify(bytes.fromhex(manifest['signature']),manifest['signed_payload'].encode())
+          release=json.loads(manifest['signed_payload'])
+          assert release['version']=='0.5.12' and release['version_code']==512 and release['revision']==7
+          assert release['schema']==1 and release['channel']=='testing'
+          assert release['sha256']==hashlib.sha256(data).hexdigest() and release['size_bytes']==len(data)
+          assert release['title_id']=='CHST00001' and release['content_id']=='IV0000-CHST00001_00-COHENSTORE000000'
+          assert data[:4]==b'\x7fCNT' and data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['url']=='https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.12-UPDATE-TEST.pkg'
+          Path('update/packages/CohenStore-0.5.12-UPDATE-TEST.pkg').write_bytes(data)
+          shutil.copyfile(stage/'release.json','update/release.json')
+          shutil.copyfile(stage/'instructions.md','update/README.md')
+          shutil.copyfile(stage/'repository-readme.md','README.md')
+      - name: Validate catalog and repository tests
+        run: |
+          python3 tools/validate_feed.py
+          python3 -m unittest discover -s tests -v
+      - name: Publish verified update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.12-UPDATE-TEST.pkg update/release.json update/README.md README.md
+          git rm -r update/staging/0.5.12
+          git commit -m "Publish verified CohenStore 0.5.12 for installed 0.5.11 builds"
+          git pull --rebase origin main
+          git push origin HEAD:main

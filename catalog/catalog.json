@@ -207,9 +207,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
-        "https://archive.org/download/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%206%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.58%5D%20%5BCP%5D.pkg"
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%206%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.58%5D%20%5BCP%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%206%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.58%5D%20%5BCP%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -225,9 +226,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Ghosts%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.21%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Ghosts%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.21%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -243,9 +245,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Advanced%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.24%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Advanced%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.24%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -261,9 +264,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%204%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.26%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%204%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.26%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -279,9 +283,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%20Cold%20War%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.41%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Black%20Ops%20Cold%20War%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.41%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -316,9 +321,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Infinite%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.25%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Infinite%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.25%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -334,9 +340,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20II%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20II%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -352,9 +359,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20III%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.33%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20III%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.33%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -370,9 +378,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.67%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.67%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -388,9 +397,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20(2007)%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20(2007)%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -406,9 +416,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
-        "https://archive.org/download/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20(2009)%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20(2009)%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20(2009)%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -424,9 +435,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Vanguard%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.26%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Vanguard%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.26%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -442,9 +454,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20WWII%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.25%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20WWII%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.25%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -460,9 +473,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
-        "https://archive.org/download/ps4-fpkg-collection-english-c/Call%20Of%20The%20Sea%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20Of%20The%20Sea%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20Of%20The%20Sea%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -478,9 +492,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Carrion%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Carrion%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -496,9 +511,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Carto%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Carto%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -514,9 +530,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Catherine%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Catherine%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -532,9 +549,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
-        "https://archive.org/download/ps4-fpkg-collection-english-c/Celeste%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Celeste%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Celeste%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -550,9 +568,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chained%20Echoes%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.13%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chained%20Echoes%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.13%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -568,9 +587,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chernobylite%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.12%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chernobylite%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.12%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -586,9 +606,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chess%20Ultra%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chess%20Ultra%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -623,9 +644,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Child%20of%20Light%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Child%20of%20Light%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -641,9 +663,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chimparty%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Chimparty%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -659,9 +682,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cities%20Skylines%20-%20%5BUS%5D%20%5BEN%5D%20%5B16.02%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cities%20Skylines%20-%20%5BUS%5D%20%5BEN%5D%20%5B16.02%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -677,9 +701,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Citizen%20Sleeper%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Citizen%20Sleeper%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -695,9 +720,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cocoon%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cocoon%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -713,9 +739,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CODE%20VEIN%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.53%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CODE%20VEIN%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.53%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -731,9 +758,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20&%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20&%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -749,9 +777,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CoffeeTalk%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CoffeeTalk%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -786,9 +815,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Concrete%20Genie%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Concrete%20Genie%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.07%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -804,9 +834,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Control%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.12%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Control%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.12%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -822,9 +853,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook,%20Serve,%20Delicious!%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook,%20Serve,%20Delicious!%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -840,9 +872,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%20N.%20Sane%20Trilogy%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%20N.%20Sane%20Trilogy%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -858,9 +891,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It's%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It's%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -876,9 +910,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Team%20Racing%20Nitro-Fueled%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.21%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Team%20Racing%20Nitro-Fueled%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.21%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -894,9 +929,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Creature%20in%20the%20Well%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Creature%20in%20the%20Well%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -912,9 +948,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cricket%2024%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.30%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cricket%2024%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.30%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -930,9 +967,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CRISIS%20CORE%20FINAL%20FANTASY%20VII%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/CRISIS%20CORE%20FINAL%20FANTASY%20VII%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -948,9 +986,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crossing%20Souls%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crossing%20Souls%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -966,9 +1005,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crow%20Country%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crow%20Country%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -984,9 +1024,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crypt%20of%20the%20Necrodancer%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crypt%20of%20the%20Necrodancer%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -1002,9 +1043,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%202%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%202%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -1020,9 +1062,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%203%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%203%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -1038,9 +1081,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crysis%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -1056,9 +1100,10 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cult%20of%20the%20Lamb%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.29%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cult%20of%20the%20Lamb%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.29%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
@@ -1074,9 +1119,10 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cuphead%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cuphead%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
-      "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
+      "note": "Public download link checked. Full transfer and PS4 compatibility unverified. Public Archive mirrors rechecked for matching size, title ID and byte-range support.",
       "format": "pkg"
     },
     {
