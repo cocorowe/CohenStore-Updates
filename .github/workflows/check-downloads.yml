@@ -31,7 +31,7 @@ jobs:
       - name: Check catalog headers
         run: python tools/check_downloads.py
       - name: Verify complete files when requested
-        if: \${{ inputs.full_transfer == true }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.full_transfer == true }}
         run: python tools/check_downloads.py --full --report reports/full-download-check.json
       - uses: actions/upload-artifact@v4
         if: always()
