@@ -1,0 +1,57 @@
+name: Publish CohenStore 0.5.9
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.9/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install signature verifier
+        run: python -m pip install cryptography==46.0.3
+      - name: Reconstruct and verify signed package
+        shell: python
+        run: |
+          import gzip,hashlib,json,shutil
+          from pathlib import Path
+          from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+          stage=Path('update/staging/0.5.9')
+          parts=sorted(stage.glob('*.gzpart'))
+          assert [p.name for p in parts]==[f'{i:03}.gzpart' for i in range(42)]
+          old=Path('update/packages/CohenStore-0.5.8-UPDATER-TEST.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='941b65e3825bf4daf32503dfeb0e0181de1aa257c1cd08ddb4b644096df8ce71'
+          delta=gzip.decompress(b''.join(p.read_bytes() for p in parts))
+          assert len(delta)==len(old)==6619136
+          data=bytes(a^b for a,b in zip(old,delta))
+          manifest=json.loads((stage/'release.json').read_text())
+          public=Ed25519PublicKey.from_public_bytes(bytes.fromhex('6d7df4c99728545705a58cb75c6e15aa097f03ab452c86726da359668bbfec41'))
+          public.verify(bytes.fromhex(manifest['signature']),manifest['signed_payload'].encode())
+          release=json.loads(manifest['signed_payload'])
+          assert release['version']=='0.5.9' and release['version_code']==59 and release['revision']==4
+          assert release['schema']==1 and release['channel']=='testing'
+          assert release['title_id']=='CHST00001' and release['content_id']=='IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['sha256']==hashlib.sha256(data).hexdigest()=='f1406b0bc4960b54e88ee557afa2f8e5d8bb45e4ef0ad6d48170bc8674e5f327'
+          assert release['size_bytes']==len(data)==6619136
+          assert data[:4]==b'\x7fCNT'
+          assert data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['url']=='https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.9-INSTALLER-TEST.pkg'
+          Path('update/packages/CohenStore-0.5.9-INSTALLER-TEST.pkg').write_bytes(data)
+          shutil.copyfile(stage/'release.json','update/release.json')
+          shutil.copyfile(stage/'repository-readme.md','README.md')
+          shutil.copyfile(stage/'instructions.md','update/README.md')
+      - name: Publish verified package and signed feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.9-INSTALLER-TEST.pkg update/release.json README.md update/README.md
+          git rm -r update/staging/0.5.9
+          git commit -m "Publish verified CohenStore 0.5.9 package and signed updater feed"
+          git pull --rebase origin main
+          git push origin HEAD:main
