@@ -24,3 +24,6 @@ and produced SHA-256 62cea09319376f5e49f293cf451a40bd02a36cf86e35f3f80308fb0fe80
 This is not a publisher-authenticated digest or proof of PS4 installation.
 Other catalog checks cover public metadata and bounded file prefixes only.
 Private entries and failed HTTP checks are held out of the added catalog.
+
+
+Packaging note: the 003/004 compressed-part boundary contains a five-byte overlap; the publish workflow removes those duplicated bytes before decompression.
