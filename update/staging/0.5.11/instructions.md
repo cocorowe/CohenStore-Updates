@@ -26,6 +26,4 @@ Other catalog checks cover public metadata and bounded file prefixes only.
 Private entries and failed HTTP checks are held out of the added catalog.
 
 
-Packaging note: the 003/004 compressed-part boundary contains a five-byte overlap; the publish workflow removes those duplicated bytes before decompression.
-
-Diagnostic rerun queued to locate any remaining compressed-stream corruption before publication.
+Packaging note: the 003/004 compressed-part boundary contains a five-byte overlap, which the workflow removes. A separate internal corruption remains in 003.gzpart (decompression fails about 12 KiB into that chunk), so publication is intentionally blocked until the staged archive is replaced and its signed package hash verifies.
