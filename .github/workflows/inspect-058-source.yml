@@ -1,0 +1,34 @@
+name: Inspect CohenStore 0.5.8 source
+on:
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract source archive
+        run: |
+          mkdir -p /tmp/cohen058
+          unzip -q update/sources/CohenStore-0.5.8-Source.zip -d /tmp/cohen058
+          echo "Archive contents:"
+          find /tmp/cohen058 -maxdepth 3 -type f | sort
+          echo "Build files:"
+          find /tmp/cohen058 -maxdepth 4 \( -name Makefile -o -name CMakeLists.txt -o -name '*.yml' \) -type f -print
+      - name: Run available source tests
+        shell: bash
+        run: |
+          set +e
+          find /tmp/cohen058 -type f \( -name Makefile -o -name CMakeLists.txt \) -print0 | while IFS= read -r -d '' f; do
+            d="$(dirname "$f")"
+            echo "=== Build/test entrypoint: $f ==="
+            if [[ -f "$d/Makefile" ]]; then
+              make -C "$d" test || make -C "$d" || true
+            fi
+          done
+      - name: Upload extracted source for local review
+        uses: actions/upload-artifact@v4
+        with:
+          name: cohenstore-058-source-review
+          path: /tmp/cohen058/
+          if-no-files-found: error
+          retention-days: 7
