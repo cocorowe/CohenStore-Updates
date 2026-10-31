@@ -1,15 +1,16 @@
 # CohenStore Updates
 
-**Current app update: 0.5.12.** A new executable and PS4 package version 1.12
-make this release newer than the installed 0.5.11/1.11 builds. Open Store Updates,
-press R3 then X. Close CohenStore at Update ready and install `CohenStore-512.pkg`
-from GoldHEN Package Installer using source HDD (`/data/pkg`). Reopen and refresh
-Games with R3. See [update instructions](update/README.md).
+**Current app repair: 0.5.13.** This release uses an existing installer folder
+without relying on the error returned by mkdir. It also shows the actual
+installed version and a specific catalog rejection reason.
 
-The live catalog contains 119 entries, including 101 public Archive games.
-Catalog header/range checks do not establish full transfer or console compatibility.
-The 0.5.12 application source and private update signing key are not uploaded
-with this release. Older source archives remain in repository history.
+If an older updater cannot stage this repair, download it, close CohenStore,
+and copy `/data/CohenStore/downloads/ffdcbf88b1f14835.pkg` into `/data/pkg` with
+PS4-Xplorer. Install that copied package in GoldHEN's HDD Package Installer,
+then reopen and refresh Games with R3. See [update instructions](update/README.md).
+
+The current application source and private signing key are not part of the
+public upload. Older source archives are still present in this public updates repository.
 
 ## Current listings
 

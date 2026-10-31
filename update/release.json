@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":7,\"schema\":1,\"sha256\":\"7bbb6d73dd2d1d923e211ba943c9435fca0a71c0fd458eeac63f7c209d3f3162\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.12-UPDATE-TEST.pkg\",\"version\":\"0.5.12\",\"version_code\":512}",
-  "signature": "f18c28eb701b58e2239f662ad6dc3ae5c45a84780f025d10d227afb58628a1f72c802f0cbf6f6e7bdad190ecb5ca8d4c8ecefcbb9b3178cd624b71aa127a400f"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":8,\"schema\":1,\"sha256\":\"0f2883be2555351adec55300c313b95e9ce9ce1535ed5b95580a503982cec93e\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.13-STAGING-FIX.pkg\",\"version\":\"0.5.13\",\"version_code\":513}",
+  "signature": "9e5840cd59dd4e610a61302695f6070102c826803c30f6fdb305d6575eeabb8d18d8d1dd7adcfc91f7b27ac7832eb0af7c2bef0986ea47f6a58de378d4a2fb06"
 }
