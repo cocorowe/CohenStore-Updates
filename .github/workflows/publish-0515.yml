@@ -1,0 +1,71 @@
+name: Publish CohenStore 0.5.15
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.15/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install package verification dependencies
+        run: python -m pip install cryptography==46.0.3 bsdiff4==1.2.6
+      - name: Reconstruct and verify the new signed package
+        shell: python
+        run: |
+          import bsdiff4,hashlib,json,shutil,gzip
+          from pathlib import Path
+          from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+          stage=Path('update/staging/0.5.15')
+          old=Path('update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='3b3e04a41afe11617106c57aff48bc71f9657275aa2fb880a63a508b3b3466a8'
+          expected_parts={'000.bsdiffpart': 'ab408ba625c49ab39c634e5f82c03732c0ce92d51a3b56798809ab7b4fc97ecb', '001.bsdiffpart': 'a9198fb1ba2789ef3205d57d4558a9a63f2e955cd5b492522c2fca72b2a7ce4c', '002.bsdiffpart': 'df73850f644153a4a877a17d08ab152511f60897d3de05879a5e2748171b6446', '003.bsdiffpart': 'b318a3cebe34820e22e2498c993c9d81529c6cb54e57ad9bb08287400236b205', '004.bsdiffpart': '149b182979a80199bda9cf4514ae07a3930c6c334dcadb6de9e774a0b7993252', '005.bsdiffpart': '1684eff6d808a03912f982a615b842218a9c95eaaabfcb54650b1b1000db70f6', '006.bsdiffpart': 'dcbbe669c6a2fc0e7a99292b768c19d391acf5811f421e6041a9d5b44afbb3ac', '007.bsdiffpart': 'ae6d74bb9b7d40ed79ecdf109e7144e6727f614dc32d9880f2622724c1bebc40', '008.bsdiffpart': 'f91b39fca3f11cb3326751369274279aa719cfc6ef3fc142ea6996f7eba9958a', '009.bsdiffpart': '0e3a8b8c5a2533dd670f91e174df48eadd7002ac4d6b496c76432d89894543ab', '010.bsdiffpart': '981c46d35ea58d3467ba28844290411c6a17f8ce42fe123b4deaf0377eecb355'}
+          parts=sorted(stage.glob('*.bsdiffpart'))
+          assert [p.name for p in parts]==list(expected_parts)
+          for part in parts:
+              assert hashlib.sha256(part.read_bytes()).hexdigest()==expected_parts[part.name], part.name
+          patch=b''.join(p.read_bytes() for p in parts)
+          assert hashlib.sha256(patch).hexdigest()=='ba206943904a1970bba61d5bf84c93ba3b7289ba8bfe4b2dd05c22757fb863d4'
+          data=bsdiff4.patch(old,patch)
+          assert len(data)==7798784
+          assert hashlib.sha256(data).hexdigest()=='665fd7b2b4f2c9fd54f8592fcc48545fe229eb7412c9c05e0949baaf9bc1d2a3'
+          manifest=json.loads((stage/'release.json').read_text())
+          Ed25519PublicKey.from_public_bytes(bytes.fromhex('6d7df4c99728545705a58cb75c6e15aa097f03ab452c86726da359668bbfec41')).verify(bytes.fromhex(manifest['signature']),manifest['signed_payload'].encode())
+          release=json.loads(manifest['signed_payload'])
+          assert release['version']=='0.5.15' and release['version_code']==515 and release['revision']==10
+          assert release['schema']==1 and release['channel']=='testing'
+          assert release['sha256']==hashlib.sha256(data).hexdigest() and release['size_bytes']==len(data)
+          assert release['title_id']=='CHST00001' and release['content_id']=='IV0000-CHST00001_00-COHENSTORE000000'
+          assert data[:4]==b'\x7fCNT' and data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['url']=='https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.15-MOD-STORE.pkg'
+          Path('update/packages/CohenStore-0.5.15-MOD-STORE.pkg').write_bytes(data)
+          packed=(stage/'mods.json.gz').read_bytes()
+          assert hashlib.sha256(packed).hexdigest()=='5d97a7b5cf143015d762aba45bfae7bb2e3a510fb439fb652160d18a8457b9eb'
+          mods=gzip.decompress(packed)
+          assert len(mods)==2221322 and hashlib.sha256(mods).hexdigest()=='172822153a9f6e07c61d87eb4b32a9e7544772d0b3b35667f19d4f964c20ddc4'
+          base=(stage/'catalog.json').read_bytes()
+          assert hashlib.sha256(base).hexdigest()=='b103595c50f47921215c1699cad438f68232e86926439e7df4662e0f14dab0f5'
+          Path('catalog/mods.json').write_bytes(mods)
+          Path('catalog/catalog.json').write_bytes(base)
+          shutil.copyfile(stage/'release.json','update/release.json')
+          shutil.copyfile(stage/'instructions.md','update/README.md')
+          shutil.copyfile(stage/'repository-readme.md','README.md')
+      - name: Validate catalog and repository tests
+        run: |
+          python3 tools/validate_feed.py
+          python3 -m unittest discover -s tests -v
+      - name: Publish verified update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.15-MOD-STORE.pkg update/release.json update/README.md README.md catalog/catalog.json catalog/mods.json
+          git rm -r update/staging/0.5.15
+          git commit -m "Publish verified CohenStore 0.5.15 with checked mod catalogs and version-guarded menu setup"
+          git pull --rebase origin main
+          git push origin HEAD:main

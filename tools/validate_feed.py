@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the public CohenStore content catalog and update-manifest scaffold."""
 import json
+import urllib.parse
 import re
 from pathlib import Path
 
@@ -37,5 +38,31 @@ if not isinstance(manifest.get("content_version"), int) or manifest["content_ver
 if not isinstance(manifest.get("announcements"), list) or not isinstance(manifest.get("catalog_updates"), list):
     raise SystemExit("manifest: announcements and catalog_updates must be arrays")
 
+mods_path=ROOT/'catalog/mods.json'
+if mods_path.exists():
+    mods=json.loads(mods_path.read_text(encoding='utf-8'))
+    if mods.get('schema')!=1 or not isinstance(mods.get('items'),list) or not mods['items']:
+        raise SystemExit('mods: expected nonempty schema-1 catalog')
+    mod_ids=set()
+    for item in mods['items']:
+        if not item.get('id') or item['id'] in mod_ids or item['id'] in seen:raise SystemExit('mods: duplicate or missing id')
+        mod_ids.add(item['id'])
+        if item.get('category')!='mod_menus' or item.get('mod_kind') not in ('menu','cheats','plugin','tool','payload'):
+            raise SystemExit('mods: missing mod classification')
+        if item.get('format') not in ('pkg','prx','sprx','json','bin','zip'):raise SystemExit('mods: unsupported file format')
+        if not re.fullmatch(r'[a-f0-9]{64}',item.get('sha256','')) or type(item.get('size_bytes')) is not int or item['size_bytes']<4:
+            raise SystemExit('mods: verified hash and exact size required')
+        if not isinstance(item.get('urls'),list) or not item['urls']:raise SystemExit('mods: missing URLs')
+        for url in item['urls']:
+            p=urllib.parse.urlsplit(url)
+            if p.scheme!='https' or not p.hostname or p.username or p.password or any(ord(c)<=32 for c in url) or '\\' in url or '%' in p.netloc:raise SystemExit('mods: invalid HTTPS URL')
+        if item.get('format') in ('sprx','prx','json'):
+            name=item.get('install_name','')
+            if not re.fullmatch(r'[A-Za-z0-9_-][A-Za-z0-9_.-]{0,95}',name) or '..' in name or not name.endswith('.'+item['format']):raise SystemExit('mods: unsafe install filename')
+            if len(item.get('title_ids',[]))!=1 or not re.fullmatch(r'CUSA\d{5}',item['title_ids'][0]) or len(item.get('game_versions',[]))!=1:raise SystemExit('mods: exact CUSA/version required')
+        if item.get('format')=='json' and item.get('install_name')!=item['title_ids'][0]+'_'+item['game_versions'][0]+'.json':raise SystemExit('mods: cheat filename identity mismatch')
+    print(f'Validated {len(mod_ids)} separately versioned mod/cheat entries.')
+
 print(f"Validated {len(seen)} catalog entries and schema-1 manifest scaffold.")
+
 

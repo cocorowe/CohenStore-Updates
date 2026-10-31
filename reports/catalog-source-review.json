@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "reviewed_sources": [
+    {
+      "url": "https://github.com/huggingfacer04/ps4-games-database",
+      "rows": 17065,
+      "finding": "Scraped hosting pages/shorteners, not a verified direct PKG catalog. Not imported as working downloads."
+    },
+    {
+      "url": "https://www.psdevwiki.com/ps4/JSON_Files",
+      "finding": "PlayStation App version JSON documentation, not a game catalog."
+    },
+    {
+      "url": "https://github.com/Ephellon/game-store-catalog",
+      "finding": "Store metadata and purchase links, not direct PS4 packages."
+    },
+    {
+      "url": "https://github.com/M3hmetSa1t/pegasus-ps4-collection-catalog",
+      "rows": 866,
+      "finding": "All entries classified as games. Two new title/version pairs against the previous Archive list: Cyberpunk 2077 01.31 checked on two public mirrors; Goat Simulator 3 01.10 marked private and excluded."
+    },
+    {
+      "url": "https://github.com/Al-Azif/ps4-exploit-host",
+      "finding": "External exploit/DNS host tool, not a verified mod-menu catalog; no payload sent and no DNS changes made."
+    },
+    {
+      "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository",
+      "finding": "1542 accepted eboot JSON cheat files matched the pinned Git tree. Alternate/multiprocess files excluded; two canonical files with invalid metadata excluded."
+    }
+  ],
+  "mod_catalog_counts": {
+    "menu": 5,
+    "cheats": 1542,
+    "plugin": 1,
+    "tool": 1
+  },
+  "compatibility": "Creator/database-declared targets. No PS4 runtime mod execution tested. No GTA 1.56 menu inferred from legacy releases."
+}

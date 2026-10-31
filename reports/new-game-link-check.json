@@ -1,0 +1,19 @@
+{
+  "size_bytes": 59416903680,
+  "checks": [
+    {
+      "url": "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cyberpunk%202077%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.31%5D.pkg",
+      "status": 206,
+      "range": "bytes 0-127/59416903680",
+      "content_id": "EP4497-CUSA16579_00-0000000000000001",
+      "ok": true
+    },
+    {
+      "url": "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cyberpunk%202077%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.31%5D.pkg",
+      "status": 206,
+      "range": "bytes 0-127/59416903680",
+      "content_id": "EP4497-CUSA16579_00-0000000000000001",
+      "ok": true
+    }
+  ]
+}

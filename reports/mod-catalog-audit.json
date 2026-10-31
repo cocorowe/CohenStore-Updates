@@ -1,0 +1,52 @@
+{
+  "cheats_tree": "baec6c427ef7b745a24823c38991d7dd89fce45b",
+  "counts": {
+    "menu": 5,
+    "cheats": 1542,
+    "plugin": 1,
+    "tool": 1
+  },
+  "excluded": [
+    {
+      "file": "CUSA29809_01.08.json",
+      "reason": "Title/version mismatch"
+    },
+    {
+      "file": "CUSA43272_01.05.json",
+      "reason": "Not a bounded eboot cheat list"
+    }
+  ],
+  "release_checks": [
+    {
+      "name": "gtaPayload_127.sprx",
+      "size_bytes": 460480,
+      "sha256": "ec21a13290a750d4e54d4fd3cf7f6484a3596f113edbce4adf2a8c4f9e7d6ce0",
+      "scope": "Complete creator release asset; no PS4 execution test"
+    },
+    {
+      "name": "gtaPayload_148.sprx",
+      "size_bytes": 460480,
+      "sha256": "9178dec18dbbda33ff2b019465562ee0be318df6e1768d9b01b73b8b3b3e2be4",
+      "scope": "Complete creator release asset; no PS4 execution test"
+    },
+    {
+      "name": "rdr3Payload_100.sprx",
+      "size_bytes": 202688,
+      "sha256": "df33c1fdc272cbdb081c60848ae654c0bd86f56b90f4ab7da7827a59492d5555",
+      "scope": "Complete creator release asset; no PS4 execution test"
+    },
+    {
+      "name": "rdr3Payload_129.sprx",
+      "size_bytes": 202688,
+      "sha256": "d4534fcae611d232a89bf2dd91f104148c2066750236703127445632365e4c83",
+      "scope": "Complete creator release asset; no PS4 execution test"
+    },
+    {
+      "name": "rdr3Payload_132.sprx",
+      "size_bytes": 202688,
+      "sha256": "b465b1f7aaa7d4a523db3b00618613b1e1d3ab9984d59461710fc4749356e36b",
+      "scope": "Complete creator release asset; no PS4 execution test"
+    }
+  ],
+  "notice": "All accepted cheat bytes match pinned upstream Git blobs. SHA-256 values for release files are observed full-transfer hashes, not a PS4 compatibility guarantee."
+}

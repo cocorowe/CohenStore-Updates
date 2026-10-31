@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check catalog headers; optionally download bounded files with publisher SHA-256."""
+"""Check catalog headers; optionally download bounded files with catalog SHA-256."""
 import argparse, hashlib, json, re, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -22,7 +22,7 @@ def make_opener(): return urllib.request.build_opener(Redirects()).open
 def verify_full(item,result,open_url):
     digest=item.get('sha256',''); size=item.get('size_bytes')
     if not re.fullmatch(r'[0-9a-fA-F]{64}',digest or ''):
-        result['full_transfer']='skipped: no publisher SHA-256'; return
+        result['full_transfer']='skipped: no catalog SHA-256'; return
     if type(size) is not int or size<4 or size>MAX_FULL_BYTES:
         result['full_transfer']='skipped: size missing or above 256 MiB safety limit'; return
     req=urllib.request.Request(item['urls'][0],headers={'Accept-Encoding':'identity','User-Agent':'CohenStore-FullVerifier/0.6'})
@@ -41,7 +41,7 @@ def verify_full(item,result,open_url):
     actual=h.hexdigest(); result['full_transfer_bytes']=count; result['full_sha256']=actual
     if actual.lower()!=digest.lower(): raise ValueError('Full download SHA-256 mismatch')
     result['full_transfer']='verified'
-    result['scope']='four-byte probe plus complete transfer and publisher SHA-256'
+    result['scope']='four-byte probe plus complete transfer and catalog SHA-256'
 
 def probe(item,open_url=None,full=False):
     result={'id':item['id'],'title':item['title'],'ok':False,'scope':'four-byte header and advertised size only'}
@@ -61,8 +61,13 @@ def probe(item,open_url=None,full=False):
             if total<4 or (item.get('size_bytes') and total!=item['size_bytes']): raise ValueError('Missing or conflicting file size')
             result['advertised_size_bytes']=total
             prefix=response.read(4)
-            expected=(b'\x4f\x15\x3d\x1d',b'\x7fELF') if item.get('format')=='prx' else (b'\x7fCNT',)
-            if prefix not in expected: raise ValueError('Response is not the selected package/plugin format')
+            format=item.get('format','pkg')
+            if format in ('prx','sprx'): valid=prefix in (b'\x4f\x15\x3d\x1d',b'\x7fELF')
+            elif format=='json': valid=prefix.lstrip().startswith(b'{')
+            elif format=='zip': valid=prefix==b'PK\x03\x04'
+            elif format=='bin': valid=len(prefix)==4 and bool(item.get('sha256'))
+            else: valid=prefix==b'\x7fCNT'
+            if not valid: raise ValueError('Response is not the selected package/plugin format')
             if response.headers.get('Content-Encoding','identity').lower()!='identity': raise ValueError('Encoded file response')
         result['ok']=True
         if full: verify_full(item,result,open_url)
@@ -76,20 +81,21 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--catalog',default='catalog/catalog.json')
     parser.add_argument('--report',default='reports/download-check.json')
-    parser.add_argument('--full',action='store_true',help='Verify complete downloads with publisher SHA-256, up to 256 MiB each')
+    parser.add_argument('--full',action='store_true',help='Verify complete downloads with catalog SHA-256, up to 256 MiB each')
     args=parser.parse_args(); catalog=json.loads(Path(args.catalog).read_text())
     with ThreadPoolExecutor(max_workers=2 if args.full else 4) as executor:
         results=list(executor.map(lambda item:probe(item,full=args.full),catalog['items']))
     report={'schema':1,'checked_at':datetime.now(timezone.utc).isoformat(),
-      'scope':'Header probes plus bounded full transfers with publisher SHA-256.' if args.full else 'Small header probes; no full-file integrity or console compatibility claim.',
+      'scope':'Header probes plus bounded full transfers with catalog SHA-256.' if args.full else 'Small header probes; no full-file integrity or console compatibility claim.',
       'results':results}
     path=Path(args.report); path.parent.mkdir(parents=True,exist_ok=True)
     temp=path.with_suffix('.tmp'); temp.write_text(json.dumps(report,indent=2)+'\n'); temp.replace(path)
     failures=[r for r in results if not r['ok']]
-    if args.full: print('Complete files verified against publisher hashes: '+str(sum(r.get('full_transfer')=='verified' for r in results)))
+    if args.full: print('Complete files verified against catalog hashes: '+str(sum(r.get('full_transfer')=='verified' for r in results)))
     print(f"Header checks passed: {len(results)-len(failures)}/{len(results)}. Console launch compatibility is not tested.")
     for result in failures: print(result['title']+': '+result.get('error','check failed'))
     return bool(failures)
 
 if __name__=='__main__': raise SystemExit(main())
+
 

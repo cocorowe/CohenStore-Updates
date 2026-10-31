@@ -11,6 +11,18 @@ class Response:
     def read(self,n):
         chunk=self.body[self.offset:self.offset+n];self.offset+=len(chunk);return chunk
 class DownloadChecksTests(unittest.TestCase):
+    def test_mod_formats_are_probed_as_their_own_types(self):
+        for format,prefix in [('sprx',b'\x4f\x15\x3d\x1d'),('json',b'{\n  '),('zip',b'PK\x03\x04')]:
+            item={'id':'test','title':'Test','format':format,'urls':['https://developer.example/file'],'size_bytes':4096}
+            self.assertTrue(m.probe(item,lambda *a,**k:Response(body=prefix+b'x'*4092))['ok'])
+
+    def test_html_is_not_a_cheat_file(self):
+        item={'id':'test','title':'Test','format':'json','urls':['https://developer.example/file'],'size_bytes':4096}
+        self.assertFalse(m.probe(item,lambda *a,**k:Response(body=b'<htm'+b'x'*4092))['ok'])
+
+    def test_raw_payload_probe_requires_catalog_hash(self):
+        item={'id':'test','title':'Test','format':'bin','urls':['https://developer.example/file'],'size_bytes':4096}
+        self.assertFalse(m.probe(item,lambda *a,**k:Response())['ok'])
     def probe(self,response,**kwargs):
         item={'id':'test','title':'Test','urls':['https://developer.example/a.pkg'],'size_bytes':4096}
         return m.probe(item,lambda *a,**k:response,**kwargs)
@@ -36,4 +48,5 @@ class DownloadChecksTests(unittest.TestCase):
         responses=[Response(body=body),Response(status=200,headers={'Content-Length':str(len(body))},body=body)]
         r=m.probe(item,lambda *a,**k:responses.pop(0),full=True)
         self.assertFalse(r['ok']);self.assertIn('SHA-256 mismatch',r['error'])
+
 
