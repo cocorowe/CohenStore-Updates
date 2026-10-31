@@ -44,7 +44,8 @@
       "urls": [
         "https://github.com/bucanero/apollo-ps4/releases/download/v2.4.0/IV0000-APOL00004_00-APOLLO0000000PS4.pkg"
       ],
-      "note": "Developer release. Publisher SHA-256 digest supplied; console compatibility has not been tested."
+      "note": "Developer release. Publisher SHA-256 digest supplied; console compatibility has not been tested.",
+      "format": "pkg"
     },
     {
       "id": "bucanero/PS4CheatsManager/173853431",
@@ -55,7 +56,8 @@
       "urls": [
         "https://github.com/bucanero/PS4CheatsManager/releases/download/v1.2.2/IV0000-CHTM00777_00-PS4CHEATSMANAGER.pkg"
       ],
-      "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested."
+      "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested.",
+      "format": "pkg"
     },
     {
       "id": "nueex/ps-mtp-explorer/669436832",
@@ -66,7 +68,8 @@
       "urls": [
         "https://github.com/nueex/ps-mtp-explorer/releases/download/v1.01/PS-MTP-Explorer-1.01.pkg"
       ],
-      "note": "Developer release. Publisher SHA-256 digest supplied. Upstream reports testing on firmware 9.00, 10.01, and 11.00; firmware 13.52 compatibility has not been verified."
+      "note": "Developer release. Publisher SHA-256 digest supplied. Upstream reports testing on firmware 9.00, 10.01, and 11.00; firmware 13.52 compatibility has not been verified.",
+      "format": "pkg"
     },
     {
       "id": "MDashK/Sonic-Time-Twisted-PS4/71563714",
