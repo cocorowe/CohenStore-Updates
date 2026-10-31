@@ -1,81 +1,43 @@
-# CohenStore Updates
+# CohenStore 0.5.16
 
-**Current release: 0.5.15.** Adds a Mod Menus section with 5 creator menu builds, 1,542 GoldHEN cheat files, a plugin bundle and PS4 Cheats Manager. Filters, full setup/details pages, version-checked menu switching and backed-up cheat installation are included.
+Native PS4 store update: version code 516, APP_VER 01.16, signed feed revision 11. Title ID CHST00001 and the installed updater signing identity are retained.
 
-The base catalog has 120 entries, including one newly checked Cyberpunk 2077 listing. Mod data refreshes separately at catalog/mods.json; older apps keep their existing games feed.
+## Install
 
-Install through Store Updates (R3, then X), close CohenStore, and install CohenStore-515.pkg using GoldHEN Package Installer (HDD). See [setup and compatibility details](update/README.md).
+Open Store Updates, press R3, then X. Wait for Update ready, close CohenStore, and install CohenStore-516.pkg using GoldHEN Package Installer from HDD (/data/pkg). Reopen and confirm 0.5.16, then press R3 in a browsing tab to load the expanded catalogs. Your existing /data/FPKGi files and download queue are preserved.
 
-GTA V Lotus builds target 1.27/1.48, not 1.56. Do not assume two core menus or PC mods are compatible. App tests and package validation pass; new mod execution still needs PS4 testing.
+## Browse and download
 
-Current application source and signing keys are not included in this public upload. Older source archives remain in repository history.
+- L1/R1 changes category. Triangle searches names, CUSA, versions and creators.
+- Outside Mod Menus, L2 switches Direct files / All listings. R2 jumps ahead 40 rows. Holding D-pad repeats navigation.
+- Mod Menus retains L2 type filters and R2 version filters. Touchpad opens full setup/source details in all browsing categories.
+- X downloads direct files. Source-page records show their original URL and cannot enter the download queue. Those pages may require separate manual steps, accounts or payment.
+- Square opens the queue. Select an entry and use R2 to cancel/remove it. Circle pauses; X retries supported failed/paused entries.
 
-## Current listings
+## What is included
 
-The feed preserves the homebrew, emulator and tool listings and includes 102 public Archive game entries.
-Games: 2048, Relic Hunters Zero, Sonic Time Twisted, Sonic 1 SMS Remake,
-and Sonic 2 SMS Remake. Emulators: pFBN, pGBA, pGEN, pNES and pSNES.
-Apps/tools: Apollo Save Tool, PS4 Cheats Manager, PS MTP Explorer, ezRemote Client and PS4 Package Link.
+The combined feeds contain 32,817 records, including game variants and metadata/source pages. They are not 32,817 unique games or working PKGs. There are 2,554 direct-file records and 30,263 source references across the categories. The existing direct base catalog has 123 entries.
 
-Download URLs and exact sizes come from publisher release metadata. Published
-hashes are retained when available; unknown hashes stay empty. Release metadata
-checks do not establish full transfer reliability or PS4 firmware 13.52 support.
-Emulators require separately supplied compatible game files.
+Mod Menus contains 2,049 records: 1,929 cheat variants, 89 patch variants, 16 menu entries, 10 legacy payload builds, one plugin bundle and four tools/source records. Seven of the 16 menu entries have creator release files; nine link to creator sources. New files include Silent Virtues for RDR1 and Atian's BO4 script. RAR/GSCC/BIN/BZ2 downloads require the creator's matching manual setup; downloading does not inject or execute them. No newly verified GTA V 1.56 native menu was found. Existing Lotus builds retain their actual supported versions.
 
-The additional Archive entries come from the user-selected FPKGi source. Game updates, DLC and GTA menus have not been populated.
-No verified GTA 1.56/CUSA00419 plugin binary is currently available in this feed.
-Shattered Pixel Dungeon was held back because its release description and API
-asset digest disagree, and it needs additional Sony modules.
+The Updates category now includes 386 CUSA-specific XML game-patch variants from the maintained PS-Game-Patch project. These are optional patch data, not retail game-update PKGs. Select the exact CUSA/version. Touchpad in Details can copy a downloaded patch to /data/GoldHEN/patches/xml, with backups and identity checks. PS4 Cheats Manager/game_patch handles activation; patches are not enabled automatically.
 
-## Automatic catalog maintenance
+New creator packages include Crema, Dolphin, HENkaku, M33, Resonance, Payload Guest and Shattered Pixel Dungeon; PS4Vibe is supplied by its public homebrew host. Other app, homebrew and emulator pages are labeled as sources. DLC has five source records and no new verified direct package.
 
-The Refresh developer game catalog workflow checks an explicit allowlist of
-developer repositories daily and supports manual runs. It tests its merger,
-fetches release metadata, validates the complete feed, and commits changes only
-when the catalog changes. A failed fetch does not overwrite the existing feed.
-Unchanged asset IDs keep curated notes and metadata.
+The Ephellon, huggingfacer, Pegasus and previously supplied catalogs are represented according to their content. Hosting pages and store purchase links are kept distinct from download files. Custom FPKGi JSONs remain supported. Only four visible cards are copied per frame, with cached filtering, so the expanded index is not scanned/copied every frame.
 
-The new mint client checks the configured feed at startup by default and keeps
-its cache on errors. The user can also enable checks every 15 minutes while the
-app is open. Older clients retain their own refresh settings.
+## Download checks
 
-The allowlist includes PS4 Package Link, a developer-published PS4/Windows companion for managing and installing user-authorized PKGs over a local network. The English PS4 package is listed; its Polish counterpart shares the same app identity and is not duplicated in the catalog.\n\nThe workflow updates listings, not game binaries or the installed store app.
-The installed app still needs a new PKG for code/interface changes. Signed app updates are available through the Store Updates tab. See
-[update instructions](update/README.md) for the current installer test.
+112 backup Archive URLs were added without removing existing listings. All 204 examined mirror endpoints passed a 128-byte PKG header, content ID, exact-size and HTTP-range probe. A passing probe is not a complete transfer test or a speed guarantee; hosts can change or become unavailable.
 
-## Download link monitoring
+Creator mod files have pinned sizes and SHA-256 hashes. Source-cheat and patch data was checked against captured Git trees. The real app downloader completed the Silent Virtues RAR, ArabicGuy compressed payload and an AER XML patch with matching hashes. New homebrew packages passed header/identity/size checks; their complete installation and execution were not tested.
 
-The Check catalog download links workflow checks the current feed daily and on
-catalog changes. It requests only the first four bytes, checks the PKG/PRX
-header and advertised size, and records whether the host supports byte ranges.
-Its JSON report is retained as a GitHub Actions artifact for 14 days. A failure
-does not erase the catalog. HTTPS downgrade redirects are refused. Header checks do not establish complete-file integrity, PS4 launch
-support or future reliability.
+## Validation and limits
 
-During the 0.5.2 repair, full desktop downloads of 2048 (35,454,976 bytes) and
-Relic Hunters Zero (71,696,384 bytes) completed. 2048 matched the publisher's
-SHA-256. Relic Hunters Zero has no publisher digest to compare. Console testing
-on firmware 13.52 is still pending.
+124 app tests and 18 repository tests passed. Tests cover large cached indexes, source-only queue rejection, mod data formats, patch backup/CUSA checks and existing cancel/retry/update behavior. Native compilation and PKG digest/signature validation passed. New browsing performance, mod setup and patch behavior still need testing on a real PS4. Launch-time official game update blocking remains deferred.
 
-Optional full verification is available through the manual workflow input
-`full_transfer=true`. It downloads eligible files only when a publisher SHA-256
-is present and the advertised size is at most 256 MiB, then checks the exact
-byte count and complete SHA-256. Larger files and entries without a publisher
-digest are explicitly skipped. This mode is not part of the daily schedule,
-to avoid repeatedly transferring large packages. Neither mode establishes
-PS4 installation or launch compatibility.
+## Private source and rebuild
 
-## Catalog rules
+The matching source ZIP is provided privately with every release. The public repository contains the compiled installer, signed feed, catalogs and validation tooling. Never publish the updater signing key. Upstream menus and tools remain attributed to their creators; a file hash verifies transfer integrity and does not prove game compatibility.
 
-- Use developer-published or authorized direct HTTPS downloads.
-- Exclude share-page URLs, embedded credentials and invented sizes, hashes or compatibility claims. Internet Archive is allowed following the user’s revised preference.
-- Do not add commercial game downloads without distribution authorization.
-- Treat firmware/game-version compatibility as unknown until tested.
-- PKG and PRX are separate formats. Plugin activation and package installation
-  remain manual in the client.
-- Version, title-ID and parent-game metadata must describe the actual package.
-
-The feed remains compatible with the older schema-1 client. Optional metadata
-is ignored by older clients. No reference-only cards with empty download arrays
-are published to this live feed, because older clients reject them.
-
+Build the desktop client with make and run make test. For PS4, use tools/build_ps4.py with OpenOrbis PS4 Toolchain 0.5.4 and LLVM 18. Set OO_PS4_TOOLCHAIN and LLVM_BIN to the installed paths; add the packaging tool's OpenSSL 1.1 compatibility libraries to LD_LIBRARY_PATH if needed. See catalog/expansion-audit.json, catalog/mod-sources.json and tools/build_catalog_expansion.py for input and validation records. The generator's --inputs directory contains external research snapshots; the generated catalogs and app build sources are included in the ZIP.

@@ -196,7 +196,7 @@
     },
     {
       "id": "archive:CUSA23827:01.58",
-      "title": "Call of Duty\u00ae Black Ops 6",
+      "title": "Call of Duty® Black Ops 6",
       "category": "games",
       "size_bytes": 44044189696,
       "sha256": "",
@@ -215,7 +215,7 @@
     },
     {
       "id": "archive:CUSA00018:01.21",
-      "title": "Call of Duty\u00ae Ghosts",
+      "title": "Call of Duty® Ghosts",
       "category": "games",
       "size_bytes": 45208698880,
       "sha256": "",
@@ -234,7 +234,7 @@
     },
     {
       "id": "archive:CUSA00803:01.24",
-      "title": "Call of Duty\u00ae: Advanced Warfare",
+      "title": "Call of Duty®: Advanced Warfare",
       "category": "games",
       "size_bytes": 66965143552,
       "sha256": "",
@@ -253,7 +253,7 @@
     },
     {
       "id": "archive:CUSA11100:01.26",
-      "title": "Call of Duty\u00ae: Black Ops 4",
+      "title": "Call of Duty®: Black Ops 4",
       "category": "games",
       "size_bytes": 105904996352,
       "sha256": "",
@@ -272,7 +272,7 @@
     },
     {
       "id": "archive:CUSA15010:01.41",
-      "title": "Call of Duty\u00ae: Black Ops Cold War",
+      "title": "Call of Duty®: Black Ops Cold War",
       "category": "games",
       "size_bytes": 156407693312,
       "sha256": "",
@@ -291,7 +291,7 @@
     },
     {
       "id": "archive:CUSA02290:01.33",
-      "title": "Call of Duty\u00ae: Black Ops III",
+      "title": "Call of Duty®: Black Ops III",
       "category": "games",
       "size_bytes": 102446333952,
       "sha256": "",
@@ -310,7 +310,7 @@
     },
     {
       "id": "archive:CUSA04762:01.25",
-      "title": "Call of Duty\u00ae: Infinite Warfare",
+      "title": "Call of Duty®: Infinite Warfare",
       "category": "games",
       "size_bytes": 92160131072,
       "sha256": "",
@@ -329,7 +329,7 @@
     },
     {
       "id": "archive:CUSA34029:01.08",
-      "title": "Call of Duty\u00ae: Modern Warfare II",
+      "title": "Call of Duty®: Modern Warfare II",
       "category": "games",
       "size_bytes": 59535523840,
       "sha256": "",
@@ -348,7 +348,7 @@
     },
     {
       "id": "archive:CUSA34083:01.33",
-      "title": "Call of Duty\u00ae: Modern Warfare III",
+      "title": "Call of Duty®: Modern Warfare III",
       "category": "games",
       "size_bytes": 65192722432,
       "sha256": "",
@@ -367,7 +367,7 @@
     },
     {
       "id": "archive:CUSA08829:01.67",
-      "title": "Call of Duty\u00ae: Modern Warfare\u00ae",
+      "title": "Call of Duty®: Modern Warfare®",
       "category": "games",
       "size_bytes": 149985886208,
       "sha256": "",
@@ -386,7 +386,7 @@
     },
     {
       "id": "archive:CUSA03522:01.00",
-      "title": "Call of Duty\u00ae: Modern Warfare\u00ae (2007)",
+      "title": "Call of Duty®: Modern Warfare® (2007)",
       "category": "games",
       "size_bytes": 38878969856,
       "sha256": "",
@@ -397,6 +397,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20%282007%29%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20%282007%29%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20(2007)%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%20(2007)%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
@@ -405,7 +407,7 @@
     },
     {
       "id": "archive:CUSA07904:01.00",
-      "title": "Call of Duty\u00ae: Modern Warfare\u00ae 2 (2009)",
+      "title": "Call of Duty®: Modern Warfare® 2 (2009)",
       "category": "games",
       "size_bytes": 46195736576,
       "sha256": "",
@@ -416,6 +418,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20%282009%29%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20%282009%29%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20(2009)%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Call%20of%20Duty%20Modern%20Warfare%202%20(2009)%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
@@ -424,7 +428,7 @@
     },
     {
       "id": "archive:CUSA24041:01.26",
-      "title": "Call of Duty\u00ae: Vanguard",
+      "title": "Call of Duty®: Vanguard",
       "category": "games",
       "size_bytes": 64232161280,
       "sha256": "",
@@ -443,7 +447,7 @@
     },
     {
       "id": "archive:CUSA05969:01.25",
-      "title": "Call of Duty\u00ae: WWII",
+      "title": "Call of Duty®: WWII",
       "category": "games",
       "size_bytes": 96102711296,
       "sha256": "",
@@ -652,7 +656,7 @@
     },
     {
       "id": "archive:CUSA12286:01.01",
-      "title": "Chimparty\u2122",
+      "title": "Chimparty™",
       "category": "games",
       "size_bytes": 2623602688,
       "sha256": "",
@@ -747,7 +751,7 @@
     },
     {
       "id": "archive:CUSA32951:01.03",
-      "title": "Coffee Talk Episode 2: Hibiscus \uff06 Butterfly",
+      "title": "Coffee Talk Episode 2: Hibiscus ＆ Butterfly",
       "category": "games",
       "size_bytes": 447086592,
       "sha256": "",
@@ -758,6 +762,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20%26%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20%26%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20&%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Coffee%20Talk%20Episode%202%20Hibiscus%20&%20Butterfly%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
@@ -853,6 +859,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook%2C%20Serve%2C%20Delicious%21%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook%2C%20Serve%2C%20Delicious%21%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook,%20Serve,%20Delicious!%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cook,%20Serve,%20Delicious!%203%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
@@ -880,7 +888,7 @@
     },
     {
       "id": "archive:CUSA19035:01.05",
-      "title": "Crash Bandicoot\u2122 4: It's About Time",
+      "title": "Crash Bandicoot™ 4: It's About Time",
       "category": "games",
       "size_bytes": 22707961856,
       "sha256": "",
@@ -891,6 +899,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It%27s%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It%27s%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It's%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Crash%20Bandicoot%204%20It's%20About%20Time%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
@@ -899,7 +909,7 @@
     },
     {
       "id": "archive:CUSA13795:01.21",
-      "title": "Crash\u2122 Team Racing Nitro-Fueled",
+      "title": "Crash™ Team Racing Nitro-Fueled",
       "category": "games",
       "size_bytes": 21934243840,
       "sha256": "",
@@ -1032,7 +1042,7 @@
     },
     {
       "id": "archive:CUSA18672:01.01",
-      "title": "Crysis2\u00ae",
+      "title": "Crysis2®",
       "category": "games",
       "size_bytes": 15788343296,
       "sha256": "",
@@ -1051,7 +1061,7 @@
     },
     {
       "id": "archive:CUSA18673:01.01",
-      "title": "Crysis3\u00ae",
+      "title": "Crysis3®",
       "category": "games",
       "size_bytes": 8560246784,
       "sha256": "",
@@ -1070,7 +1080,7 @@
     },
     {
       "id": "archive:CUSA18671:01.03",
-      "title": "Crysis\u00ae",
+      "title": "Crysis®",
       "category": "games",
       "size_bytes": 11297685504,
       "sha256": "",
@@ -1153,6 +1163,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jetpack%20Joyride%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jetpack%20Joyride%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Jetpack%20Joyride%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1171,6 +1183,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/John%20Wick%20Hex%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/John%20Wick%20Hex%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/John%20Wick%20Hex%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1189,6 +1203,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JoJo%27s%20Bizarre%20Adventure%20All-Star%20Battle%20R%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.33%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JoJo%27s%20Bizarre%20Adventure%20All-Star%20Battle%20R%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.33%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/JoJo's%20Bizarre%20Adventure%20All-Star%20Battle%20R%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.33%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1207,6 +1223,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JoJo%27s%20Bizarre%20Adventure%20Eyes%20of%20Heaven%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JoJo%27s%20Bizarre%20Adventure%20Eyes%20of%20Heaven%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/JoJo's%20Bizarre%20Adventure%20Eyes%20of%20Heaven%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1225,6 +1243,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Journey%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Journey%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Journey%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1243,6 +1263,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Journey%20To%20The%20Savage%20Planet%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Journey%20To%20The%20Savage%20Planet%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Journey%20To%20The%20Savage%20Planet%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1261,6 +1283,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Judgment%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Judgment%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Judgment%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1279,6 +1303,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JUMP%20FORCE%20-%20%5BEU%5D%20%5BEN%5D%20%5B3.03%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JUMP%20FORCE%20-%20%5BEU%5D%20%5BEN%5D%20%5B3.03%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/JUMP%20FORCE%20-%20%5BEU%5D%20%5BEN%5D%20%5B3.03%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1297,6 +1323,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jump%20King%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jump%20King%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Jump%20King%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1315,6 +1343,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.34%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.34%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.34%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1333,6 +1363,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.33%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.33%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Jurassic%20World%20Evolution%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.33%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1351,6 +1383,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Cause%203%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Cause%203%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Just%20Cause%203%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1369,6 +1403,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Cause%204%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.31%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Cause%204%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.31%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Just%20Cause%204%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.31%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1387,6 +1423,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Deal%20With%20It%21%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Deal%20With%20It%21%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Just%20Deal%20With%20It!%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1405,6 +1443,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Die%20Already%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Die%20Already%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Just%20Die%20Already%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.04%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1423,6 +1463,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Shapes%20%26%20Beats%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/Just%20Shapes%20%26%20Beats%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/Just%20Shapes%20&%20Beats%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1430,7 +1472,7 @@
     },
     {
       "id": "archive:CUSA03483:01.02",
-      "title": "JUST SING\u2122",
+      "title": "JUST SING™",
       "category": "games",
       "size_bytes": 484900864,
       "sha256": "",
@@ -1441,6 +1483,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JUST%20SING%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801605.us.archive.org/7/items/ps4-fpkg-collection-english-j/JUST%20SING%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-j/JUST%20SING%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1459,6 +1503,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600704.us.archive.org/20/items/ps4-fpkg-collection-english-q/Quake%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
+        "https://ia800704.us.archive.org/20/items/ps4-fpkg-collection-english-q/Quake%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-q/Quake%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.08%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1477,6 +1523,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600704.us.archive.org/20/items/ps4-fpkg-collection-english-q/Quake%20II%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
+        "https://ia800704.us.archive.org/20/items/ps4-fpkg-collection-english-q/Quake%20II%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-q/Quake%20II%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1563,6 +1611,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Valiant%20Hearts%20Coming%20Home%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Valiant%20Hearts%20Coming%20Home%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Valiant%20Hearts%20Coming%20Home%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1581,6 +1631,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Valiant%20Hearts%20The%20Great%20War%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Valiant%20Hearts%20The%20Great%20War%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Valiant%20Hearts%20The%20Great%20War%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1599,6 +1651,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Vampyr%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Vampyr%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Vampyr%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.09%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1617,6 +1671,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Vanquish%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Vanquish%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Vanquish%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1635,6 +1691,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Viewfinder%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Viewfinder%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Viewfinder%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1653,6 +1711,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Visage%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
+        "https://ia801801.us.archive.org/30/items/ps4-fpkg-collection-english-v/Visage%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-v/Visage%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1660,7 +1720,7 @@
     },
     {
       "id": "archive:CUSA13034:01.24",
-      "title": "Watch Dogs\u00ae: Legion",
+      "title": "Watch Dogs®: Legion",
       "category": "games",
       "size_bytes": 40924413952,
       "sha256": "",
@@ -1671,6 +1731,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Watch%20Dogs%20Legion%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Watch%20Dogs%20Legion%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Watch%20Dogs%20Legion%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1678,7 +1740,7 @@
     },
     {
       "id": "archive:CUSA04294:01.18",
-      "title": "WATCH_DOGS\u00ae 2",
+      "title": "WATCH_DOGS® 2",
       "category": "games",
       "size_bytes": 23090167808,
       "sha256": "",
@@ -1689,6 +1751,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WATCH_DOGS%202%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.18%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WATCH_DOGS%202%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.18%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WATCH_DOGS%202%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.18%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1696,7 +1760,7 @@
     },
     {
       "id": "archive:CUSA00021:01.05",
-      "title": "WATCH_DOGS\u2122",
+      "title": "WATCH_DOGS™",
       "category": "games",
       "size_bytes": 17755209728,
       "sha256": "",
@@ -1707,6 +1771,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WATCH_DOGS%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WATCH_DOGS%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WATCH_DOGS%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.05%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1725,6 +1791,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/We%20Happy%20Few%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/We%20Happy%20Few%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.09%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/We%20Happy%20Few%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.09%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1743,6 +1811,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Webbed%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Webbed%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Webbed%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1761,6 +1831,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Weird%20West%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.11%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Weird%20West%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.11%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Weird%20West%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.11%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1779,6 +1851,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/What%20Remains%20of%20Edith%20Finch%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/What%20Remains%20of%20Edith%20Finch%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/What%20Remains%20of%20Edith%20Finch%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1797,6 +1871,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WHAT%20THE%20GOLF%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WHAT%20THE%20GOLF%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WHAT%20THE%20GOLF%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1804,7 +1880,7 @@
     },
     {
       "id": "archive:CUSA07671:01.07",
-      "title": "WIPEOUT\u2122 OMEGA COLLECTION",
+      "title": "WIPEOUT™ OMEGA COLLECTION",
       "category": "games",
       "size_bytes": 27253407744,
       "sha256": "",
@@ -1815,6 +1891,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WIPEOUT%20OMEGA%20COLLECTION%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WIPEOUT%20OMEGA%20COLLECTION%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WIPEOUT%20OMEGA%20COLLECTION%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.07%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1833,6 +1911,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20Youngblood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20Youngblood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.08%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wolfenstein%20Youngblood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.08%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1840,7 +1920,7 @@
     },
     {
       "id": "archive:CUSA07377:01.07",
-      "title": "Wolfenstein\u00ae II: The New Colossus\u2122",
+      "title": "Wolfenstein® II: The New Colossus™",
       "category": "games",
       "size_bytes": 63111102464,
       "sha256": "",
@@ -1851,6 +1931,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20II%20The%20New%20Colossus%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20II%20The%20New%20Colossus%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wolfenstein%20II%20The%20New%20Colossus%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.07%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1858,7 +1940,7 @@
     },
     {
       "id": "archive:CUSA00320:01.01",
-      "title": "Wolfenstein\u00ae: The New Order",
+      "title": "Wolfenstein®: The New Order",
       "category": "games",
       "size_bytes": 44658524160,
       "sha256": "",
@@ -1869,6 +1951,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20The%20New%20Order%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20The%20New%20Order%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wolfenstein%20The%20New%20Order%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1876,7 +1960,7 @@
     },
     {
       "id": "archive:CUSA01540:01.00",
-      "title": "Wolfenstein\u00ae: The Old Blood",
+      "title": "Wolfenstein®: The Old Blood",
       "category": "games",
       "size_bytes": 37765840896,
       "sha256": "",
@@ -1887,6 +1971,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20The%20Old%20Blood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wolfenstein%20The%20Old%20Blood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wolfenstein%20The%20Old%20Blood%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1905,6 +1991,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wonder%20Boy%20The%20Dragon%27s%20Trap%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wonder%20Boy%20The%20Dragon%27s%20Trap%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wonder%20Boy%20The%20Dragon's%20Trap%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.03%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1912,7 +2000,7 @@
     },
     {
       "id": "archive:CUSA14059:01.00",
-      "title": "Wordhunters\u2122",
+      "title": "Wordhunters™",
       "category": "games",
       "size_bytes": 2306801664,
       "sha256": "",
@@ -1923,6 +2011,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wordhunters%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wordhunters%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wordhunters%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.00%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1941,6 +2031,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/World%20War%20Z%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.53%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/World%20War%20Z%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.53%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/World%20War%20Z%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.53%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1959,6 +2051,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Worms%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Worms%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Worms%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1977,6 +2071,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Worms%20W.M.D%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Worms%20W.M.D%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Worms%20W.M.D%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.13%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -1995,6 +2091,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wreckfest%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.22%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/Wreckfest%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.22%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/Wreckfest%20-%20%5BEU%5D%20%5BEN%5D%20%5B2.22%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2013,6 +2111,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WWE%202K%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B16.00%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WWE%202K%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B16.00%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WWE%202K%20Battlegrounds%20-%20%5BUS%5D%20%5BEN%5D%20%5B16.00%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2031,6 +2131,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WWE%202K24%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg",
+        "https://ia801401.us.archive.org/35/items/ps4-fpkg-collection-english-w/WWE%202K24%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-w/WWE%202K24%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.24%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2049,6 +2151,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia600709.us.archive.org/35/items/ps4-fpkg-collection-english-x/XCOM%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.06%5D.pkg",
+        "https://ia800709.us.archive.org/35/items/ps4-fpkg-collection-english-x/XCOM%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.06%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-x/XCOM%202%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.06%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2067,6 +2171,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zero%20Escape%20The%20Nonary%20Games%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
+        "https://ia801906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zero%20Escape%20The%20Nonary%20Games%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-z/Zero%20Escape%20The%20Nonary%20Games%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.02%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2085,6 +2191,8 @@
       "region": "USA",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zombie%20Army%204%20Dead%20War%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.48%5D.pkg",
+        "https://ia801906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zombie%20Army%204%20Dead%20War%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.48%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-z/Zombie%20Army%204%20Dead%20War%20-%20%5BUS%5D%20%5BEN%5D%20%5B1.48%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2103,6 +2211,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zombie%20Army%20Trilogy%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801906.us.archive.org/6/items/ps4-fpkg-collection-english-z/Zombie%20Army%20Trilogy%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-z/Zombie%20Army%20Trilogy%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
@@ -2110,7 +2220,7 @@
     },
     {
       "id": "archive:CUSA10576:01.01",
-      "title": "ZONE OF THE ENDERS THE 2nd RUNNER : M\u2200RS",
+      "title": "ZONE OF THE ENDERS THE 2nd RUNNER : M∀RS",
       "category": "games",
       "size_bytes": 9771417600,
       "sha256": "",
@@ -2121,6 +2231,8 @@
       "region": "EUR",
       "compatibility": "Unverified on PS4",
       "urls": [
+        "https://ia601906.us.archive.org/6/items/ps4-fpkg-collection-english-z/ZONE%20OF%20THE%20ENDERS%20THE%202nd%20RUNNER%20M%E2%88%80RS%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
+        "https://ia801906.us.archive.org/6/items/ps4-fpkg-collection-english-z/ZONE%20OF%20THE%20ENDERS%20THE%202nd%20RUNNER%20M%E2%88%80RS%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg",
         "https://archive.org/download/ps4-fpkg-collection-english-z/ZONE%20OF%20THE%20ENDERS%20THE%202nd%20RUNNER%20M%E2%88%80RS%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.01%5D.pkg"
       ],
       "note": "Public download link checked. Full transfer and PS4 compatibility unverified.",
