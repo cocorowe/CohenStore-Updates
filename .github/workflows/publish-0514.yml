@@ -1,0 +1,63 @@
+name: Publish CohenStore 0.5.14
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.14/**'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install package verification dependencies
+        run: python -m pip install cryptography==46.0.3 bsdiff4==1.2.6
+      - name: Reconstruct and verify the new signed package
+        shell: python
+        run: |
+          import bsdiff4,hashlib,json,shutil
+          from pathlib import Path
+          from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+          stage=Path('update/staging/0.5.14')
+          old=Path('update/packages/CohenStore-0.5.13-STAGING-FIX.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='0f2883be2555351adec55300c313b95e9ce9ce1535ed5b95580a503982cec93e'
+          expected_parts={'000.bsdiffpart': '5d5391459a46295c4dc8fe325433cf17422453054bda7203339a742ee9813fa9', '001.bsdiffpart': 'ffabf42f7719e668644ce3fd80169e4593809edcb51e7f47fd5d027452ebea89', '002.bsdiffpart': '593e0fc1b14dd625e5db3aa8c68e24d083e9dd655ddcd0162be47430cbb0f077', '003.bsdiffpart': 'e5a4710035def134b63b6c96e8190a251e6b75ede4dfa1dc310082590f338147', '004.bsdiffpart': 'befaaf1ac2cab586a3df93284193a05bb56066057194b06a42ffc4fd9e8f1963', '005.bsdiffpart': '5c6f7b6145f89e89aad86a79328052f36c3977ab04c254c0513d2c8bca96de95', '006.bsdiffpart': 'b22a22699fef21a1dede2b05bf6558a2be6a59c9268b4999e1379015783322ef'}
+          parts=sorted(stage.glob('*.bsdiffpart'))
+          assert [p.name for p in parts]==list(expected_parts)
+          for part in parts:
+              assert hashlib.sha256(part.read_bytes()).hexdigest()==expected_parts[part.name], part.name
+          patch=b''.join(p.read_bytes() for p in parts)
+          assert hashlib.sha256(patch).hexdigest()=='ab8b7133eab70ab5f989bd004efe31f936820b8e5d6fa88ee12960883cf2a923'
+          data=bsdiff4.patch(old,patch)
+          assert len(data)==6619136
+          assert hashlib.sha256(data).hexdigest()=='3b3e04a41afe11617106c57aff48bc71f9657275aa2fb880a63a508b3b3466a8'
+          manifest=json.loads((stage/'release.json').read_text())
+          Ed25519PublicKey.from_public_bytes(bytes.fromhex('6d7df4c99728545705a58cb75c6e15aa097f03ab452c86726da359668bbfec41')).verify(bytes.fromhex(manifest['signature']),manifest['signed_payload'].encode())
+          release=json.loads(manifest['signed_payload'])
+          assert release['version']=='0.5.14' and release['version_code']==514 and release['revision']==9
+          assert release['schema']==1 and release['channel']=='testing'
+          assert release['sha256']==hashlib.sha256(data).hexdigest() and release['size_bytes']==len(data)
+          assert release['title_id']=='CHST00001' and release['content_id']=='IV0000-CHST00001_00-COHENSTORE000000'
+          assert data[:4]==b'\x7fCNT' and data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['url']=='https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg'
+          Path('update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg').write_bytes(data)
+          shutil.copyfile(stage/'release.json','update/release.json')
+          shutil.copyfile(stage/'instructions.md','update/README.md')
+          shutil.copyfile(stage/'repository-readme.md','README.md')
+      - name: Validate catalog and repository tests
+        run: |
+          python3 tools/validate_feed.py
+          python3 -m unittest discover -s tests -v
+      - name: Publish verified update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg update/release.json update/README.md README.md
+          git rm -r update/staging/0.5.14
+          git commit -m "Publish verified CohenStore 0.5.14 with queue cancellation and readable filenames"
+          git pull --rebase origin main
+          git push origin HEAD:main

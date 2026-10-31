@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":9,\"schema\":1,\"sha256\":\"3b3e04a41afe11617106c57aff48bc71f9657275aa2fb880a63a508b3b3466a8\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg\",\"version\":\"0.5.14\",\"version_code\":514}",
+  "signature": "66fae9656e7fc0c90481874262a22f34b02d6ce688adb454231df726b1ab5a7a7114d15471c3084737aafb36e4c3ed21a18bf4bfecb26587304b7253cbbed506"
+}
