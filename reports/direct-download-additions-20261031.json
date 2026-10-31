@@ -1,0 +1,2736 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "homebrew-pkgzone:LAPY20015:1.02",
+      "title": "Avatar Changer v1.02",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20015"
+      ],
+      "content_id": "ED1234-LAPY20015_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY20015",
+      "size_bytes": 54788096,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20015/1.02"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:51.157421+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20015",
+        "binary_rehosted": false
+      },
+      "release_version": "1.02"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW69420:1.00",
+      "title": "Brew v1.00",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW69420"
+      ],
+      "content_id": "TX0000-BREW69420_00-BREWSTORE0000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW69420",
+      "size_bytes": 2752512,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW69420/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:49.084493+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW69420",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:VTHX21368:1.32",
+      "title": "Consolepedia 3D v1.32",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "VTHX21368"
+      ],
+      "content_id": "ED1633-VTHX21368_00-1267003901084356",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/VTHX21368",
+      "size_bytes": 253886464,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/VTHX21368/1.32"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:48.780484+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/VTHX21368",
+        "binary_rehosted": false
+      },
+      "release_version": "1.32"
+    },
+    {
+      "id": "MoHadiShibli/Control4Free/670666524",
+      "title": "Control4Free v1.3.1",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "CFRE00001"
+      ],
+      "content_id": "IV0000-CFRE00001_00-CONTROL4FREE0000",
+      "author": "MoHadiShibli",
+      "source_url": "https://github.com/MoHadiShibli/Control4Free/releases/tag/v1.3.1",
+      "size_bytes": 7012352,
+      "sha256": "8844a74a7c451aea49957b8702c9c79fe14e54b0d203703a7cecce02e2339671",
+      "urls": [
+        "https://github.com/MoHadiShibli/Control4Free/releases/download/v1.3.1/Control4Free-1.3.1.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Phone/PC controller client. Read creator setup instructions. Exact SFO APP_VER not inspected.",
+      "instructions": "Phone/PC controller client. Read creator setup instructions.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:17.703913+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-3.0",
+        "source_url": "https://github.com/MoHadiShibli/Control4Free/releases/tag/v1.3.1",
+        "binary_rehosted": false
+      },
+      "release_version": "1.3.1",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX33382:1.00",
+      "title": "File Manager for PS4™ v1.00",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX33382"
+      ],
+      "content_id": "HW1633-NPXX33382_00-HOMEBREWSSSSSSSS",
+      "author": "lm",
+      "source_url": "https://pkg-zone.com/details/NPXX33382",
+      "size_bytes": 74776576,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX33382/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:00.673550+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX33382",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:PKGI13337:1.10.0",
+      "title": "FPKGi v1.10.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "PKGI13337"
+      ],
+      "content_id": "ED1633-PKGI13337_00-0000000000000000",
+      "author": "ItsJokerZz",
+      "source_url": "https://pkg-zone.com/details/PKGI13337",
+      "size_bytes": 85458944,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/PKGI13337/1.10.0"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:50.265252+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/PKGI13337",
+        "binary_rehosted": false
+      },
+      "release_version": "1.10.0"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20007:1.16",
+      "title": "Icon Mask v1.16",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20007"
+      ],
+      "content_id": "ED1234-LAPY20007_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/LAPY20007",
+      "size_bytes": 74055680,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20007/1.16"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:41.864925+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20007",
+        "binary_rehosted": false
+      },
+      "release_version": "1.16"
+    },
+    {
+      "id": "homebrew-pkgzone:ITEM00001:1.08",
+      "title": "Itemzflow Game Manager v1.08",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "ITEM00001"
+      ],
+      "content_id": "IV0002-ITEM00001_00-STOREUPD00000000",
+      "author": "lm",
+      "source_url": "https://pkg-zone.com/details/ITEM00001",
+      "size_bytes": 27131904,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/ITEM00001/1.08"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:18.539861+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/ITEM00001",
+        "binary_rehosted": false
+      },
+      "release_version": "1.08"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10024:1.01",
+      "title": "Live Die Repeat v1.01",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10024"
+      ],
+      "content_id": "ED1234-LAPY10024_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10024",
+      "size_bytes": 948830208,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10024/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:51.997755+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10024",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00179:0.2.3",
+      "title": "LogMeIn Hamachi (UNOFFICIAL) v0.2.3",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00179"
+      ],
+      "content_id": "IV0000-BREW00179_00-LOGMEINHAMACHI00",
+      "author": "sleirsgoevy",
+      "source_url": "https://pkg-zone.com/details/BREW00179",
+      "size_bytes": 7798784,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00179/0.2.3"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:41.208276+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00179",
+        "binary_rehosted": false
+      },
+      "release_version": "0.2.3"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX51363:1.00",
+      "title": "MediaPlayer PS4 v1.00",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX51363"
+      ],
+      "content_id": "ED1634-NPXX51363_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/NPXX51363",
+      "size_bytes": 116129792,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX51363/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:49.718182+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX51363",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00080:1.00",
+      "title": "OpenOrbis Audio Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00080"
+      ],
+      "content_id": "IV0000-BREW00080_00-AUDIOWAVEX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00080",
+      "size_bytes": 30474240,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00080/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:28.009106+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00080",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00081:1.00",
+      "title": "OpenOrbis Font Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00081"
+      ],
+      "content_id": "IV0000-BREW00081_00-FONTDRAWEX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00081",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00081/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:28.721150+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00081",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00082:1.00",
+      "title": "OpenOrbis Graphics Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00082"
+      ],
+      "content_id": "IV0000-BREW00082_00-GRAPHICSEX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00082",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00082/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:28.717412+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00082",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00084:1.00",
+      "title": "OpenOrbis Input Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00084"
+      ],
+      "content_id": "IV0000-BREW00084_00-CONTROLREX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00084",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00084/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:22.587360+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00084",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00086:1.02",
+      "title": "OpenOrbis PNG Sample v1.02",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00086"
+      ],
+      "content_id": "IV0000-BREW00086_00-IPNGDRAWEX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00086",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00086/1.02"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:28.720870+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00086",
+        "binary_rehosted": false
+      },
+      "release_version": "1.02"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00088:1.00",
+      "title": "OpenOrbis System Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00088"
+      ],
+      "content_id": "IV0000-BREW00088_00-GETUSRIDEX000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00088",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00088/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:40.465201+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00088",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX33362:1.00",
+      "title": "ORBISMAN (BETA) v1.00",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX33362"
+      ],
+      "content_id": "HW1633-NPXX33362_00-HOMEBREWSSSSSSSS",
+      "author": "lm",
+      "source_url": "https://pkg-zone.com/details/NPXX33362",
+      "size_bytes": 99352576,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX33362/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:49.724452+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX33362",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:PKGI00001:1.00",
+      "title": "PKGi v1.00",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "PKGI00001"
+      ],
+      "content_id": "IV0000-PKGI00001_00-YYYYYYYYYY000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/PKGI00001",
+      "size_bytes": 3407872,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/PKGI00001/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:21.610548+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/PKGI00001",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "LowganDev/PlayfinPS4/651191728",
+      "title": "Playfin 1.0.1",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "PLFN00000"
+      ],
+      "content_id": "IV0001-PLFN00000_00-PLFN000000100000",
+      "author": "LowganDev",
+      "source_url": "https://github.com/LowganDev/PlayfinPS4/releases/tag/1.0.1",
+      "size_bytes": 50921472,
+      "sha256": "0f4d7d60ed66f9927f9c5b3a5da498a942c2edb0e5c56c1d4fa5a53307560f26",
+      "urls": [
+        "https://github.com/LowganDev/PlayfinPS4/releases/download/1.0.1/IV0001-PLFN00000_00-PLFN000000100000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Jellyfin media client. Requires your own Jellyfin server. Exact SFO APP_VER not inspected.",
+      "instructions": "Jellyfin media client. Requires your own Jellyfin server.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:05.370630+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-3.0",
+        "source_url": "https://github.com/LowganDev/PlayfinPS4/releases/tag/1.0.1",
+        "binary_rehosted": false
+      },
+      "release_version": "1.0.1",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "nueex/ps-mtp-explorer/696200728",
+      "title": "PS MTP Explorer v2.0.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NUEX00001"
+      ],
+      "content_id": "IV0000-NUEX00001_00-NUEEXMTP00000000",
+      "author": "nueex",
+      "source_url": "https://github.com/nueex/ps-mtp-explorer/releases/tag/v2.0.0",
+      "size_bytes": 6619136,
+      "sha256": "9e7802be92a4be9b4fa3e3f68715b8d6d87d7daccb889f8ae14d347129710eb2",
+      "urls": [
+        "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Android MTP file-transfer client. Read creator supported-device instructions. Exact SFO APP_VER not inspected.",
+      "instructions": "Android MTP file-transfer client. Read creator supported-device instructions.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:35.893707+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-3.0",
+        "source_url": "https://github.com/nueex/ps-mtp-explorer/releases/tag/v2.0.0",
+        "binary_rehosted": false
+      },
+      "release_version": "2.0.0",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20004:1.07",
+      "title": "PS4 App Lock v1.07",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20004"
+      ],
+      "content_id": "ED1234-LAPY20004_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY20004",
+      "size_bytes": 53936128,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20004/1.07"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:19.738763+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20004",
+        "binary_rehosted": false
+      },
+      "release_version": "1.07"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20002:1.08",
+      "title": "PS4 Player v1.08",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20002"
+      ],
+      "content_id": "ED1234-LAPY20002_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY20002",
+      "size_bytes": 52428800,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20002/1.08"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:59.790305+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20002",
+        "binary_rehosted": false
+      },
+      "release_version": "1.08"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20014:1.01",
+      "title": "PS4 Player 3D v1.01",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20014"
+      ],
+      "content_id": "VR1234-LAPY20014_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY20014",
+      "size_bytes": 57475072,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20014/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:00.669120+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20014",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20006:1.07",
+      "title": "PS4 Temperature v1.07",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20006"
+      ],
+      "content_id": "ED1234-LAPY20006_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/LAPY20006",
+      "size_bytes": 50331648,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20006/1.07"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:21.536090+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20006",
+        "binary_rehosted": false
+      },
+      "release_version": "1.07"
+    },
+    {
+      "id": "homebrew-pkgzone:XDPX20004:1.33",
+      "title": "PS4 Tools v1.33",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "XDPX20004"
+      ],
+      "content_id": "ED1633-XDPX20004_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/XDPX20004",
+      "size_bytes": 238485504,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/XDPX20004/1.33"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:41.592551+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/XDPX20004",
+        "binary_rehosted": false
+      },
+      "release_version": "1.33"
+    },
+    {
+      "id": "homebrew-pkgzone:SAAT29385:2.20",
+      "title": "PS4 TOOLSET v2.20",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SAAT29385"
+      ],
+      "content_id": "PL1985-SAAT29385_00-00000000000SNAKE",
+      "author": "Snake",
+      "source_url": "https://pkg-zone.com/details/SAAT29385",
+      "size_bytes": 158793728,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/SAAT29385/2.20"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:45:13.453571+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/SAAT29385",
+        "binary_rehosted": false
+      },
+      "release_version": "2.20"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY20001:1.34",
+      "title": "PS4-Xplorer v1.34",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY20001"
+      ],
+      "content_id": "ED1234-LAPY20001_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY20001",
+      "size_bytes": 73531392,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY20001/1.34"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:45:10.945987+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY20001",
+        "binary_rehosted": false
+      },
+      "release_version": "1.34"
+    },
+    {
+      "id": "homebrew-pkgzone:FLTZ00003:1.02",
+      "title": "Remote PKG installer v1.02",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "FLTZ00003"
+      ],
+      "content_id": "UP9000-FLTZ00003_00-REMOTEPKGINSTALL",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/FLTZ00003",
+      "size_bytes": 4259840,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/FLTZ00003/1.02"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:59.698983+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/FLTZ00003",
+        "binary_rehosted": false
+      },
+      "release_version": "1.02"
+    },
+    {
+      "id": "AldySan/ps4_remote_pkg_installer_nextgen/692581638",
+      "title": "Remote PKG Installer NextGen v0.0.5",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "RPIN00001"
+      ],
+      "content_id": "IV0000-RPIN00001_00-RPINEXTGEN000000",
+      "author": "AldySan",
+      "source_url": "https://github.com/AldySan/ps4_remote_pkg_installer_nextgen/releases/tag/v0.0.5",
+      "size_bytes": 6619136,
+      "sha256": "e4518fb940566577927cfaa3249955bce965f40bb0f0337808540868631c01bc",
+      "urls": [
+        "https://github.com/AldySan/ps4_remote_pkg_installer_nextgen/releases/download/v0.0.5/RemotePkgInstallerNextGen-0.0.5.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Creator open-source release; manual installer utility. Exact SFO APP_VER not inspected.",
+      "instructions": "Creator open-source release; manual installer utility.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:59.796349+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-3.0",
+        "source_url": "https://github.com/AldySan/ps4_remote_pkg_installer_nextgen/releases/tag/v0.0.5",
+        "binary_rehosted": false
+      },
+      "release_version": "0.0.5",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "s0liton/RommPS/691028336",
+      "title": "RommPS v1.4.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "ROMM00002"
+      ],
+      "content_id": "IV0000-ROMM00002_00-ROMMSYNCPS400000",
+      "author": "s0liton",
+      "source_url": "https://github.com/s0liton/RommPS/releases/tag/v1.4.0",
+      "size_bytes": 12320768,
+      "sha256": "f9efc004a9f6035b8bb279abcc75fb3f6023b6b8cb819a749342c1ea015f37a0",
+      "urls": [
+        "https://github.com/s0liton/RommPS/releases/download/v1.4.0/romm-sync-ps4.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Requires your own RomM server and legally obtained game files. Exact SFO APP_VER not inspected.",
+      "instructions": "Requires your own RomM server and legally obtained game files.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:35.912299+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-3.0",
+        "source_url": "https://github.com/s0liton/RommPS/releases/tag/v1.4.0",
+        "binary_rehosted": false
+      },
+      "release_version": "1.4.0",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:YTSB42069:1.0.1",
+      "title": "Sponsorblock Installer v1.0.1",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "YTSB42069"
+      ],
+      "content_id": "IV0000-YTSB42069_00-SPONSORBLK000000",
+      "author": "earthonion",
+      "source_url": "https://pkg-zone.com/details/YTSB42069",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/YTSB42069/1.0.1"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:18.539020+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/YTSB42069",
+        "binary_rehosted": false
+      },
+      "release_version": "1.0.1"
+    },
+    {
+      "id": "homebrew-pkgzone:SFIN00000:0.9.4",
+      "title": "Switchfin v0.9.4",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SFIN00000"
+      ],
+      "content_id": "IV0001-SFIN00000_00-SFIN000000009400",
+      "author": "lm",
+      "source_url": "https://pkg-zone.com/details/SFIN00000",
+      "size_bytes": 58458112,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/SFIN00000/0.9.4"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:44:49.704745+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/SFIN00000",
+        "binary_rehosted": false
+      },
+      "release_version": "0.9.4"
+    },
+    {
+      "id": "ayka-667/SysDVRClient-PS4/689810961",
+      "title": "SysDVR Client v1.2.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SDVR00001"
+      ],
+      "content_id": "IV0000-SDVR00001_00-SYSDVRPS4CLIENT0",
+      "author": "ayka-667",
+      "source_url": "https://github.com/ayka-667/SysDVRClient-PS4/releases/tag/v1.2.0",
+      "size_bytes": 6619136,
+      "sha256": "fad1952fab228deaece8325dd3b6feb8e2e676a2726670cf1e642f06f2f73043",
+      "urls": [
+        "https://github.com/ayka-667/SysDVRClient-PS4/releases/download/v1.2.0/IV0000-SDVR00001_00-SYSDVRPS4CLIENT0.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Streaming client. Requires a compatible source device and SysDVR server. Exact SFO APP_VER not inspected.",
+      "instructions": "Streaming client. Requires a compatible source device and SysDVR server.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:17.707186+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/ayka-667/SysDVRClient-PS4/releases/tag/v1.2.0",
+        "binary_rehosted": false
+      },
+      "release_version": "1.2.0",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "EmiiBytee/np2kai-ps4/492294586",
+      "title": "NP2kai PC-98 emulator v1.0",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00984"
+      ],
+      "content_id": "IV0000-BREW00984_00-NP2KAIBOOTSTRAP0",
+      "author": "EmiiBytee",
+      "source_url": "https://github.com/EmiiBytee/np2kai-ps4/releases/tag/v1.0",
+      "size_bytes": 9109504,
+      "sha256": "78be5832008fee5c3cf2b023a3fc9e029013625a2f04292ff1589263edc03063",
+      "urls": [
+        "https://github.com/EmiiBytee/np2kai-ps4/releases/download/v1.0/IV0000-BREW00984_00-NP2KAIBOOTSTRAP0.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Supply your own legally obtained BIOS and software as required by the creator. Exact SFO APP_VER not inspected.",
+      "instructions": "Supply your own legally obtained BIOS and software as required by the creator.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:46:59.924114+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "MIT",
+        "source_url": "https://github.com/EmiiBytee/np2kai-ps4/releases/tag/v1.0",
+        "binary_rehosted": false
+      },
+      "release_version": "1.0",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "birth1mark/picoplay-ps4/684580105",
+      "title": "PicoPlay v1.00",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "PPLA00008"
+      ],
+      "content_id": "IV0000-PPLA00008_00-PICOPLAYPS400000",
+      "author": "birth1mark",
+      "source_url": "https://github.com/birth1mark/picoplay-ps4/releases/tag/v1.00",
+      "size_bytes": 6619136,
+      "sha256": "98fae9c4d8ada399e9e6ca0f8ebbdb6046e34de02ecc98f897fdbb8d7d2523f9",
+      "urls": [
+        "https://github.com/birth1mark/picoplay-ps4/releases/download/v1.00/picoplay-ps4.pkg"
+      ],
+      "note": "Complete desktop transfer passed size and content-ID checks. Publisher SHA-256 matched. PS4 installation not tested. Creator supplies open-source starter cartridges. Additional carts retain their own licenses.",
+      "instructions": "Creator supplies open-source starter cartridges. Additional carts retain their own licenses.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Working",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:27.685330+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": true,
+        "console_tested": false,
+        "full_transfer_bytes": 6619136,
+        "sha256": "98fae9c4d8ada399e9e6ca0f8ebbdb6046e34de02ecc98f897fdbb8d7d2523f9",
+        "publisher_digest_matched": true,
+        "test_platform": "Desktop download engine; not PS4"
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "MIT (creator README; components retain their licenses)",
+        "source_url": "https://github.com/birth1mark/picoplay-ps4/releases/tag/v1.00",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:QUIG00003:1.00",
+      "title": "Blue Boi | Quickz v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUIG00003"
+      ],
+      "content_id": "IV0000-QUIG00003_00-SAVETHEBLUEBOI00",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/QUIG00003",
+      "size_bytes": 12845056,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/QUIG00003/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:09.878656+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/QUIG00003",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10017:1.01",
+      "title": "Brain Splitter v1.01",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10017"
+      ],
+      "content_id": "ED1234-LAPY10017_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10017",
+      "size_bytes": 103415808,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10017/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:34.461135+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10017",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10022:1.00",
+      "title": "Drum VR v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10022"
+      ],
+      "content_id": "VR1234-LAPY10022_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10022",
+      "size_bytes": 71303168,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10022/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Creator labels this a VR build; check required headset/controller support.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:12.085303+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10022",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10008:1.01",
+      "title": "Duck Hunt Remake v1.01",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10008"
+      ],
+      "content_id": "ED1234-LAPY10008_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10008",
+      "size_bytes": 98369536,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10008/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:20.304680+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10008",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10021:1.00",
+      "title": "Duck Hunt Remake VR v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10021"
+      ],
+      "content_id": "VR1234-LAPY10021_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10021",
+      "size_bytes": 96993280,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10021/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Creator labels this a VR build; check required headset/controller support.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:08.664319+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10021",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "gen04177/freedoom-ps4/497225116",
+      "title": "Freedoom Phase 1 freedoom-v1.5",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BGEN00041"
+      ],
+      "content_id": "IV0000-BGEN00041_00-FREEDOOM00000000",
+      "author": "gen04177",
+      "source_url": "https://github.com/gen04177/freedoom-ps4/releases/tag/freedoom-v1.5",
+      "size_bytes": 40697856,
+      "sha256": "a0b7830dc9deeb92d7b8871df68123e53d3c83df267d9841418f8ec038f7a433",
+      "urls": [
+        "https://github.com/gen04177/freedoom-ps4/releases/download/freedoom-v1.5/IV0000-BGEN00041_00-FREEDOOM00000000.pkg"
+      ],
+      "note": "Complete desktop transfer passed size and content-ID checks. Publisher SHA-256 matched. PS4 installation not tested. Freedoom uses free replacement game data. See creator source/release for attribution.",
+      "instructions": "Freedoom uses free replacement game data. See creator source/release for attribution.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Working",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:27.720089+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": true,
+        "console_tested": false,
+        "full_transfer_bytes": 40697856,
+        "sha256": "a0b7830dc9deeb92d7b8871df68123e53d3c83df267d9841418f8ec038f7a433",
+        "publisher_digest_matched": true,
+        "test_platform": "Desktop download engine; not PS4"
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "Freedoom BSD-style data; source-port components retain their licenses",
+        "source_url": "https://github.com/gen04177/freedoom-ps4/releases/tag/freedoom-v1.5",
+        "binary_rehosted": false,
+        "license_source": "https://github.com/freedoom/freedoom/blob/master/COPYING.adoc"
+      },
+      "release_version": "freedoom-v1.5",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "gen04177/freedoom-ps4/497225488",
+      "title": "Freedoom Phase 2 freedoom-v1.5",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BGEN00042"
+      ],
+      "content_id": "IV0000-BGEN00042_00-FREEDOOM00000000",
+      "author": "gen04177",
+      "source_url": "https://github.com/gen04177/freedoom-ps4/releases/tag/freedoom-v1.5",
+      "size_bytes": 41418752,
+      "sha256": "491ae6d2befc646d852b982ab8eef7c2674b1a5728a4999318aaebcf94346a2f",
+      "urls": [
+        "https://github.com/gen04177/freedoom-ps4/releases/download/freedoom-v1.5/IV0000-BGEN00042_00-FREEDOOM00000000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Freedoom uses free replacement game data. See creator source/release for attribution. Exact SFO APP_VER not inspected.",
+      "instructions": "Freedoom uses free replacement game data. See creator source/release for attribution.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:27.726332+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "Freedoom BSD-style data; source-port components retain their licenses",
+        "source_url": "https://github.com/gen04177/freedoom-ps4/releases/tag/freedoom-v1.5",
+        "binary_rehosted": false,
+        "license_source": "https://github.com/freedoom/freedoom/blob/master/COPYING.adoc"
+      },
+      "release_version": "freedoom-v1.5",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:SCUS00000:1.00",
+      "title": "Friday Night Funkin' v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SCUS00000"
+      ],
+      "content_id": "UP9000-SCUS00000_00-SCUS00000PSXFPKG",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/SCUS00000",
+      "size_bytes": 179961856,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/SCUS00000/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:04.279831+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/SCUS00000",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10018:1.00",
+      "title": "Ghost of Tsushima Mini Games v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10018"
+      ],
+      "content_id": "ED1234-LAPY10018_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10018",
+      "size_bytes": 91488256,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10018/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:04.282528+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10018",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX52599:1.00",
+      "title": "Greedy Gutz Gary v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX52599"
+      ],
+      "content_id": "CH1105-NPXX52599_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/NPXX52599",
+      "size_bytes": 90505216,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX52599/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:23.801738+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX52599",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:KRGR00001:1.00",
+      "title": "Hamer!! (PORT) v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "KRGR00001"
+      ],
+      "content_id": "KG1633-KRGR00001_00-HAMER00000000000",
+      "author": "smolkrieger",
+      "source_url": "https://pkg-zone.com/details/KRGR00001",
+      "size_bytes": 235667456,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/KRGR00001/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:04.279510+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/KRGR00001",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10023:1.00",
+      "title": "I Know that Song v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10023"
+      ],
+      "content_id": "ED1234-LAPY10023_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10023",
+      "size_bytes": 226033664,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10023/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:11.664752+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10023",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "Mayo1970/ioQuake3-PS4/576580502",
+      "title": "ioQuake3 - Classic engine (own data required) 1.8",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUAK03003"
+      ],
+      "content_id": "IV0000-QUAK03003_00-IOQ3PS4PORT00000",
+      "author": "Mayo1970",
+      "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+      "size_bytes": 13107200,
+      "sha256": "53a6a447346e88e22684e523193574606374ab247896a127d54188b5c5ba6d57",
+      "urls": [
+        "https://github.com/Mayo1970/ioQuake3-PS4/releases/download/1.8/IV0000-QUAK03003_00-IOQ3PS4PORT00000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths. Exact SFO APP_VER not inspected.",
+      "instructions": "Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:17.659258+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+        "binary_rehosted": false
+      },
+      "release_version": "1.8",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "Mayo1970/ioQuake3-PS4/576580767",
+      "title": "ioQuake3 - Elite Force engine (own data required) 1.8",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUAK03004"
+      ],
+      "content_id": "IV0000-QUAK03004_00-IOQ3PS4PORT00000",
+      "author": "Mayo1970",
+      "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+      "size_bytes": 13762560,
+      "sha256": "8e77da8680aa6f51e9676d526291cd127f4f2eea441a527cb9e1ed120ca542c8",
+      "urls": [
+        "https://github.com/Mayo1970/ioQuake3-PS4/releases/download/1.8/IV0000-QUAK03004_00-IOQ3PS4PORT00000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths. Exact SFO APP_VER not inspected.",
+      "instructions": "Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:17.692044+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+        "binary_rehosted": false
+      },
+      "release_version": "1.8",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "Mayo1970/ioQuake3-PS4/576580302",
+      "title": "ioQuake3 - OpenArena engine (free data setup) 1.8",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUAK03002"
+      ],
+      "content_id": "IV0000-QUAK03002_00-IOQ3PS4PORT00000",
+      "author": "Mayo1970",
+      "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+      "size_bytes": 13762560,
+      "sha256": "5ffe1e0c70ab455a693db4af6ac6960e2a2ec430519ea09571bf4e6e09f1d3f0",
+      "urls": [
+        "https://github.com/Mayo1970/ioQuake3-PS4/releases/download/1.8/IV0000-QUAK03002_00-IOQ3PS4PORT00000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths. Exact SFO APP_VER not inspected.",
+      "instructions": "Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:06.952350+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+        "binary_rehosted": false
+      },
+      "release_version": "1.8",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "Mayo1970/ioQuake3-PS4/576579976",
+      "title": "ioQuake3 - Quake III engine (own data required) 1.8",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUAK03000"
+      ],
+      "content_id": "IV0000-QUAK03000_00-IOQ3PS4PORT00000",
+      "author": "Mayo1970",
+      "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+      "size_bytes": 13762560,
+      "sha256": "4f609f1dab826f558fa99d7389c2d9d48ef3c0a28e9c2aec926835b44fce2cc4",
+      "urls": [
+        "https://github.com/Mayo1970/ioQuake3-PS4/releases/download/1.8/IV0000-QUAK03000_00-IOQ3PS4PORT00000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths. Exact SFO APP_VER not inspected.",
+      "instructions": "Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:05.412518+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+        "binary_rehosted": false
+      },
+      "release_version": "1.8",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "Mayo1970/ioQuake3-PS4/576580139",
+      "title": "ioQuake3 - Team Arena engine (own data required) 1.8",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "QUAK03001"
+      ],
+      "content_id": "IV0000-QUAK03001_00-IOQ3PS4PORT00000",
+      "author": "Mayo1970",
+      "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+      "size_bytes": 13762560,
+      "sha256": "3c1823e5ba2003d25166aaa75868ec68e5a83684fc18b8a31c5f5c52025058af",
+      "urls": [
+        "https://github.com/Mayo1970/ioQuake3-PS4/releases/download/1.8/IV0000-QUAK03001_00-IOQ3PS4PORT00000.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths. Exact SFO APP_VER not inspected.",
+      "instructions": "Engine only. No copyrighted game data included. Supply the matching legally obtained .pk3 files; creator INSTALLATION.md gives paths.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:06.717939+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/Mayo1970/ioQuake3-PS4/releases/tag/1.8",
+        "binary_rehosted": false
+      },
+      "release_version": "1.8",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW91909:1.00",
+      "title": "Is it, or isn't? v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW91909"
+      ],
+      "content_id": "IV0000-BREW91909_00-NIKPS4HOMEBREW00",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW91909",
+      "size_bytes": 15597568,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW91909/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:34.280521+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW91909",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10012:1.00",
+      "title": "Lapy Games Collection v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10012"
+      ],
+      "content_id": "ED1234-LAPY10012_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10012",
+      "size_bytes": 192282624,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10012/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:26.288566+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10012",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10014:1.00",
+      "title": "Lapy's River Raid v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10014"
+      ],
+      "content_id": "ED1234-LAPY10014_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10014",
+      "size_bytes": 87490560,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10014/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:50.910454+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10014",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10020:1.00",
+      "title": "Lapy's River Raid VR v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10020"
+      ],
+      "content_id": "VR1234-LAPY10020_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10020",
+      "size_bytes": 69533696,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10020/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Creator labels this a VR build; check required headset/controller support.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:04.283308+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10020",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX33392:1.00",
+      "title": "LibOrbis PKG Loader Sample (Tetris) v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX33392"
+      ],
+      "content_id": "HW1633-NPXX33392_00-HOMEBREWSSSSSSSS",
+      "author": "masterzorag",
+      "source_url": "https://pkg-zone.com/details/NPXX33392",
+      "size_bytes": 11272192,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX33392/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:45.607800+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX33392",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10016:1.00",
+      "title": "Nanospeed The Game v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10016"
+      ],
+      "content_id": "ED1234-LAPY10016_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10016",
+      "size_bytes": 102825984,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10016/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:26.513514+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10016",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:BREW00090:1.00",
+      "title": "OpenOrbis SDL Sample v1.00",
+      "category": "homebrew",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "BREW00090"
+      ],
+      "content_id": "IV0000-BREW00090_00-SDLEXAMPLE000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/BREW00090",
+      "size_bytes": 6619136,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/BREW00090/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:29.827109+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/BREW00090",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:OPEN00001:1.01",
+      "title": "OpenTyrian @ cpasjuste v1.01",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "OPEN00001"
+      ],
+      "content_id": "IV0001-OPEN00001_00-OPEN000010000000",
+      "author": "cpasjuste",
+      "source_url": "https://pkg-zone.com/details/OPEN00001",
+      "size_bytes": 19791872,
+      "sha256": "4f2557f919bd4e7219044803c3beef31147072bacc7d93f7f1493f2c45c40a5f",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/OPEN00001/1.01"
+      ],
+      "note": "Complete desktop transfer passed size and content-ID checks. Observed SHA-256 pinned; no publisher digest was supplied. PS4 installation not tested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:43.639932+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": true,
+        "console_tested": false,
+        "full_transfer_bytes": 19791872,
+        "sha256": "4f2557f919bd4e7219044803c3beef31147072bacc7d93f7f1493f2c45c40a5f",
+        "publisher_digest_matched": false,
+        "test_platform": "Desktop download engine; not PS4"
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/OPEN00001",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01",
+      "sha256_origin": "Observed complete upstream transfer; not publisher-supplied"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10005:1.00",
+      "title": "Overcome Save the Girl v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10005"
+      ],
+      "content_id": "ED1234-LAPY10005_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10005",
+      "size_bytes": 100728832,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10005/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:34.467489+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10005",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:PCMN99999:1.00",
+      "title": "pacman v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "PCMN99999"
+      ],
+      "content_id": "TX0000-PCMN99999_00-0000000000PACMAN",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/PCMN99999",
+      "size_bytes": 67764224,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/PCMN99999/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:03.161258+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/PCMN99999",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10010:1.01",
+      "title": "PS Scene The Quiz Game v1.01",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10010"
+      ],
+      "content_id": "ED1234-LAPY10010_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10010",
+      "size_bytes": 261685248,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10010/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:42.784249+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10010",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX51365:1.00",
+      "title": "Roll The Ball for PS4 v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX51365"
+      ],
+      "content_id": "ED1633-NPXX51365_00-0000000000000000",
+      "author": "lm",
+      "source_url": "https://pkg-zone.com/details/NPXX51365",
+      "size_bytes": 144572416,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX51365/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:50.310691+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX51365",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:GMSP00006:1.00",
+      "title": "SHEPHARD v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "GMSP00006"
+      ],
+      "content_id": "IV0000-GMSP00006_00-GAMEMAKERSTUDIO0",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/GMSP00006",
+      "size_bytes": 18022400,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/GMSP00006/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:10.125996+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/GMSP00006",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10007:1.01",
+      "title": "Shoot Test v1.01",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10007"
+      ],
+      "content_id": "ED1234-LAPY10007_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10007",
+      "size_bytes": 86507520,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10007/1.01"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:19.982830+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10007",
+        "binary_rehosted": false
+      },
+      "release_version": "1.01"
+    },
+    {
+      "id": "homebrew-pkgzone:SNEK99999:1.00",
+      "title": "snake v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SNEK99999"
+      ],
+      "content_id": "TX0000-SNEK99999_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/SNEK99999",
+      "size_bytes": 72810496,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/SNEK99999/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:06.522794+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/SNEK99999",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX51351:1.00",
+      "title": "Soilder Mayham v1 v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX51351"
+      ],
+      "content_id": "ED1633-NPXX51351_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/NPXX51351",
+      "size_bytes": 164298752,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX51351/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:17.131651+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX51351",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "iHaiDeeZ/SRB2-PS4/627087495",
+      "title": "Sonic Robo Blast 2 v01.02",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "SRBP00001"
+      ],
+      "content_id": "IV0000-SRBP00001_00-SRB2PS4000000000",
+      "author": "iHaiDeeZ",
+      "source_url": "https://github.com/iHaiDeeZ/SRB2-PS4/releases/tag/v01.02",
+      "size_bytes": 183631872,
+      "sha256": "cf5648874ae98efe4d1e0eb30b4010fcbd5fbf4c3c8623d6fece9e159232245e",
+      "urls": [
+        "https://github.com/iHaiDeeZ/SRB2-PS4/releases/download/v01.02/SRB2-PS4-v01.02.pkg"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Creator includes the official freely distributed SRB2 game data. Software renderer; read creator limitations. Exact SFO APP_VER not inspected.",
+      "instructions": "Creator includes the official freely distributed SRB2 game data. Software renderer; read creator limitations.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:47:27.730787+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "creator-release",
+        "license": "GPL-2.0",
+        "source_url": "https://github.com/iHaiDeeZ/SRB2-PS4/releases/tag/v01.02",
+        "binary_rehosted": false
+      },
+      "release_version": "01.02",
+      "sha256_origin": "GitHub release-asset digest"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX50004:1.00",
+      "title": "SpaceShooter v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX50004"
+      ],
+      "content_id": "ED1633-NPXX50004_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/NPXX50004",
+      "size_bytes": 84475904,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX50004/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:01.751857+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX50004",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10015:1.00",
+      "title": "Super Console Wars v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10015"
+      ],
+      "content_id": "ED1234-LAPY10015_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/LAPY10015",
+      "size_bytes": 183894016,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10015/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:26.489970+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10015",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:NPXX50003:1.00",
+      "title": "tank game v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "NPXX50003"
+      ],
+      "content_id": "ED1633-NPXX50003_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/NPXX50003",
+      "size_bytes": 118620160,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/NPXX50003/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:41:02.862816+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/NPXX50003",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:TEFO11111:1.00",
+      "title": "The Enchanted Forest v1.00",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "TEFO11111"
+      ],
+      "content_id": "ED1633-TEFO11111_00-0000000000000000",
+      "author": "See publisher page",
+      "source_url": "https://pkg-zone.com/details/TEFO11111",
+      "size_bytes": 318504960,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/TEFO11111/1.00"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:50.318345+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/TEFO11111",
+        "binary_rehosted": false
+      },
+      "release_version": "1.00"
+    },
+    {
+      "id": "homebrew-pkgzone:LAPY10009:1.02",
+      "title": "Wild Gunman Remake v1.02",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "",
+      "title_ids": [
+        "LAPY10009"
+      ],
+      "content_id": "ED1234-LAPY10009_00-0000000000000000",
+      "author": "Lapy",
+      "source_url": "https://pkg-zone.com/details/LAPY10009",
+      "size_bytes": 112525312,
+      "sha256": "",
+      "urls": [
+        "https://pkg-zone.com/download/ps4/LAPY10009/1.02"
+      ],
+      "note": "Unverified download. Homebrew download. Header, title ID and exact size checked; full transfer and PS4 installation untested. Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements. Exact SFO APP_VER not inspected.",
+      "instructions": "Public PKG-Zone homebrew listing. Attribution and download button verified on the source page; no binary is rehosted. Read creator requirements.",
+      "compatibility": "Unverified on this PS4; read creator requirements.",
+      "source_status": "Unverified",
+      "validation": {
+        "checked_at": "2026-10-31T22:40:38.892735+00:00",
+        "scope": "128-byte header, package title/content identity and exact advertised size only",
+        "range_supported": true,
+        "complete_transfer": false,
+        "console_tested": false
+      },
+      "rights": {
+        "evidence": "publisher-homebrew-listing",
+        "license": "Not specified by publisher page; public homebrew download listing",
+        "source_url": "https://pkg-zone.com/details/LAPY10009",
+        "binary_rehosted": false
+      },
+      "release_version": "1.02"
+    }
+  ]
+}
