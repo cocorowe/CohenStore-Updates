@@ -30,7 +30,22 @@ jobs:
           # The 003/004 split was captured with a five-byte inclusive range overlap.
           overlaps=[0,0,0,5,0,0]
           delta_stream=b''.join(p.read_bytes()[skip:] for p,skip in zip(parts,overlaps))
-          delta=gzip.decompress(delta_stream)
+          import zlib
+          decoder=zlib.decompressobj(16+zlib.MAX_WBITS)
+          try:
+              delta=decoder.decompress(delta_stream)+decoder.flush()
+          except zlib.error as exc:
+              # Locate the first failing input block so a damaged split can be identified.
+              probe=zlib.decompressobj(16+zlib.MAX_WBITS)
+              offset=0
+              for pos in range(0,len(delta_stream),4096):
+                  try:
+                      probe.decompress(delta_stream[pos:pos+4096])
+                  except zlib.error:
+                      print(f"DECOMPRESSION_FAILURE_OFFSET={pos}")
+                      print(f"DECOMPRESSION_FAILURE_CHUNK={next((p.name for p in parts if sum(len(x.read_bytes()) for x in parts[:parts.index(p)]) <= pos < sum(len(x.read_bytes()) for x in parts[:parts.index(p)+1])), 'unknown')}")
+                      raise
+              raise exc
           assert len(delta)==len(old)==6619136
           data=bytes(a^b for a,b in zip(old,delta))
           manifest=json.loads((stage/'release.json').read_text())
