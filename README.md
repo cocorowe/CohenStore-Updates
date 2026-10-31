@@ -1,14 +1,15 @@
 # CohenStore Updates
 
-**Current app update: 0.5.9 installer-folder test.** Open Store Updates, press
-R3, then X to download. Close CohenStore and install `CohenStore-59.pkg` from
-GoldHEN Package Installer using source HDD (`/data/pkg`). Game downloads completed
-with 0.5.9 also go directly into that installer folder. Real PS4 testing is
-still required. See [update instructions](update/README.md).
+**Current app repair: 0.5.10.** This fixes 0.5.9 rejecting writable shared
+installer folders when their permissions cannot be changed. Existing
+`/data/pkg` permissions are preserved. Both game downloads and Store Updates
+check actual write access instead.
 
-Content feed for CohenStore, separate from its PS4 application source.
-
-Live feed: https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/catalog/catalog.json
+Install [CohenStore 0.5.10](https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.10-INSTALLER-FIX.pkg)
+once manually over the closed store. The 0.5.9 updater can encounter the same
+permission check while staging this repair. Then retry the failed game download
+with X in the queue. Real PS4 confirmation is still required. See
+[update instructions](update/README.md).
 
 ## Current listings
 
