@@ -65,6 +65,10 @@ def probe(item,open_url=None,full=False):
             if format in ('prx','sprx'): valid=prefix in (b'\x4f\x15\x3d\x1d',b'\x7fELF')
             elif format=='json': valid=prefix.lstrip().startswith(b'{')
             elif format=='zip': valid=prefix==b'PK\x03\x04'
+            elif format=='rar': valid=prefix==b'Rar!'
+            elif format=='bz2': valid=len(prefix)==4 and prefix[:3]==b'BZh' and prefix[3:4] in b'123456789'
+            elif format=='xml': valid=prefix.lstrip().startswith((b'<?xm',b'<Pat')) or prefix.startswith(b'\xef\xbb\xbf<')
+            elif format=='gscc': valid=len(prefix)==4 and bool(item.get('sha256'))
             elif format=='bin': valid=len(prefix)==4 and bool(item.get('sha256'))
             else: valid=prefix==b'\x7fCNT'
             if not valid: raise ValueError('Response is not the selected package/plugin format')
@@ -97,5 +101,6 @@ def main():
     return bool(failures)
 
 if __name__=='__main__': raise SystemExit(main())
+
 
 

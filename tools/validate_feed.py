@@ -63,6 +63,32 @@ if mods_path.exists():
         if item.get('format')=='json' and item.get('install_name')!=item['title_ids'][0]+'_'+item['game_versions'][0]+'.json':raise SystemExit('mods: cheat filename identity mismatch')
     print(f'Validated {len(mod_ids)} separately versioned mod/cheat entries.')
 
-print(f"Validated {len(seen)} catalog entries and schema-1 manifest scaffold.")
+expanded_ids=set(seen)
+for filename in ('expanded-mods.json','expansion.json','library-store.json','library-links.json'):
+    path=ROOT/'catalog'/filename
+    if not path.exists():continue
+    data=json.loads(path.read_text(encoding='utf-8'))
+    if data.get('schema')!=1 or not isinstance(data.get('items'),list) or not data['items']:raise SystemExit(filename+': invalid catalog')
+    for item in data['items']:
+        if not item.get('id') or not item.get('title') or item['id'] in expanded_ids:raise SystemExit(filename+': duplicate/missing id or title')
+        expanded_ids.add(item['id'])
+        if item.get('category') not in ('games','updates','dlc','homebrew','apps','emulators','mod_menus'):raise SystemExit(filename+': invalid category')
+        urls=item.get('urls',[])
+        if not isinstance(urls,list) or len(urls)>16:raise SystemExit(filename+': invalid URL list')
+        if filename.startswith('library-') and urls:raise SystemExit(filename+': source index must not advertise direct files')
+        source=item.get('source_url','')
+        if not urls and not source:raise SystemExit(filename+': no file or source page')
+        for value in urls+([source] if source else []):
+            p=urllib.parse.urlsplit(value)
+            if p.scheme not in ('http','https') or not p.hostname or p.username or p.password or any(ord(c)<=32 for c in value) or '\\' in value or '%' in p.netloc:raise SystemExit(filename+': unsafe URL')
+        if urls:
+            if any(not u.startswith('https://') for u in urls):raise SystemExit(filename+': file downloads must use HTTPS')
+            if type(item.get('size_bytes')) is not int or item['size_bytes']<4:raise SystemExit(filename+': direct file needs exact size')
+            if item.get('format','pkg')!='pkg' and not re.fullmatch(r'[a-f0-9]{64}',item.get('sha256','')):raise SystemExit(filename+': mod data needs a hash')
+        if item.get('format')=='xml' and (item.get('mod_kind')!='patch' or len(item.get('title_ids',[]))!=1 or item.get('install_name')!=item['title_ids'][0]+'.xml'):raise SystemExit(filename+': invalid patch install metadata')
+    print(f'Validated {len(data["items"])} records in {filename}.')
+
+print(f"Validated {len(seen)} base catalog entries and schema-1 manifest scaffold.")
+
 
 

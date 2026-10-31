@@ -1,0 +1,129 @@
+{
+  "counts": {
+    "base": 123,
+    "mods": 2049,
+    "expansion": 394,
+    "store_references": 12205,
+    "catalog_references": 18046
+  },
+  "mod_types": {
+    "menu": 16,
+    "plugin": 1,
+    "tool": 4,
+    "cheats": 1929,
+    "payload": 10,
+    "patch": 89
+  },
+  "extra_categories": {
+    "homebrew": 2,
+    "emulators": 5,
+    "games": 1,
+    "updates": 386
+  },
+  "reference_categories": {
+    "games": 30147,
+    "homebrew": 32,
+    "apps": 25,
+    "updates": 34,
+    "dlc": 5,
+    "emulators": 8
+  },
+  "checks": [
+    {
+      "file": "Silent.Virtues.RDR.Mod.Menu.-.PS4.rar",
+      "scope": "Complete creator release asset and SHA-256",
+      "sha256": "ed5616a69fd2f04606762e35a5c973bfa15f40c926a8cf3f55261588c72c3a87",
+      "size_bytes": 4604539
+    },
+    {
+      "file": "BlackOps4_atianmenu_ps4.gscc",
+      "scope": "Complete creator release asset and SHA-256",
+      "sha256": "a63071e6e2464eb7ad1aada82ea8a5dfa6f0e1e40dd894b04b014cfb112ac0fa",
+      "size_bytes": 388784
+    },
+    {
+      "id": "iHaiDeeZ/Crema/659446637",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 101908480
+    },
+    {
+      "id": "iHaiDeeZ/HENkaku-PS4/694935304",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 69140480
+    },
+    {
+      "id": "iHaiDeeZ/M33/659570288",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 112001024
+    },
+    {
+      "id": "iHaiDeeZ/DolphinPS4/675931332",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 206831616
+    },
+    {
+      "id": "Al-Azif/ps4-payload-guest/61559353",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 34865152
+    },
+    {
+      "id": "iHaiDeeZ/shattered-pixel-dungeon-ps4/613675564",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 111804416
+    },
+    {
+      "id": "iHaiDeeZ/Resonance/659524917",
+      "scope": "PKG header and exact size only",
+      "size_bytes": 55443456
+    }
+  ],
+  "excluded": [
+    {
+      "file": "HEN-Cheats-Collection-main/cheats/json/CUSA43272_01.05_e5ff9fe3.json",
+      "reason": "Oversized cheat file"
+    }
+  ],
+  "scope": "Files and source metadata checked as described. No new PS4 installation or mod execution test.",
+  "combined_categories": {
+    "apps": {
+      "direct": 5,
+      "references": 25,
+      "total": 30
+    },
+    "emulators": {
+      "direct": 12,
+      "references": 8,
+      "total": 20
+    },
+    "games": {
+      "direct": 110,
+      "references": 30147,
+      "total": 30257
+    },
+    "homebrew": {
+      "direct": 4,
+      "references": 32,
+      "total": 36
+    },
+    "mod_menus": {
+      "direct": 2037,
+      "references": 12,
+      "total": 2049
+    },
+    "updates": {
+      "direct": 386,
+      "references": 34,
+      "total": 420
+    },
+    "dlc": {
+      "direct": 0,
+      "references": 5,
+      "total": 5
+    }
+  },
+  "mirror_check": {
+    "probes_passed": 204,
+    "new_backup_urls": 112,
+    "scope": "128-byte PKG header, content ID, exact size and HTTP range support; not complete game transfers"
+  }
+}

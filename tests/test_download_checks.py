@@ -20,6 +20,11 @@ class DownloadChecksTests(unittest.TestCase):
         item={'id':'test','title':'Test','format':'json','urls':['https://developer.example/file'],'size_bytes':4096}
         self.assertFalse(m.probe(item,lambda *a,**k:Response(body=b'<htm'+b'x'*4092))['ok'])
 
+    def test_patch_and_menu_archive_formats(self):
+        for format,prefix in [('xml',b'<?xm'),('bz2',b'BZh9'),('rar',b'Rar!')]:
+            item={'id':'test','title':'Test','format':format,'urls':['https://developer.example/file'],'size_bytes':4096}
+            self.assertTrue(m.probe(item,lambda *a,**k:Response(body=prefix+b'x'*4092))['ok'])
+
     def test_raw_payload_probe_requires_catalog_hash(self):
         item={'id':'test','title':'Test','format':'bin','urls':['https://developer.example/file'],'size_bytes':4096}
         self.assertFalse(m.probe(item,lambda *a,**k:Response())['ok'])
@@ -48,5 +53,6 @@ class DownloadChecksTests(unittest.TestCase):
         responses=[Response(body=body),Response(status=200,headers={'Content-Length':str(len(body))},body=body)]
         r=m.probe(item,lambda *a,**k:responses.pop(0),full=True)
         self.assertFalse(r['ok']);self.assertIn('SHA-256 mismatch',r['error'])
+
 
 

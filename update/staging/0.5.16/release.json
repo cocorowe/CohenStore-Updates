@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":11,\"schema\":1,\"sha256\":\"22d9d9013c6afeb8011292fbf65ee09df1172a45bb1270375ae54cca3c5d645b\",\"size_bytes\":8650752,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.16-CATALOG-EXPANSION.pkg\",\"version\":\"0.5.16\",\"version_code\":516}",
+  "signature": "b9f1495593d7dacbb10f793ca2f9768544599a471c4370d35c6c1f947b7d79dbac2c7a52633611815ba087c051dde81b529b8b5a7a6dd12436d07f770c18b50d"
+}

@@ -1,0 +1,82 @@
+name: Publish CohenStore 0.5.16
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.16/**'
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-release-0516
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install package verification dependencies
+        run: python -m pip install cryptography==46.0.3 bsdiff4==1.2.6
+      - name: Reconstruct and verify the signed package and catalog payloads
+        shell: python
+        run: |
+          import bsdiff4,gzip,hashlib,json,shutil,subprocess
+          from pathlib import Path
+          from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+          stage=Path('update/staging/0.5.16')
+          public_key=Ed25519PublicKey.from_public_bytes(bytes.fromhex('6d7df4c99728545705a58cb75c6e15aa097f03ab452c86726da359668bbfec41'))
+          current=json.loads(Path('update/release.json').read_text())
+          public_key.verify(bytes.fromhex(current['signature']),current['signed_payload'].encode())
+          previous=json.loads(current['signed_payload'])
+          assert previous['version_code']==515 and previous['revision']==10, 'Unexpected previous release; do not overwrite'
+          old=Path('update/packages/CohenStore-0.5.15-MOD-STORE.pkg').read_bytes()
+          assert hashlib.sha256(old).hexdigest()=='665fd7b2b4f2c9fd54f8592fcc48545fe229eb7412c9c05e0949baaf9bc1d2a3'
+          expected={'package_size': 8650752, 'package_sha256': '22d9d9013c6afeb8011292fbf65ee09df1172a45bb1270375ae54cca3c5d645b', 'package_git_sha': '30e7b3d347fbad7433f52e9d894f5c6d407eace8', 'patch_size': 6589239, 'patch_sha256': 'edfe3665158fbbaa9fd98894c4c295a9b519096abcba4d291a01f158f48511b7', 'parts': {'000.bsdiffpart': '066d6bda5138ea12ee989c885ea2315bd73abafdc3ee6fa78ff01f811c543cf3', '001.bsdiffpart': 'c57f67b34854e81b13d912cbcc385bf0d20586c34d055a76bcfc58cb27407e02', '002.bsdiffpart': 'd60d3a0a722f957e8a286eceff6abc4b14498457705a528be6fe08acc2fd7d4e', '003.bsdiffpart': 'e5dca18fab812c96ecbca51486929265d4a75c386e17b07ceee9e66745a19013', '004.bsdiffpart': '4eb6e6f4071e977e24eb8da42b2223b306f7148b5aa054546ffe83f6af155d9d', '005.bsdiffpart': '790bc389a9c9801b4ff589e2727717e12eef8d844d60deb9948459d9b40b6b23', '006.bsdiffpart': '173b0ae3f8824f9456390fdf4532a6eaf694d084a479c5393d135341d0b80070', '007.bsdiffpart': 'e329ccb6f22692c931ecce9555d00e59f06ace13fdec77843cef8c98347e8b08', '008.bsdiffpart': 'f8f857f18d194974a70a6532676be147724e59bb6f22934577bcb7f310273b01', '009.bsdiffpart': 'b21eed7b4b8d1402fbb55691427666b719540055d13308053f0753e87b36ab49', '010.bsdiffpart': '9f0c1a0381028485e510440307db527b9b770c92af097d63bf1d0c9ac9676a67', '011.bsdiffpart': 'cc22729b075d6326bf8160583073f1a64c3264d542f8457a6d7665a815149459', '012.bsdiffpart': '83e1927c99c046dd99d97e564ea3cff541f2e04bb4b830ef6897adcbe5d77694'}, 'catalogs': {'catalog.json': {'size': 103935, 'sha256': '5be136583e7b58e253cfaff1fc0df7627564323d133e1d19bc54eff505023a76', 'packed_sha256': '4869d4a7341961b330d8713c0e0b1601e690a51bee748adac94144e078e8be60', 'packed_size': 9423}, 'expanded-mods.json': {'size': 2477860, 'sha256': 'fb7756799a15527790deedf2c1c9c12c9933bf8a4d89015298481e38b0a2fb81', 'packed_sha256': '246fbdc8b439237e140a563329d19d9c511086cfd8dcc29fcb1f211255e22061', 'packed_size': 282855}, 'expansion.json': {'size': 532131, 'sha256': '36c776f41aac85907b379c911b09b9490c76c2b0ca2c53753a82a3172250a8b7', 'packed_sha256': '09ed2ba26c70d276dbef3b7b662bc08574d2089651148eb1eb2caa982a9e1376', 'packed_size': 30113}, 'library-store.json': {'size': 4169092, 'sha256': 'fe6f2c0dd12e302f3b6ed3ea8f94326ef3709d84ae29a102d415493c530a29c5', 'packed_sha256': '049338e54460f688ad4b1f783950dece7cf81b3275a0183880203609f6454b79', 'packed_size': 424954}, 'library-links.json': {'size': 4864370, 'sha256': '6da99409feb9b96368bc58d54e4fbd1bfd44ef14a374adb9374e954e724e3c57', 'packed_sha256': 'fbd9a2cf134db68cc79d3b060407ebbaffc789e71e750ac8116e5883c05c8c58', 'packed_size': 597070}}}
+          parts=sorted(stage.glob('*.bsdiffpart'))
+          assert [p.name for p in parts]==list(expected['parts'])
+          for part in parts:
+              assert hashlib.sha256(part.read_bytes()).hexdigest()==expected['parts'][part.name],part.name
+          patch=b''.join(p.read_bytes() for p in parts)
+          assert len(patch)==expected['patch_size'] and hashlib.sha256(patch).hexdigest()==expected['patch_sha256']
+          data=bsdiff4.patch(old,patch)
+          assert len(data)==expected['package_size'] and hashlib.sha256(data).hexdigest()==expected['package_sha256']
+          assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==expected['package_git_sha']
+          manifest=json.loads((stage/'release.json').read_text())
+          public_key.verify(bytes.fromhex(manifest['signature']),manifest['signed_payload'].encode())
+          release=json.loads(manifest['signed_payload'])
+          assert release['version']=='0.5.16' and release['version_code']==516 and release['revision']==11
+          assert release['schema']==1 and release['channel']=='testing'
+          assert release['sha256']==hashlib.sha256(data).hexdigest() and release['size_bytes']==len(data)
+          assert release['title_id']=='CHST00001' and release['content_id']=='IV0000-CHST00001_00-COHENSTORE000000'
+          assert data[:4]==b'\x7fCNT' and data[0x40:0x64]==b'IV0000-CHST00001_00-COHENSTORE000000'
+          assert release['url']=='https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.16-CATALOG-EXPANSION.pkg'
+          Path('update/packages/CohenStore-0.5.16-CATALOG-EXPANSION.pkg').write_bytes(data)
+          for name,check in expected['catalogs'].items():
+              packed=(stage/(name+'.gz')).read_bytes()
+              assert len(packed)==check['packed_size'] and hashlib.sha256(packed).hexdigest()==check['packed_sha256'],name
+              raw=gzip.decompress(packed)
+              assert len(raw)==check['size'] and hashlib.sha256(raw).hexdigest()==check['sha256'],name
+              Path('catalog',name).write_bytes(raw)
+          for source,target in [('release.json','update/release.json'),('instructions.md','update/README.md'),('repository-readme.md','README.md'),('manifest.json','update/manifest.json')]:
+              shutil.copyfile(stage/source,target)
+          Path('reports').mkdir(exist_ok=True)
+          for name in ['catalog-expansion-0516.json','archive-mirror-refresh-0516.json','mod-transfer-check-0516.json']:
+              shutil.copyfile(stage/name,Path('reports',name))
+          print('Signed CohenStore 0.5.16 PKG, five catalog payloads and release identity verified.')
+      - name: Validate catalog and repository tests
+        run: |
+          python3 tools/validate_feed.py
+          python3 -m unittest discover -s tests -v
+      - name: Publish verified update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.16-CATALOG-EXPANSION.pkg update/release.json update/README.md update/manifest.json README.md catalog/catalog.json catalog/expanded-mods.json catalog/expansion.json catalog/library-store.json catalog/library-links.json reports/catalog-expansion-0516.json reports/archive-mirror-refresh-0516.json reports/mod-transfer-check-0516.json
+          git rm -r update/staging/0.5.16
+          git commit -m "Publish verified CohenStore 0.5.16 with expanded catalogs, source browsing, patches and backup mirrors"
+          git pull --rebase origin main
+          python3 -c 'import json,subprocess; feed=json.loads(subprocess.check_output(["git","show","origin/main:update/release.json"])); version=json.loads(feed["signed_payload"]); assert version["version_code"]==515 and version["revision"]==10, "Remote release changed; publication stopped"'
+          git push origin HEAD:main

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Silent Virtues - Red Dead Redemption",
+    "format": "rar",
+    "size_bytes": 4604539,
+    "sha256": "ed5616a69fd2f04606762e35a5c973bfa15f40c926a8cf3f55261588c72c3a87",
+    "ok": true
+  },
+  {
+    "title": "ArabicGuy - GTA V 1.00 / FW 7.02",
+    "format": "bz2",
+    "size_bytes": 67629,
+    "sha256": "dd61b88e4c8620b198c45c62a00fa3554d645c8a5c4ce6d72a2e36149b0fbb66",
+    "ok": true
+  },
+  {
+    "title": "AER: Memorises of Old - game patches / CUSA09210",
+    "format": "xml",
+    "size_bytes": 337,
+    "sha256": "af1e97228ef3c2c023fd1b0d3c3f810f946595ac0ce981b4bbe8cc752fe03a9e",
+    "ok": true
+  }
+]
