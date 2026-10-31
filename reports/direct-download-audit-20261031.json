@@ -1,0 +1,406 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-31T22:54:02.715717+00:00",
+  "baseline_commit": "b6f4c77155b14f56e40360f9e92f08833dd9faf5",
+  "merged_p1_pr": "https://github.com/cocorowe/CohenStore-Updates/pull/2",
+  "baseline_base_entries": 123,
+  "new_base_entries": 198,
+  "added_records": 75,
+  "added_categories": {
+    "apps": 28,
+    "homebrew": 8,
+    "emulators": 2,
+    "games": 37
+  },
+  "creator_repositories_inspected": 49,
+  "publisher_listings_reviewed": 151,
+  "candidate_files_probed": 118,
+  "header_identity_size_passed": 78,
+  "duplicates_not_added": [
+    {
+      "id": "homebrew-pkgzone:APOL00004:2.4.0",
+      "title": "Apollo Save Tool",
+      "reason": "Existing application identity; keep current creator release instead of a duplicate/older host listing"
+    },
+    {
+      "id": "homebrew-pkgzone:RMTC00001:2.08",
+      "title": "ezRemote Client",
+      "reason": "Existing application identity; keep current creator release instead of a duplicate/older host listing"
+    },
+    {
+      "id": "homebrew-pkgzone:CHTM00777:1.2.2",
+      "title": "PS4 Cheats Manager",
+      "reason": "Existing application identity; keep current creator release instead of a duplicate/older host listing"
+    }
+  ],
+  "failed_probes": [
+    {
+      "title": "★ FLAPPY BIRD  ★ By TER152 ★",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX51374",
+      "ok": false,
+      "checked_at": "2026-10-31T22:40:12.091391+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "Pinball Wizard",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX51369",
+      "ok": false,
+      "checked_at": "2026-10-31T22:40:19.745455+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "Street Racer HB",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SILI00009",
+      "ok": false,
+      "checked_at": "2026-10-31T22:40:43.681359+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "Strike Elite",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX51373",
+      "ok": false,
+      "checked_at": "2026-10-31T22:40:55.826179+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "Pong",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/PONG00000",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:09.526233+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Space Invaders",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SPAC30000",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:32.908113+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Spelunky Classic HD",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SPLK00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:34.908742+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "CreeperDiver",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/CREP00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:35.183863+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "El Pollo 2.0",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX10003",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:13.317294+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Block Buster",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX88888",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:53.856419+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Deltarune",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/DELT00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:53.842757+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Quickz Game",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/QUIG00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:53.856571+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Save The Scene",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX10002",
+      "ok": false,
+      "checked_at": "2026-10-31T22:41:53.858769+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Street Racing",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/STRE00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:14.991820+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "El Pollo de Lapy",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX10001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:14.996352+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Snake Ball v0.3",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX10129",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:14.993891+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "An Untitled Story",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/UNTI00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:14.975665+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Sync Simple",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SYNC00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:36.233430+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Kill'em All.",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/BBFF12362",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:36.241187+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Overcome",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/LAPY10004",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:36.239928+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Ball Blaster",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/BALL00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:36.238596+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "ps4Gearsystem",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/MRPH00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:57.127847+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Orbis MSX",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/FMSX00000",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:57.130792+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "B&nder Bar",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/BBAR00505",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:57.125740+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Chip 8",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/CHIP80020",
+      "ok": false,
+      "checked_at": "2026-10-31T22:42:57.125878+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Mednafen",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/MEDN00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:20.260948+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "mGBA",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/ZZZZ00002",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:20.258668+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Reicast Beta 2",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/ZZZZ00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:20.260794+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Yabause (Saturn)",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/PPPP00002",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:20.259857+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "Unofficial RetroArch",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SSNE10000",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:41.859506+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "RetroArch Core Installer",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SSNE20000",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:41.859698+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PCSX-R (Playstation)",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/PCSX00002",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:41.863985+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PS4 P-8 / Pico8",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/BREW34965",
+      "ok": false,
+      "checked_at": "2026-10-31T22:43:41.871820+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PS4-GBEmu",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX51385",
+      "ok": false,
+      "checked_at": "2026-10-31T22:44:18.536730+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "PS4NES",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/PNES00002",
+      "ok": false,
+      "checked_at": "2026-10-31T22:44:18.536599+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "PS4 Controller Homebrew",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/NPXX51364",
+      "ok": false,
+      "checked_at": "2026-10-31T22:45:14.604432+00:00",
+      "error": "ValueError: PKG title ID differs from source listing"
+    },
+    {
+      "title": "PS4 WebDAV Client",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/WDVC00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:45:38.206553+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PS4 FTP Client",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/FTPC00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:45:38.003398+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PS4 SMB Client",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/SMBC00001",
+      "ok": false,
+      "checked_at": "2026-10-31T22:45:37.606092+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "title": "PS4-Xplorer 2.0",
+      "kind": "host",
+      "source_url": "https://pkg-zone.com/details/LAPY20009",
+      "ok": false,
+      "checked_at": "2026-10-31T22:45:37.291487+00:00",
+      "error": "TimeoutError: The read operation timed out"
+    }
+  ],
+  "full_transfer_tests": [
+    {
+      "bytes": 19791872,
+      "error": "",
+      "ok": true,
+      "paused": false,
+      "exit": 0,
+      "sha256": "4f2557f919bd4e7219044803c3beef31147072bacc7d93f7f1493f2c45c40a5f",
+      "publisher_digest_matched": false,
+      "item_id": "homebrew-pkgzone:OPEN00001:1.01",
+      "title": "OpenTyrian @ cpasjuste",
+      "tested_at": "2026-10-31T22:46:09.026487+00:00",
+      "scope": "Complete creator/host file through candidate engine on desktop; not PS4 installation."
+    },
+    {
+      "bytes": 6619136,
+      "error": "",
+      "ok": true,
+      "paused": false,
+      "item_id": "birth1mark/picoplay-ps4/684580105",
+      "title": "PicoPlay v1.00",
+      "scope": "Complete creator file through candidate download engine on desktop; not PS4 installation.",
+      "exit": 0,
+      "sha256": "98fae9c4d8ada399e9e6ca0f8ebbdb6046e34de02ecc98f897fdbb8d7d2523f9",
+      "publisher_digest_matched": true
+    },
+    {
+      "bytes": 40697856,
+      "error": "",
+      "ok": true,
+      "paused": false,
+      "item_id": "gen04177/freedoom-ps4/497225116",
+      "title": "Freedoom Phase 1 freedoom-v1.5",
+      "scope": "Complete creator file through candidate download engine on desktop; not PS4 installation.",
+      "exit": 0,
+      "sha256": "a0b7830dc9deeb92d7b8871df68123e53d3c83df267d9841418f8ec038f7a433",
+      "publisher_digest_matched": true
+    }
+  ],
+  "combined_records": 32892,
+  "combined_direct_records": 2629,
+  "combined_reference_records": 30263,
+  "scope": "Header-only records remain Unverified. Working means a full desktop transfer matched a publisher digest, not PS4 installation. Temporary host/network failures do not establish that a game or every mirror is unavailable. Binaries remain hosted upstream; no retail game PKGs or ROM/data bundles are added.",
+  "rights_limits": "Creator assets retain their source licenses and requirements. Host listings have public PS4 download buttons and author attribution; many do not specify a software license. Those gaps are recorded per entry; no claim of a permissive license or ownership is invented.",
+  "baseline_console_feedback": "User reports 0.5.16 scrolls normally. New downloads have not been installed/tested on their PS4.",
+  "app_version": "0.5.16",
+  "signed_revision": 11,
+  "native_app_or_signing_changed": false
+}

@@ -1,5 +1,9 @@
 # CohenStore 0.5.16
 
+## Proposed direct-download expansion
+
+This development branch adds 75 checked direct homebrew PKG entries. Read [the catalog proposal and PS4 steps](reports/direct-downloads-20261031.md) and [per-file evidence](reports/direct-download-audit-20261031.json). The 0.5.16 installer and signed updater remain unchanged. The counts below describe the original0.5.16 release snapshot; the linked audit records the proposed catalog totals.
+
 Native PS4 store update: version code 516, APP_VER 01.16, signed feed revision 11. Title ID CHST00001 and the installed updater signing identity are retained.
 
 ## Install
