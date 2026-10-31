@@ -27,3 +27,5 @@ Private entries and failed HTTP checks are held out of the added catalog.
 
 
 Packaging note: the 003/004 compressed-part boundary contains a five-byte overlap; the publish workflow removes those duplicated bytes before decompression.
+
+Diagnostic rerun queued to locate any remaining compressed-stream corruption before publication.
