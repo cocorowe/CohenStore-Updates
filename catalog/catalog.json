@@ -2149,6 +2149,26 @@
       ],
       "note": "Developer release. SHA-256 not published by the release API; console compatibility has not been tested.",
       "format": "pkg"
+    },
+    {
+      "id": "archive:CUSA16579:01.31",
+      "title": "Cyberpunk 2077",
+      "category": "games",
+      "format": "pkg",
+      "title_ids": [
+        "CUSA16579"
+      ],
+      "app_version": "01.31",
+      "region": "EUR",
+      "size_bytes": 59416903680,
+      "sha256": "",
+      "urls": [
+        "https://ia600903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cyberpunk%202077%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.31%5D.pkg",
+        "https://ia800903.us.archive.org/6/items/ps4-fpkg-collection-english-c/Cyberpunk%202077%20-%20%5BEU%5D%20%5BEN%5D%20%5B1.31%5D.pkg"
+      ],
+      "source_url": "https://archive.org/details/ps4-fpkg-collection-english-c",
+      "compatibility": "Archive-listed version; firmware compatibility not verified.",
+      "note": "Two public mirrors passed package-header, CUSA and exact-size checks. Full 59.4 GB transfer and PS4 installation not tested."
     }
   ]
 }

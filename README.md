@@ -1,14 +1,18 @@
 # CohenStore Updates
 
-**Current release: 0.5.14.** Adds R2 cancel/remove in the download queue and readable game package filenames. Circle pauses; completed packages are kept when removing a task.
+**Current release: 0.5.15.** Adds a Mod Menus section with 5 creator menu builds, 1,542 GoldHEN cheat files, a plugin bundle and PS4 Cheats Manager. Filters, full setup/details pages, version-checked menu switching and backed-up cheat installation are included.
 
-Install through Store Updates (R3, then X), close CohenStore, and install CohenStore-514.pkg using GoldHEN Package Installer, source HDD. See [update instructions](update/README.md).
+The base catalog has 120 entries, including one newly checked Cyberpunk 2077 listing. Mod data refreshes separately at catalog/mods.json; older apps keep their existing games feed.
 
-The current application source and private signing key are not included in this public upload. Older source archives remain in repository history.
+Install through Store Updates (R3, then X), close CohenStore, and install CohenStore-515.pkg using GoldHEN Package Installer (HDD). See [setup and compatibility details](update/README.md).
+
+GTA V Lotus builds target 1.27/1.48, not 1.56. Do not assume two core menus or PC mods are compatible. App tests and package validation pass; new mod execution still needs PS4 testing.
+
+Current application source and signing keys are not included in this public upload. Older source archives remain in repository history.
 
 ## Current listings
 
-The feed preserves the homebrew, emulator and tool listings and adds 101 public Archive game entries.
+The feed preserves the homebrew, emulator and tool listings and includes 102 public Archive game entries.
 Games: 2048, Relic Hunters Zero, Sonic Time Twisted, Sonic 1 SMS Remake,
 and Sonic 2 SMS Remake. Emulators: pFBN, pGBA, pGEN, pNES and pSNES.
 Apps/tools: Apollo Save Tool, PS4 Cheats Manager, PS MTP Explorer, ezRemote Client and PS4 Package Link.

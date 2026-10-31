@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":9,\"schema\":1,\"sha256\":\"3b3e04a41afe11617106c57aff48bc71f9657275aa2fb880a63a508b3b3466a8\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.14-QUEUE-FIX.pkg\",\"version\":\"0.5.14\",\"version_code\":514}",
-  "signature": "66fae9656e7fc0c90481874262a22f34b02d6ce688adb454231df726b1ab5a7a7114d15471c3084737aafb36e4c3ed21a18bf4bfecb26587304b7253cbbed506"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":10,\"schema\":1,\"sha256\":\"665fd7b2b4f2c9fd54f8592fcc48545fe229eb7412c9c05e0949baaf9bc1d2a3\",\"size_bytes\":7798784,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.15-MOD-STORE.pkg\",\"version\":\"0.5.15\",\"version_code\":515}",
+  "signature": "fa64ecb152cb416928f9ed71f369dc2d5c31d407f610dffef138cd8815a8f0014257c98469253aad028df10ba5bcfa76bedd686a22acd76bd52ad228faadb30e"
 }
