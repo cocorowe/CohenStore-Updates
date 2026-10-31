@@ -1,5 +1,11 @@
 # CohenStore Updates
 
+**Current app update: 0.5.9 installer-folder test.** Open Store Updates, press
+R3, then X to download. Close CohenStore and install `CohenStore-59.pkg` from
+GoldHEN Package Installer using source HDD (`/data/pkg`). Game downloads completed
+with 0.5.9 also go directly into that installer folder. Real PS4 testing is
+still required. See [update instructions](update/README.md).
+
 Content feed for CohenStore, separate from its PS4 application source.
 
 Live feed: https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/catalog/catalog.json
@@ -34,8 +40,8 @@ its cache on errors. The user can also enable checks every 15 minutes while the
 app is open. Older clients retain their own refresh settings.
 
 The allowlist includes PS4 Package Link, a developer-published PS4/Windows companion for managing and installing user-authorized PKGs over a local network. The English PS4 package is listed; its Polish counterpart shares the same app identity and is not duplicated in the catalog.\n\nThe workflow updates listings, not game binaries or the installed store app.
-The installed app still needs a new PKG for code/interface changes. The update
-manifest remains a scaffold; signed app updates are not implemented.
+The installed app still needs a new PKG for code/interface changes. Signed app updates are available through the Store Updates tab. See
+[update instructions](update/README.md) for the current installer test.
 
 ## Download link monitoring
 
