@@ -77,6 +77,25 @@ def probe(item,open_url=None,full=False):
         result['error']=str(error) if isinstance(error,ValueError) else type(error).__name__; result['ok']=False
     return result
 
+def classify_download_result(result):
+    """Status of the checked SOURCE only, not the whole game or PS4 compatibility."""
+    if result.get('ok'):
+        if result.get('full_transfer') == 'verified':
+            return 'Working', 'complete-file-hash-verified', False
+        return 'Unverified', 'header-only-or-skipped', False
+    error = str(result.get('error', ''))
+    match = re.fullmatch(r'HTTP (\d{3})', error)
+    status = int(match.group(1)) if match else None
+    if status in (404, 410):
+        return 'Unavailable', 'checked-source-not-found', False
+    if status in (401, 403, 407):
+        return 'Unverified', 'access-restricted', False
+    if status in (408, 425, 429) or (status is not None and 500 <= status <= 599):
+        return 'Unverified', 'temporary-source-failure', False
+    if error in ('URLError', 'TimeoutError', 'ConnectionError', 'ConnectionResetError', 'RemoteDisconnected', 'OSError'):
+        return 'Unverified', 'temporary-network-failure', False
+    return 'Unverified', 'invalid-response-or-integrity-failure', True
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--catalog',default='catalog/catalog.json')
@@ -85,16 +104,25 @@ def main():
     args=parser.parse_args(); catalog=json.loads(Path(args.catalog).read_text())
     with ThreadPoolExecutor(max_workers=2 if args.full else 4) as executor:
         results=list(executor.map(lambda item:probe(item,full=args.full),catalog['items']))
+    for result in results:
+        status,reason,blocking=classify_download_result(result)
+        result['source_status']=status
+        result['classification']=reason
+        result['blocking_check_error']=blocking
+    counts={name:sum(r['source_status']==name for r in results) for name in ('Working','Unverified','Unavailable')}
+    errors=[r for r in results if r['blocking_check_error']]
+    warnings=[r for r in results if not r['ok'] and not r['blocking_check_error']]
     report={'schema':1,'checked_at':datetime.now(timezone.utc).isoformat(),
-      'scope':'Header probes plus bounded full transfers with catalog SHA-256.' if args.full else 'Small header probes; no full-file integrity or console compatibility claim.',
+      'scope':'Checked first source URL only: range/header probe and optional bounded SHA-256 full verification; not PS4 compatibility.',
+      'summary':{'total':len(results),**counts,'blocking':len(errors),'warnings':len(warnings)},
       'results':results}
-    path=Path(args.report); path.parent.mkdir(parents=True,exist_ok=True)
-    temp=path.with_suffix('.tmp'); temp.write_text(json.dumps(report,indent=2)+'\n'); temp.replace(path)
-    failures=[r for r in results if not r['ok']]
+    path=Path(args.report);path.parent.mkdir(parents=True,exist_ok=True)
+    temp=path.with_suffix('.tmp');temp.write_text(json.dumps(report,indent=2)+'\n');temp.replace(path)
     if args.full: print('Complete files verified against catalog hashes: '+str(sum(r.get('full_transfer')=='verified' for r in results)))
-    print(f"Header checks passed: {len(results)-len(failures)}/{len(results)}. Console launch compatibility is not tested.")
-    for result in failures: print(result['title']+': '+result.get('error','check failed'))
-    return bool(failures)
+    print(f"Source checks: Working={counts['Working']}, Unverified={counts['Unverified']}, Unavailable={counts['Unavailable']}; blocking={len(errors)}, warnings={len(warnings)}.")
+    for result in results:
+        if not result['ok']: print(result['title']+': '+result.get('error','check failed')+' ['+result['classification']+']')
+    return bool(errors)
 
 if __name__=='__main__': raise SystemExit(main())
 
