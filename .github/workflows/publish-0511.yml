@@ -27,7 +27,10 @@ jobs:
           assert [p.name for p in parts]==[f'{i:03}.gzpart' for i in range(7)]
           old=Path('update/packages/CohenStore-0.5.10-INSTALLER-FIX.pkg').read_bytes()
           assert hashlib.sha256(old).hexdigest()=='fe9beadb5635bf68440954252b9769218ab21ff263628991a35273eb29d6f568'
-          delta=gzip.decompress(b''.join(p.read_bytes() for p in parts))
+          # The 003/004 split was captured with a five-byte inclusive range overlap.
+          overlaps=[0,0,0,5,0,0]
+          delta_stream=b''.join(p.read_bytes()[skip:] for p,skip in zip(parts,overlaps))
+          delta=gzip.decompress(delta_stream)
           assert len(delta)==len(old)==6619136
           data=bytes(a^b for a,b in zip(old,delta))
           manifest=json.loads((stage/'release.json').read_text())
