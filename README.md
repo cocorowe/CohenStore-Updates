@@ -1,15 +1,15 @@
 # CohenStore Updates
 
-**Current app update: 0.5.11, with Internet Archive support.** The user-selected
-catalog adds 101 public Archive entries. Every included link passed access,
-128-byte PKG header, CUSA identity, exact-size and byte-range checks. 42 failing
-CDN routes were replaced with checked public servers listed by Archive itself.
-These checks do not establish full-file integrity, PS4 installation or firmware
-compatibility. 763 private Archive entries and failing Akirabox links are excluded.
+**Current app update: 0.5.12.** A new executable and PS4 package version 1.12
+make this release newer than the installed 0.5.11/1.11 builds. Open Store Updates,
+press R3 then X. Close CohenStore at Update ready and install `CohenStore-512.pkg`
+from GoldHEN Package Installer using source HDD (`/data/pkg`). Reopen and refresh
+Games with R3. See [update instructions](update/README.md).
 
-From 0.5.10, open Store Updates, press R3 then X. Close CohenStore and install
-`CohenStore-61.pkg` through GoldHEN Package Installer, source HDD (`/data/pkg`).
-After upgrading, open Games and press R3 to refresh. See [update instructions](update/README.md).
+The live catalog contains 119 entries, including 101 public Archive games.
+Catalog header/range checks do not establish full transfer or console compatibility.
+The 0.5.12 application source and private update signing key are not uploaded
+with this release. Older source archives remain in repository history.
 
 ## Current listings
 
