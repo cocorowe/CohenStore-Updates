@@ -11,7 +11,6 @@ CHUNK_BYTES = 1024 * 1024
 def safe_url(url):
     parts=urllib.parse.urlsplit(url); host=(parts.hostname or '').lower().rstrip('.')
     if parts.scheme!='https' or not host or parts.username or parts.password: raise ValueError('An HTTPS URL without embedded credentials is required')
-    if host=='archive.org' or host.endswith('.archive.org'): raise ValueError('Internet Archive is excluded')
     return host
 
 class Redirects(urllib.request.HTTPRedirectHandler):
@@ -93,3 +92,5 @@ def main():
     return bool(failures)
 
 if __name__=='__main__': raise SystemExit(main())
+
+

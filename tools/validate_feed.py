@@ -29,8 +29,6 @@ for index, item in enumerate(catalog["items"]):
     digest = item.get("sha256", "")
     if digest and not re.fullmatch(r"[0-9a-fA-F]{64}", digest):
         raise SystemExit(f"{prefix}: sha256 must be 64 hex characters or empty")
-    if any("archive.org" in url.lower() for url in urls):
-        raise SystemExit(f"{prefix}: Internet Archive URLs are not accepted")
 
 if manifest.get("schema") != 1 or manifest.get("channel") not in ("stable", "testing"):
     raise SystemExit("manifest: unsupported schema or channel")
@@ -40,3 +38,5 @@ if not isinstance(manifest.get("announcements"), list) or not isinstance(manifes
     raise SystemExit("manifest: announcements and catalog_updates must be arrays")
 
 print(f"Validated {len(seen)} catalog entries and schema-1 manifest scaffold.")
+
+

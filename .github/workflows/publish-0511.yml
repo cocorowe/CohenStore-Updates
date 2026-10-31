@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'update/staging/0.5.11/**'
+      - '.github/workflows/publish-0511.yml'
 permissions:
   contents: write
 jobs:
@@ -27,9 +28,10 @@ jobs:
           assert [p.name for p in parts]==[f'{i:03}.gzpart' for i in range(7)]
           old=Path('update/packages/CohenStore-0.5.10-INSTALLER-FIX.pkg').read_bytes()
           assert hashlib.sha256(old).hexdigest()=='fe9beadb5635bf68440954252b9769218ab21ff263628991a35273eb29d6f568'
-          # The 003/004 split was captured with a five-byte inclusive range overlap.
-          overlaps=[0,0,0,5,0,0]
-          delta_stream=b''.join(p.read_bytes()[skip:] for p,skip in zip(parts,overlaps))
+          expected_parts={'000.gzpart': '301134b264ea9d728a3dbd7151c81cc8d70e0ec1eea3bddda5be1856c7fc49ec', '001.gzpart': '244098ad87b463b4c3a0b15cbe53d28220dbec344564982ff1faccb3626394cc', '002.gzpart': '21b4a4dea7bf8e2e48a12a3e0cd4373aed64845e692b739d90105809f82f7cf4', '003.gzpart': '3116d5db37d43eeae52ea93543e8a427ab79e2bd013e4c66850fad05783204fb', '004.gzpart': 'e2e72671ca75695ba2491bad04973ef5bcce6d1ac133b032286fba25cee3923c', '005.gzpart': '2d95966f6a8b4f684c9f53724f3b13514e0d8072664e230c1f252724cd6b5c74', '006.gzpart': '1cc1796dcef26e0f0fbd409983ff66f0afb6422a0da6b9faefeb76aba6595030'}
+          for part in parts:
+              assert hashlib.sha256(part.read_bytes()).hexdigest()==expected_parts[part.name], "Staging part hash mismatch: "+part.name
+          delta_stream=b''.join(part.read_bytes() for part in parts)
           try:
               delta=gzip.decompress(delta_stream)
           except Exception as exc:
@@ -69,3 +71,4 @@ jobs:
           git commit -m "Publish verified CohenStore 0.5.11 package and signed updater feed"
           git pull --rebase origin main
           git push origin HEAD:main
+
