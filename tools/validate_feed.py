@@ -39,4 +39,3 @@ if not isinstance(manifest.get("announcements"), list) or not isinstance(manifes
 
 print(f"Validated {len(seen)} catalog entries and schema-1 manifest scaffold.")
 
-

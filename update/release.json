@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":5,\"schema\":1,\"sha256\":\"fe9beadb5635bf68440954252b9769218ab21ff263628991a35273eb29d6f568\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.10-INSTALLER-FIX.pkg\",\"version\":\"0.5.10\",\"version_code\":60}",
-  "signature": "6a54b8f81f79c6d35f4f7c50075f1a0512aaf1c9e90c819768c9da00d9553f6ed59e995a8518ef1033c15f95807feffd2d2719be705183ef493d608592672905"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":6,\"schema\":1,\"sha256\":\"5e6f59d9a72c2b8f1c4b3f6a1a402105a44dfccca1f3863e84bff77e78a377fa\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.11-ARCHIVE-TEST.pkg\",\"version\":\"0.5.11\",\"version_code\":61}",
+  "signature": "0f6953b64fcda892b3676728afd1b4834b2670b7118c00c2ed97a4989a0c068002021caacc92876b778f3e338da4f693096dc5815b7b6f464997e4df81f5c50d"
 }

@@ -1,22 +1,29 @@
-# CohenStore 0.5.10 installer permissions fix
+# CohenStore 0.5.11 Archive support test
 
-0.5.9 incorrectly treated failure to chmod an existing /data/pkg as a download
-failure. A shared folder can permit writing without allowing CohenStore to
-change its mode. The new client preserves existing installer folder permissions
-and checks write access with a unique temporary file that is removed immediately.
-New folders created by CohenStore still receive 0755; verified PKGs receive 0644.
-Game downloads and Store Updates use the same folder check. Non-directory paths
-and genuinely unwritable directories are rejected without replacing their data.
+Internet Archive links and redirects are now accepted, following the user's
+updated source preference. HTTPS downgrade and credential-in-URL checks remain.
+The desktop and PS4 network adapters allow a 30-second connection setup and
+60-second stalled receive interval. Interrupted downloads retain their existing
+validated resume/retry flow; host authorization failures still stop promptly.
+Existing shared installer-folder permissions remain unchanged (0.5.10 repair).
 
-Install this PKG over the closed CohenStore 0.5.9 using GoldHEN Package Installer.
-An existing 0.5.9 updater can hit the same permission error while staging this
-repair, so one manual installation is required. Future updates use the fixed check.
-Then open CohenStore, select the failed download in the queue and press X to retry.
-Completed verified PKGs go directly into /data/pkg. Incomplete files and receipts
-remain under /data/CohenStore/downloads. GoldHEN installation remains manual.
+FPKGi JSON import preserves title IDs, game versions and regions, and percent-
+encodes reserved path characters. This source repeats the same firmware and
+release-date values for every entry; those values are not treated as verified
+compatibility. Missing publisher SHA-256 values remain unknown.
 
-Version 0.5.10 uses version code 60 and PS4 APP_VER 00.60, with the existing
-CHST00001 title/content IDs and update signing identity. The regression fixture
-reproduces the old error by denying chmod on an otherwise writable folder.
-The repair also checks that an unwritable destination is rejected before HTTP.
-Desktop and package validation do not establish success on a real PS4.
+Install 0.5.11 from Store Updates: R3, X, then close CohenStore and install
+/data/pkg/CohenStore-61.pkg in GoldHEN. From 0.5.10 this uses its repaired
+updater and does not require another USB transfer. Reopen and refresh Games
+with R3 to load the filtered live catalog. GoldHEN installation stays manual.
+
+Validation: 84 app tests pass. The native executable builds and its PKG passes
+package validation. A real full desktop transfer of Webbed completed at
+166,002,688 bytes, matched the Archive-listed MD5 and its catalog title ID,
+and produced SHA-256 62cea09319376f5e49f293cf451a40bd02a36cf86e35f3f80308fb0fe809ec68.
+This is not a publisher-authenticated digest or proof of PS4 installation.
+Other catalog checks cover public metadata and bounded file prefixes only.
+Private entries and failed HTTP checks are held out of the added catalog.
+
+
+Packaging note: the 003/004 compressed-part boundary contains a five-byte overlap, which the workflow removes. A separate internal corruption remains in 003.gzpart (decompression fails about 12 KiB into that chunk), so publication is intentionally blocked until the staged archive is replaced and its signed package hash verifies.

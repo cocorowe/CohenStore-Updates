@@ -37,4 +37,3 @@ class DownloadChecksTests(unittest.TestCase):
         r=m.probe(item,lambda *a,**k:responses.pop(0),full=True)
         self.assertFalse(r['ok']);self.assertIn('SHA-256 mismatch',r['error'])
 
-

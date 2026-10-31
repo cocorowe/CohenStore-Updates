@@ -1,4 +1,0 @@
-{
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":6,\"schema\":1,\"sha256\":\"5e6f59d9a72c2b8f1c4b3f6a1a402105a44dfccca1f3863e84bff77e78a377fa\",\"size_bytes\":6619136,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.11-ARCHIVE-TEST.pkg\",\"version\":\"0.5.11\",\"version_code\":61}",
-  "signature": "0f6953b64fcda892b3676728afd1b4834b2670b7118c00c2ed97a4989a0c068002021caacc92876b778f3e338da4f693096dc5815b7b6f464997e4df81f5c50d"
-}
