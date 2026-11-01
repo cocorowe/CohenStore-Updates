@@ -5057,6 +5057,162 @@
         "binary_rehosted": false
       },
       "release_version": "1.02"
+    },
+    {
+      "id": "github-publisher:jw-notes/JellyFin-PS4:v1.12:IV0000-JFPS40000_00-JELLYFINPS400000_pkg",
+      "title": "Jellyfin for PS4 v1.12",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "1.12",
+      "title_ids": [
+        "JFPS40000"
+      ],
+      "source_url": "https://github.com/jw-notes/JellyFin-PS4/releases/tag/v1.12",
+      "size_bytes": 33751040,
+      "sha256": "6a2ea510584614078885d692bfa5828702497f616a25b12979b14e48aed0f036",
+      "urls": [
+        "https://github.com/jw-notes/JellyFin-PS4/releases/download/v1.12/IV0000-JFPS40000_00-JELLYFINPS400000.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Open-source Jellyfin media player. Requires a Jellyfin server; PS4 launch and complete transfer not tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:LightningMods/PS4-Store:4.5:Store-R2_pkg",
+      "title": "PS4 Homebrew Store v4.5",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "4.5",
+      "title_ids": [],
+      "source_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "size_bytes": 24772608,
+      "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc",
+      "urls": [
+        "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Publisher-provided PS4 store package. Other files in this release are PS5-specific; this is the PS4-named package. PS4 launch not independently tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:alechurri/shipofharkinian-ps4:v0.2.0:IV0000-SOHP00001_00-SHIPOFHARKINIAN0_pkg",
+      "title": "Ship of Harkinian PS4 v0.2.0",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "0.2.0",
+      "title_ids": [
+        "SOHP00001"
+      ],
+      "source_url": "https://github.com/alechurri/shipofharkinian-ps4/releases/tag/v0.2.0",
+      "size_bytes": 46596096,
+      "sha256": "e7baa45b1cb55656c69ef0271d45e8bf1b80fb2f02e2fbb2b6f02466981253cf",
+      "urls": [
+        "https://github.com/alechurri/shipofharkinian-ps4/releases/download/v0.2.0/IV0000-SOHP00001_00-SHIPOFHARKINIAN0.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Experimental game engine/port. Requires user-provided legally obtained original game data; no ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:alechurri/2ship2harkinian-ps4:v0.1.0:IV0000-TSHP00001_00-TWOSHIPHARKINIAN_pkg",
+      "title": "2 Ship 2 Harkinian PS4 v0.1.0 (experimental)",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "0.1.0",
+      "title_ids": [
+        "TSHP00001"
+      ],
+      "source_url": "https://github.com/alechurri/2ship2harkinian-ps4/releases/tag/v0.1.0",
+      "size_bytes": 35717120,
+      "sha256": "da88ee2f7f0efc4688e7a045f2095353aeb899c0d8ead645bbf6fe28534ca6c3",
+      "urls": [
+        "https://github.com/alechurri/2ship2harkinian-ps4/releases/download/v0.1.0/IV0000-TSHP00001_00-TWOSHIPHARKINIAN.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Prerelease experimental port, requires your own legitimately obtained original game data. No ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:asp11edgr/XCloud4:v1.2.1-beta:XCloud4-1_2_1-beta-publico_pkg",
+      "title": "XCloud4 v1.2.1 beta",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "1.2.1-beta",
+      "title_ids": [],
+      "source_url": "https://github.com/asp11edgr/XCloud4/releases/tag/v1.2.1-beta",
+      "size_bytes": 16646144,
+      "sha256": "69456fe3e5349a5f9eca12b16e1d94a02b5f9e481ff65eff84329981295c0e33",
+      "urls": [
+        "https://github.com/asp11edgr/XCloud4/releases/download/v1.2.1-beta/XCloud4-1.2.1-beta-publico.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Unofficial PS4 Xbox Cloud Gaming client. Requires internet access and an eligible provider account; service and firmware compatibility untested. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:thcolin/gamepad-media-center-aggregator:v1.4.0:IV0001-GMCA00000_00-GMCA000000003000_pkg",
+      "title": "GMCA Media Center v1.4.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "1.4.0",
+      "title_ids": [
+        "GMCA00000"
+      ],
+      "source_url": "https://github.com/thcolin/gamepad-media-center-aggregator/releases/tag/v1.4.0",
+      "size_bytes": 62717952,
+      "sha256": "3e579fc595aeae1e7c9eedd3e942ebfbd187a864b5675f3e39d15b06c88e00d3",
+      "urls": [
+        "https://github.com/thcolin/gamepad-media-center-aggregator/releases/download/v1.4.0/IV0001-GMCA00000_00-GMCA000000003000.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Creator-published media aggregator (Jellyfin/Plex/etc.). Requires your own service credentials where applicable. Console launch not tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:iHaiDeeZ/G-Diffuser-PS4:Release:G-Diffuser-PS4-v01_20_pkg",
+      "title": "G-Diffuser PS4 v01.20",
+      "category": "games",
+      "format": "pkg",
+      "app_version": "Release",
+      "title_ids": [],
+      "source_url": "https://github.com/iHaiDeeZ/G-Diffuser-PS4/releases/tag/Release",
+      "size_bytes": 94044160,
+      "sha256": "94b18f45e24b8422d9b85bd06248c1901addb8742784cf290d6cdfb6393bd4de",
+      "urls": [
+        "https://github.com/iHaiDeeZ/G-Diffuser-PS4/releases/download/Release/G-Diffuser-PS4-v01.20.pkg"
+      ],
+      "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
+      "note": "Experimental game-data-dependent port; bring your own legally obtained required game files. Publisher license not declared in repo metadata. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:gen04177/rarch-ps4:rarch-v1.22.2-15:IV0000-BGEN00070_00-RARCH00000000000_pkg",
+      "title": "RetroArch PS4 Frontend v1.22.2-15",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "rarch-v1.22.2-15",
+      "title_ids": [
+        "BGEN00070"
+      ],
+      "source_url": "https://github.com/gen04177/rarch-ps4/releases/tag/rarch-v1.22.2-15",
+      "size_bytes": 21823488,
+      "sha256": "9a099b48e0c7f21618878b59cf7c1a310573b4a86c1847f42f0120a6977edf88",
+      "urls": [
+        "https://github.com/gen04177/rarch-ps4/releases/download/rarch-v1.22.2-15/IV0000-BGEN00070_00-RARCH00000000000.pkg"
+      ],
+      "compatibility": "Unverified: publisher GitHub asset size and hash available; file transfer and console installation not checked.",
+      "note": "Creator-published PS4 RetroArch package. Frontend and cores installer are distinct packages. User supplies permitted game files. Check free space and supported firmware before installing. No PS4 install test was performed."
+    },
+    {
+      "id": "github-publisher:gen04177/rarch-ps4:rarch-v1.22.2-15:IV0000-BGEN00071_00-RARCHCOREINST000_pkg",
+      "title": "RetroArch PS4 Core Installer v1.22.2-15",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "rarch-v1.22.2-15",
+      "title_ids": [
+        "BGEN00071"
+      ],
+      "source_url": "https://github.com/gen04177/rarch-ps4/releases/tag/rarch-v1.22.2-15",
+      "size_bytes": 535625728,
+      "sha256": "05265ca72e7c6c1d32448d7cf75b992331455f7799854b83a3e7a5f55d74e4b8",
+      "urls": [
+        "https://github.com/gen04177/rarch-ps4/releases/download/rarch-v1.22.2-15/IV0000-BGEN00071_00-RARCHCOREINST000.pkg"
+      ],
+      "compatibility": "Unverified: publisher GitHub asset size and hash available; file transfer and console installation not checked.",
+      "note": "Creator-published PS4 RetroArch package. Frontend and cores installer are distinct packages. User supplies permitted game files. Check free space and supported firmware before installing. No PS4 install test was performed."
     }
   ]
 }
