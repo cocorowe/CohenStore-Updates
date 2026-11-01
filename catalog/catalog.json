@@ -196,7 +196,7 @@
     },
     {
       "id": "archive:CUSA23827:01.58",
-      "title": "Call of Duty® Black Ops 6",
+      "title": "Call of Duty\u00ae Black Ops 6",
       "category": "games",
       "size_bytes": 44044189696,
       "sha256": "",
@@ -215,7 +215,7 @@
     },
     {
       "id": "archive:CUSA00018:01.21",
-      "title": "Call of Duty® Ghosts",
+      "title": "Call of Duty\u00ae Ghosts",
       "category": "games",
       "size_bytes": 45208698880,
       "sha256": "",
@@ -234,7 +234,7 @@
     },
     {
       "id": "archive:CUSA00803:01.24",
-      "title": "Call of Duty®: Advanced Warfare",
+      "title": "Call of Duty\u00ae: Advanced Warfare",
       "category": "games",
       "size_bytes": 66965143552,
       "sha256": "",
@@ -253,7 +253,7 @@
     },
     {
       "id": "archive:CUSA11100:01.26",
-      "title": "Call of Duty®: Black Ops 4",
+      "title": "Call of Duty\u00ae: Black Ops 4",
       "category": "games",
       "size_bytes": 105904996352,
       "sha256": "",
@@ -272,7 +272,7 @@
     },
     {
       "id": "archive:CUSA15010:01.41",
-      "title": "Call of Duty®: Black Ops Cold War",
+      "title": "Call of Duty\u00ae: Black Ops Cold War",
       "category": "games",
       "size_bytes": 156407693312,
       "sha256": "",
@@ -291,7 +291,7 @@
     },
     {
       "id": "archive:CUSA02290:01.33",
-      "title": "Call of Duty®: Black Ops III",
+      "title": "Call of Duty\u00ae: Black Ops III",
       "category": "games",
       "size_bytes": 102446333952,
       "sha256": "",
@@ -310,7 +310,7 @@
     },
     {
       "id": "archive:CUSA04762:01.25",
-      "title": "Call of Duty®: Infinite Warfare",
+      "title": "Call of Duty\u00ae: Infinite Warfare",
       "category": "games",
       "size_bytes": 92160131072,
       "sha256": "",
@@ -329,7 +329,7 @@
     },
     {
       "id": "archive:CUSA34029:01.08",
-      "title": "Call of Duty®: Modern Warfare II",
+      "title": "Call of Duty\u00ae: Modern Warfare II",
       "category": "games",
       "size_bytes": 59535523840,
       "sha256": "",
@@ -348,7 +348,7 @@
     },
     {
       "id": "archive:CUSA34083:01.33",
-      "title": "Call of Duty®: Modern Warfare III",
+      "title": "Call of Duty\u00ae: Modern Warfare III",
       "category": "games",
       "size_bytes": 65192722432,
       "sha256": "",
@@ -367,7 +367,7 @@
     },
     {
       "id": "archive:CUSA08829:01.67",
-      "title": "Call of Duty®: Modern Warfare®",
+      "title": "Call of Duty\u00ae: Modern Warfare\u00ae",
       "category": "games",
       "size_bytes": 149985886208,
       "sha256": "",
@@ -386,7 +386,7 @@
     },
     {
       "id": "archive:CUSA03522:01.00",
-      "title": "Call of Duty®: Modern Warfare® (2007)",
+      "title": "Call of Duty\u00ae: Modern Warfare\u00ae (2007)",
       "category": "games",
       "size_bytes": 38878969856,
       "sha256": "",
@@ -407,7 +407,7 @@
     },
     {
       "id": "archive:CUSA07904:01.00",
-      "title": "Call of Duty®: Modern Warfare® 2 (2009)",
+      "title": "Call of Duty\u00ae: Modern Warfare\u00ae 2 (2009)",
       "category": "games",
       "size_bytes": 46195736576,
       "sha256": "",
@@ -428,7 +428,7 @@
     },
     {
       "id": "archive:CUSA24041:01.26",
-      "title": "Call of Duty®: Vanguard",
+      "title": "Call of Duty\u00ae: Vanguard",
       "category": "games",
       "size_bytes": 64232161280,
       "sha256": "",
@@ -447,7 +447,7 @@
     },
     {
       "id": "archive:CUSA05969:01.25",
-      "title": "Call of Duty®: WWII",
+      "title": "Call of Duty\u00ae: WWII",
       "category": "games",
       "size_bytes": 96102711296,
       "sha256": "",
@@ -656,7 +656,7 @@
     },
     {
       "id": "archive:CUSA12286:01.01",
-      "title": "Chimparty™",
+      "title": "Chimparty\u2122",
       "category": "games",
       "size_bytes": 2623602688,
       "sha256": "",
@@ -751,7 +751,7 @@
     },
     {
       "id": "archive:CUSA32951:01.03",
-      "title": "Coffee Talk Episode 2: Hibiscus ＆ Butterfly",
+      "title": "Coffee Talk Episode 2: Hibiscus \uff06 Butterfly",
       "category": "games",
       "size_bytes": 447086592,
       "sha256": "",
@@ -888,7 +888,7 @@
     },
     {
       "id": "archive:CUSA19035:01.05",
-      "title": "Crash Bandicoot™ 4: It's About Time",
+      "title": "Crash Bandicoot\u2122 4: It's About Time",
       "category": "games",
       "size_bytes": 22707961856,
       "sha256": "",
@@ -909,7 +909,7 @@
     },
     {
       "id": "archive:CUSA13795:01.21",
-      "title": "Crash™ Team Racing Nitro-Fueled",
+      "title": "Crash\u2122 Team Racing Nitro-Fueled",
       "category": "games",
       "size_bytes": 21934243840,
       "sha256": "",
@@ -1042,7 +1042,7 @@
     },
     {
       "id": "archive:CUSA18672:01.01",
-      "title": "Crysis2®",
+      "title": "Crysis2\u00ae",
       "category": "games",
       "size_bytes": 15788343296,
       "sha256": "",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "archive:CUSA18673:01.01",
-      "title": "Crysis3®",
+      "title": "Crysis3\u00ae",
       "category": "games",
       "size_bytes": 8560246784,
       "sha256": "",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": "archive:CUSA18671:01.03",
-      "title": "Crysis®",
+      "title": "Crysis\u00ae",
       "category": "games",
       "size_bytes": 11297685504,
       "sha256": "",
@@ -1472,7 +1472,7 @@
     },
     {
       "id": "archive:CUSA03483:01.02",
-      "title": "JUST SING™",
+      "title": "JUST SING\u2122",
       "category": "games",
       "size_bytes": 484900864,
       "sha256": "",
@@ -1720,7 +1720,7 @@
     },
     {
       "id": "archive:CUSA13034:01.24",
-      "title": "Watch Dogs®: Legion",
+      "title": "Watch Dogs\u00ae: Legion",
       "category": "games",
       "size_bytes": 40924413952,
       "sha256": "",
@@ -1740,7 +1740,7 @@
     },
     {
       "id": "archive:CUSA04294:01.18",
-      "title": "WATCH_DOGS® 2",
+      "title": "WATCH_DOGS\u00ae 2",
       "category": "games",
       "size_bytes": 23090167808,
       "sha256": "",
@@ -1760,7 +1760,7 @@
     },
     {
       "id": "archive:CUSA00021:01.05",
-      "title": "WATCH_DOGS™",
+      "title": "WATCH_DOGS\u2122",
       "category": "games",
       "size_bytes": 17755209728,
       "sha256": "",
@@ -1880,7 +1880,7 @@
     },
     {
       "id": "archive:CUSA07671:01.07",
-      "title": "WIPEOUT™ OMEGA COLLECTION",
+      "title": "WIPEOUT\u2122 OMEGA COLLECTION",
       "category": "games",
       "size_bytes": 27253407744,
       "sha256": "",
@@ -1920,7 +1920,7 @@
     },
     {
       "id": "archive:CUSA07377:01.07",
-      "title": "Wolfenstein® II: The New Colossus™",
+      "title": "Wolfenstein\u00ae II: The New Colossus\u2122",
       "category": "games",
       "size_bytes": 63111102464,
       "sha256": "",
@@ -1940,7 +1940,7 @@
     },
     {
       "id": "archive:CUSA00320:01.01",
-      "title": "Wolfenstein®: The New Order",
+      "title": "Wolfenstein\u00ae: The New Order",
       "category": "games",
       "size_bytes": 44658524160,
       "sha256": "",
@@ -1960,7 +1960,7 @@
     },
     {
       "id": "archive:CUSA01540:01.00",
-      "title": "Wolfenstein®: The Old Blood",
+      "title": "Wolfenstein\u00ae: The Old Blood",
       "category": "games",
       "size_bytes": 37765840896,
       "sha256": "",
@@ -2000,7 +2000,7 @@
     },
     {
       "id": "archive:CUSA14059:01.00",
-      "title": "Wordhunters™",
+      "title": "Wordhunters\u2122",
       "category": "games",
       "size_bytes": 2306801664,
       "sha256": "",
@@ -2220,7 +2220,7 @@
     },
     {
       "id": "archive:CUSA10576:01.01",
-      "title": "ZONE OF THE ENDERS THE 2nd RUNNER : M∀RS",
+      "title": "ZONE OF THE ENDERS THE 2nd RUNNER : M\u2200RS",
       "category": "games",
       "size_bytes": 9771417600,
       "sha256": "",
@@ -2474,7 +2474,7 @@
     },
     {
       "id": "homebrew-pkgzone:NPXX33382:1.00",
-      "title": "File Manager for PS4™ v1.00",
+      "title": "File Manager for PS4\u2122 v1.00",
       "category": "apps",
       "format": "pkg",
       "app_version": "",
@@ -5220,6 +5220,21 @@
       ],
       "compatibility": "Unverified: publisher GitHub asset size and hash available; file transfer and console installation not checked.",
       "note": "Creator-published PS4 RetroArch package. Frontend and cores installer are distinct packages. User supplies permitted game files. Check free space and supported firmware before installing. No PS4 install test was performed."
+    },
+    {
+      "id": "ChiricoG/OneFamily/698054231",
+      "title": "OneFamily Companion v1.2.0",
+      "category": "apps",
+      "format": "pkg",
+      "app_version": "1.2.0",
+      "title_ids": [],
+      "source_url": "https://github.com/ChiricoG/OneFamily/releases/tag/v1.2.0",
+      "size_bytes": 8585216,
+      "sha256": "dce5b52b147b761a01e354d1ba321ebfd3d29f804f9626c9b5f6212668931ba6",
+      "urls": [
+        "https://github.com/ChiricoG/OneFamily/releases/download/v1.2.0/onefamily_companion.pkg"
+      ],
+      "note": "Developer-published homebrew. Publisher SHA-256 supplied. Full transfer and firmware 13.52 launch have not been tested."
     }
   ]
 }
