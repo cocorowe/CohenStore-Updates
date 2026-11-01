@@ -1,47 +1,36 @@
-# CohenStore 0.5.16
+# CohenStore 0.5.17 TEST
 
-## Proposed direct-download expansion
+Native PS4 testing-channel update, version code 517, APP_VER 01.17, signed updater revision 12. Title ID CHST00001 and the existing signing identity are unchanged. Published with the owner's explicit approval. **Physical PS4 testing of 0.5.17 is pending.**
 
-This development branch adds 75 checked direct homebrew PKG entries. Read [the catalog proposal and PS4 steps](reports/direct-downloads-20261031.md) and [per-file evidence](reports/direct-download-audit-20261031.json). The 0.5.16 installer and signed updater remain unchanged. The counts below describe the original0.5.16 release snapshot; the linked audit records the proposed catalog totals.
+[Download CohenStore 0.5.17 TEST PKG](update/packages/CohenStore-0.5.17-TEST.pkg)
 
-Native PS4 store update: version code 516, APP_VER 01.16, signed feed revision 11. Title ID CHST00001 and the installed updater signing identity are retained.
+## Update from CohenStore 0.5.16
 
-## Install
+Open Store Updates, press R3, then X. Wait for Update ready, close CohenStore, and install CohenStore-517.pkg from GoldHEN Package Installer using HDD /data/pkg. Reopen and confirm 0.5.17. The app does not install itself automatically. Keep a backup of /data/CohenStore and the known working 0.5.16 installer. Do not uninstall the store first.
 
-Open Store Updates, press R3, then X. Wait for Update ready, close CohenStore, and install CohenStore-516.pkg using GoldHEN Package Installer from HDD (/data/pkg). Reopen and confirm 0.5.16, then press R3 in a browsing tab to load the expanded catalogs. Your existing /data/FPKGi files and download queue are preserved.
+## Changes
 
-## Browse and download
+- Startup restores saved source indexes offline. Corrupt or missing caches use bundled fallback without erasing the original.
+- L2 outside Mod Menus cycles Direct files / All listings / Grouped titles. Grouping uses exact linked_source_id matching; original sources remain available in All listings.
+- Refresh preserves omitted record IDs, provenance and known newer local package versions. Settings changes preserve unknown fields. Corrupt queues and settings remain available for recovery.
+- Package title/content identity checks when metadata supplies them, cached-package rechecks, occupied/zero-byte destination preservation and safe updater staging remain included.
+- Settings: Quick-start downloads defaults ON. OFF requires X confirmation or Circle cancel. Browsing never starts downloads.
+- In-app download notifications default ON and are independently toggleable. Queue progress and local rolling history are retained. These are not native OS notifications or proof of installation.
+- Interface style offers Mint (default) / Console. Choose the style then Apply interface style. Both use the same catalog, downloads, favorites, search, L2 views and settings. Preferences are per installation, not per PS4 user. The Console layout is an early original four-tile design; advanced media caching/details remain future work.
+- Auto-install is visibly unavailable and stays OFF. Verified PKGs retain the normal /data/pkg manual-install path.
 
-- L1/R1 changes category. Triangle searches names, CUSA, versions and creators.
-- Outside Mod Menus, L2 switches Direct files / All listings. R2 jumps ahead 40 rows. Holding D-pad repeats navigation.
-- Mod Menus retains L2 type filters and R2 version filters. Touchpad opens full setup/source details in all browsing categories.
-- X downloads direct files. Source-page records show their original URL and cannot enter the download queue. Those pages may require separate manual steps, accounts or payment.
-- Square opens the queue. Select an entry and use R2 to cancel/remove it. Circle pauses; X retries supported failed/paused entries.
+## Catalogs and controls
 
-## What is included
+All published catalog files remain unchanged. The package bundles the current 207 direct base entries and both full source indexes: 12,205 + 18,046 records. Combined feeds contain 32,901 records, including 2,638 direct-file records and 30,263 source references. These are not unique games or verified playable downloads. Creator/source listings, regions, versions, mods, patches and custom /data/FPKGi files are preserved. The Updates category includes XML gameplay patches, which are distinct from retail/FPKG update installers.
 
-The combined feeds contain 32,817 records, including game variants and metadata/source pages. They are not 32,817 unique games or working PKGs. There are 2,554 direct-file records and 30,263 source references across the categories. The existing direct base catalog has 123 entries.
-
-Mod Menus contains 2,049 records: 1,929 cheat variants, 89 patch variants, 16 menu entries, 10 legacy payload builds, one plugin bundle and four tools/source records. Seven of the 16 menu entries have creator release files; nine link to creator sources. New files include Silent Virtues for RDR1 and Atian's BO4 script. RAR/GSCC/BIN/BZ2 downloads require the creator's matching manual setup; downloading does not inject or execute them. No newly verified GTA V 1.56 native menu was found. Existing Lotus builds retain their actual supported versions.
-
-The Updates category now includes 386 CUSA-specific XML game-patch variants from the maintained PS-Game-Patch project. These are optional patch data, not retail game-update PKGs. Select the exact CUSA/version. Touchpad in Details can copy a downloaded patch to /data/GoldHEN/patches/xml, with backups and identity checks. PS4 Cheats Manager/game_patch handles activation; patches are not enabled automatically.
-
-New creator packages include Crema, Dolphin, HENkaku, M33, Resonance, Payload Guest and Shattered Pixel Dungeon; PS4Vibe is supplied by its public homebrew host. Other app, homebrew and emulator pages are labeled as sources. DLC has five source records and no new verified direct package.
-
-The Ephellon, huggingfacer, Pegasus and previously supplied catalogs are represented according to their content. Hosting pages and store purchase links are kept distinct from download files. Custom FPKGi JSONs remain supported. Only four visible cards are copied per frame, with cached filtering, so the expanded index is not scanned/copied every frame.
-
-## Download checks
-
-112 backup Archive URLs were added without removing existing listings. All 204 examined mirror endpoints passed a 128-byte PKG header, content ID, exact-size and HTTP-range probe. A passing probe is not a complete transfer test or a speed guarantee; hosts can change or become unavailable.
-
-Creator mod files have pinned sizes and SHA-256 hashes. Source-cheat and patch data was checked against captured Git trees. The real app downloader completed the Silent Virtues RAR, ArabicGuy compressed payload and an AER XML patch with matching hashes. New homebrew packages passed header/identity/size checks; their complete installation and execution were not tested.
+L1/R1 categories, Triangle search, Touchpad details/setup, Square queue, Circle pause, R2 cancel/remove in queue, X resume/retry, L3 favorite and R3 refresh are retained. Mod Menus retains its L2 type and R2 version filters. Source-only records cannot be queued. Game/mod compatibility must match the actual target version and CUSA.
 
 ## Validation and limits
 
-124 app tests and 18 repository tests passed. Tests cover large cached indexes, source-only queue rejection, mod data formats, patch backup/CUSA checks and existing cancel/retry/update behavior. Native compilation and PKG digest/signature validation passed. New browsing performance, mod setup and patch behavior still need testing on a real PS4. Launch-time official game update blocking remains deferred.
+152 application/native-simulation tests passed. OpenOrbis 0.5.4 / LLVM18 native compilation and PKG validation passed. The actual package's embedded SFO is APP_VER 01.17 with the original title/content identity. PKG size: 17,956,864 bytes. SHA256: cb0ae0ed7a3bc6f229df91914cb4826197820a82c9cd06e04de82387f80e1c23.
 
-## Private source and rebuild
+The standard Mint library screen matched the original desktop rendering pixel-for-pixel. A desktop benchmark loaded all 32,901 records, but host timings are not PS4 performance measurements. Firmware and GoldHEN versions for the owner's console remain unknown. Real startup, offline restore, L2 modes, queue/download behavior and optional layout/notification controls still require PS4 testing. Automatic installation and native system notifications are unfinished. No game, save, plugin configuration or console dependency is changed by publication.
 
-The matching source ZIP is provided privately with every release. The public repository contains the compiled installer, signed feed, catalogs and validation tooling. Never publish the updater signing key. Upstream menus and tools remain attributed to their creators; a file hash verifies transfer integrity and does not prove game compatibility.
+Matching source, logs, checksums and recovery instructions are supplied privately. Private signing keys and source ZIPs are not added to this release. Historical public sources belong to older versions.
 
-Build the desktop client with make and run make test. For PS4, use tools/build_ps4.py with OpenOrbis PS4 Toolchain 0.5.4 and LLVM 18. Set OO_PS4_TOOLCHAIN and LLVM_BIN to the installed paths; add the packaging tool's OpenSSL 1.1 compatibility libraries to LD_LIBRARY_PATH if needed. See catalog/expansion-audit.json, catalog/mod-sources.json and tools/build_catalog_expansion.py for input and validation records. The generator's --inputs directory contains external research snapshots; the generated catalogs and app build sources are included in the ZIP.
+[Known 0.5.16 rollback installer](update/packages/CohenStore-0.5.16-CATALOG-EXPANSION.pkg). Preserve settings and user files. If GoldHEN refuses a downgrade, stop without uninstalling or deleting data. See [release validation](reports/release-0517.json).
