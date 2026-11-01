@@ -25,7 +25,9 @@
       "publisher_size_bytes": 33751040,
       "release_prerelease": false,
       "matched_library_source_title": "JellyFin-PS4",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:apps:cf7211a60c2cb24a84702e73",
+      "existing_source_page_url": "https://github.com/jw-notes/JellyFin-PS4"
     },
     {
       "id": "github-publisher:LightningMods/PS4-Store:4.5:Store-R2_pkg",
@@ -37,7 +39,9 @@
       "publisher_size_bytes": 24772608,
       "release_prerelease": false,
       "matched_library_source_title": "PS4 Homebrew Store",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:apps:e7d20bd130742364039620f9",
+      "existing_source_page_url": "https://github.com/LightningMods/PS4-Store"
     },
     {
       "id": "github-publisher:alechurri/shipofharkinian-ps4:v0.2.0:IV0000-SOHP00001_00-SHIPOFHARKINIAN0_pkg",
@@ -49,7 +53,9 @@
       "publisher_size_bytes": 46596096,
       "release_prerelease": false,
       "matched_library_source_title": "Ship of Harkinian",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:games:5bc783ed5a8a5441de8478e7",
+      "existing_source_page_url": "https://github.com/alechurri/shipofharkinian-ps4"
     },
     {
       "id": "github-publisher:alechurri/2ship2harkinian-ps4:v0.1.0:IV0000-TSHP00001_00-TWOSHIPHARKINIAN_pkg",
@@ -61,7 +67,9 @@
       "publisher_size_bytes": 35717120,
       "release_prerelease": true,
       "matched_library_source_title": "2 Ship 2 Harkinian",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:games:fb5d5fedeb571d475d778e87",
+      "existing_source_page_url": "https://github.com/alechurri/2ship2harkinian-ps4"
     },
     {
       "id": "github-publisher:asp11edgr/XCloud4:v1.2.1-beta:XCloud4-1_2_1-beta-publico_pkg",
@@ -73,7 +81,9 @@
       "publisher_size_bytes": 16646144,
       "release_prerelease": false,
       "matched_library_source_title": "XCloud4",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:apps:2d7f76d244abd0e67e55c371",
+      "existing_source_page_url": "https://github.com/asp11edgr/XCloud4"
     },
     {
       "id": "github-publisher:thcolin/gamepad-media-center-aggregator:v1.4.0:IV0001-GMCA00000_00-GMCA000000003000_pkg",
@@ -85,7 +95,9 @@
       "publisher_size_bytes": 62717952,
       "release_prerelease": false,
       "matched_library_source_title": "GMCA",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:apps:acfe892d70377900895b2647",
+      "existing_source_page_url": "https://github.com/thcolin/gamepad-media-center-aggregator"
     },
     {
       "id": "github-publisher:iHaiDeeZ/G-Diffuser-PS4:Release:G-Diffuser-PS4-v01_20_pkg",
@@ -97,7 +109,10 @@
       "publisher_size_bytes": 94044160,
       "release_prerelease": false,
       "matched_library_source_title": "G-Diffuser",
-      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked."
+      "verification_scope": "Publisher release asset metadata only; download, PS4 PKG headers, full digest and installation NOT independently checked.",
+      "existing_source_page_id": "source:games:1083663040bb873cfc9638fb",
+      "existing_source_page_url": "https://github.com/iHaiDeeZ/G-Diffuser-PS4"
     }
-  ]
+  ],
+  "linkage_note": "Matching original library-links IDs is evidence for a future grouped game/info page. Current CohenStore 0.5.16 still displays these as separate direct and source cards; this report does not modify original source pages."
 }
