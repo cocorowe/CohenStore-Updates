@@ -11,8 +11,8 @@ class DirectGapfillTests(unittest.TestCase):
         cls.catalog=json.loads((ROOT/'catalog/catalog.json').read_text())['items']
         cls.new=[x for x in cls.catalog if x['id'].startswith(NEW_PREFIX)]
     def test_keeps_prior_198_entries_and_appends_only(self):
-        self.assertGreaterEqual(len(self.catalog),205)
-        self.assertGreaterEqual(len(self.new),7)
+        self.assertGreaterEqual(len(self.catalog),207)
+        self.assertGreaterEqual(len(self.new),9)
         self.assertEqual(len({x['id'] for x in self.catalog}),len(self.catalog))
         self.assertTrue(all(not x['id'].startswith(NEW_PREFIX) for x in self.catalog[:198]))
         self.assertTrue(all(row in self.catalog for row in self.new))
@@ -37,7 +37,7 @@ class DirectGapfillTests(unittest.TestCase):
     def test_provenance_report_lists_each_direct_package(self):
         report=json.loads((ROOT/'reports/direct-source-gapfill-20261031.json').read_text())
         self.assertEqual(report['baseline_catalog_records'],198)
-        self.assertEqual(report['proposed_base_records'],205)
-        self.assertEqual(len(report['entries']),7)
+        self.assertEqual(report['proposed_base_records'],207)
+        self.assertEqual(len(report['entries']),9)
         self.assertTrue({x['id'] for x in report['entries']}.issubset({x['id'] for x in self.new}))
 if __name__=='__main__':unittest.main()
