@@ -5177,6 +5177,42 @@
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
       "note": "Experimental game-data-dependent port; bring your own legally obtained required game files. Publisher license not declared in repo metadata. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+    },
+    {
+      "id": "github-publisher:gen04177/rarch-ps4:rarch-v1.22.2-15:IV0000-BGEN00070_00-RARCH00000000000_pkg",
+      "title": "RetroArch PS4 Frontend v1.22.2-15",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "rarch-v1.22.2-15",
+      "title_ids": [
+        "BGEN00070"
+      ],
+      "source_url": "https://github.com/gen04177/rarch-ps4/releases/tag/rarch-v1.22.2-15",
+      "size_bytes": 21823488,
+      "sha256": "9a099b48e0c7f21618878b59cf7c1a310573b4a86c1847f42f0120a6977edf88",
+      "urls": [
+        "https://github.com/gen04177/rarch-ps4/releases/download/rarch-v1.22.2-15/IV0000-BGEN00070_00-RARCH00000000000.pkg"
+      ],
+      "compatibility": "Unverified: publisher GitHub asset size and hash available; file transfer and console installation not checked.",
+      "note": "Creator-published PS4 RetroArch package. Frontend and cores installer are distinct packages. User supplies permitted game files. Check free space and supported firmware before installing. No PS4 install test was performed."
+    },
+    {
+      "id": "github-publisher:gen04177/rarch-ps4:rarch-v1.22.2-15:IV0000-BGEN00071_00-RARCHCOREINST000_pkg",
+      "title": "RetroArch PS4 Core Installer v1.22.2-15",
+      "category": "emulators",
+      "format": "pkg",
+      "app_version": "rarch-v1.22.2-15",
+      "title_ids": [
+        "BGEN00071"
+      ],
+      "source_url": "https://github.com/gen04177/rarch-ps4/releases/tag/rarch-v1.22.2-15",
+      "size_bytes": 535625728,
+      "sha256": "05265ca72e7c6c1d32448d7cf75b992331455f7799854b83a3e7a5f55d74e4b8",
+      "urls": [
+        "https://github.com/gen04177/rarch-ps4/releases/download/rarch-v1.22.2-15/IV0000-BGEN00071_00-RARCHCOREINST000.pkg"
+      ],
+      "compatibility": "Unverified: publisher GitHub asset size and hash available; file transfer and console installation not checked.",
+      "note": "Creator-published PS4 RetroArch package. Frontend and cores installer are distinct packages. User supplies permitted game files. Check free space and supported firmware before installing. No PS4 install test was performed."
     }
   ]
 }
