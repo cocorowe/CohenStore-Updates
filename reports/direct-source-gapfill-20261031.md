@@ -1,6 +1,6 @@
 # Direct source-page gapfill, October 31, 2026
 
-This **additive catalog-only** branch proposes 7 publisher-released PS4 PKG links and preserves the prior 198 entries in original order. New direct catalog total: **205**. Existing 30k+ source entries, mod catalogs, queue, user data, signed updater, PKG, and native PS4 app code are untouched.
+This **additive catalog-only** branch proposes 9 publisher-released PS4 PKG links and preserves the prior 198 entries in original order. New direct catalog total: **207**. Existing 30k+ source entries, mod catalogs, queue, user data, signed updater, PKG, and native PS4 app code are untouched.
 
 ## New source-matched titles
 - Jellyfin for PS4 v1.12 — jw-notes/JellyFin-PS4, IV0000-JFPS40000_00-JELLYFINPS400000.pkg. Publisher digest and asset size recorded; **Unverified** for actual transfer and PS4 installation.
@@ -10,6 +10,9 @@ This **additive catalog-only** branch proposes 7 publisher-released PS4 PKG link
 - XCloud4 v1.2.1 beta — asp11edgr/XCloud4, XCloud4-1.2.1-beta-publico.pkg. Publisher digest and asset size recorded; **Unverified** for actual transfer and PS4 installation.
 - GMCA Media Center v1.4.0 — thcolin/gamepad-media-center-aggregator, IV0001-GMCA00000_00-GMCA000000003000.pkg. Publisher digest and asset size recorded; **Unverified** for actual transfer and PS4 installation.
 - G-Diffuser PS4 v01.20 — iHaiDeeZ/G-Diffuser-PS4, G-Diffuser-PS4-v01.20.pkg. Publisher digest and asset size recorded; **Unverified** for actual transfer and PS4 installation.
+
+### RetroArch publisher packages
+- RetroArch PS4 Frontend v1.22.2-15 and the separate RetroArch PS4 Core Installer v1.22.2-15 were discovered in the developer's release assets. Both remain Unverified pending independent package and console checks. These were not already in the direct base catalog. The pFBN/pGBA/pGEN/pNES/pSNES packages were **already present**, so they were deliberately not duplicated.
 
 ## Important
 - These additions appear as separate direct-file cards in their category after refreshing the base feed. 0.5.16 **does not automatically merge each corresponding source-page card with its new direct-download card**. That requires a separately reviewed native client change.
