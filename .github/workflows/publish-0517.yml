@@ -1,0 +1,38 @@
+name: Publish CohenStore 0.5.17 TEST
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.17/**'
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-package-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install signature verification dependency
+        run: python -m pip install cryptography==46.0.3
+      - name: Verify and stage the owner-approved testing release
+        run: python3 update/staging/0.5.17/publish.py
+      - name: Validate catalogs and repository tests
+        run: |
+          python3 tools/validate_feed.py
+          python3 -m unittest discover -s tests -v
+      - name: Publish package and signed updater atomically
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.17-TEST.pkg update/release.json update/manifest.json update/README.md README.md reports/release-0517.json
+          git rm -r update/staging/0.5.17
+          git commit -m "Publish owner-approved CohenStore 0.5.17 TEST and signed revision 12"
+          git pull --rebase origin main
+          python3 -c 'import json,subprocess; p=json.loads(json.loads(subprocess.check_output(["git","show","origin/main:update/release.json"]))["signed_payload"]); assert (p["version_code"],p["revision"],p["sha256"])==(516,11,"22d9d9013c6afeb8011292fbf65ee09df1172a45bb1270375ae54cca3c5d645b"), "Remote release changed; publication stopped"'
+          git push origin HEAD:main

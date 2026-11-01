@@ -1,0 +1,63 @@
+{
+  "build": "CohenStore-0.5.17-EXPERIENCE-DEV",
+  "tests": {
+    "count": 152,
+    "status": "PASS"
+  },
+  "native_build": "PASS",
+  "pkg_validate": "all emitted checks PASS",
+  "metadata_from_actual_pkg": {
+    "APP_VER": "01.17",
+    "CONTENT_ID": "IV0000-CHST00001_00-COHENSTORE000000",
+    "TITLE_ID": "CHST00001"
+  },
+  "package": {
+    "name": "CohenStore-0.5.17-TEST.pkg",
+    "bytes": 17956864,
+    "sha256": "cb0ae0ed7a3bc6f229df91914cb4826197820a82c9cd06e04de82387f80e1c23"
+  },
+  "bundled_catalogs": {
+    "catalog.json": {
+      "entries": 207,
+      "sha256": "5fc0b7b78146b9176ef4631106778a58f5d4d7b098e1257f905f27055bf07ebb"
+    },
+    "library-store.json": {
+      "entries": 12205,
+      "sha256": "fe6f2c0dd12e302f3b6ed3ea8f94326ef3709d84ae29a102d415493c530a29c5"
+    },
+    "library-links.json": {
+      "entries": 18046,
+      "sha256": "6da99409feb9b96368bc58d54e4fbd1bfd44ef14a374adb9374e954e724e3c57"
+    }
+  },
+  "original_catalog_files": "13/13 byte-for-byte unchanged from attachment",
+  "live_repo_commit": "fb3f907e5177dfb8f8ff0d2ce251998992e93381",
+  "console_tested": false,
+  "firmware": "unknown",
+  "goldhen_version": "unknown",
+  "performance": {
+    "all_records": 32901,
+    "console_30_frames_ms": 60,
+    "direct_records": 2638,
+    "doom_search_matches": 71,
+    "filter_pair_search_ms": 37,
+    "grouped_records": 32894,
+    "host_peak_rss_kib": 113084,
+    "mint_30_frames_ms": 87,
+    "parse_merge_ms": 381,
+    "records": 32901,
+    "scope": "Desktop host benchmark, not PS4 timing; cached four-card rendering and same combined dataset"
+  },
+  "source": {
+    "name": "CohenStore-0.5.17-EXPERIENCE-DEV-PRIVATE-SOURCE.zip",
+    "bytes": 2491381,
+    "sha256": "a738cd1cbcdfd7a5eab531a4599daf169262c9aaa66020269fcdb057a12a9620"
+  },
+  "publication": {
+    "approved_by_owner": true,
+    "release_version": "0.5.17",
+    "revision": 12,
+    "channel": "testing",
+    "console_tested": false
+  }
+}
