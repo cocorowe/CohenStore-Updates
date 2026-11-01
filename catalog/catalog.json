@@ -5074,7 +5074,8 @@
         "https://github.com/jw-notes/JellyFin-PS4/releases/download/v1.12/IV0000-JFPS40000_00-JELLYFINPS400000.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Open-source Jellyfin media player. Requires a Jellyfin server; PS4 launch and complete transfer not tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Open-source Jellyfin media player. Requires a Jellyfin server; PS4 launch and complete transfer not tested. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:apps:cf7211a60c2cb24a84702e73"
     },
     {
       "id": "github-publisher:LightningMods/PS4-Store:4.5:Store-R2_pkg",
@@ -5090,7 +5091,8 @@
         "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Publisher-provided PS4 store package. Other files in this release are PS5-specific; this is the PS4-named package. PS4 launch not independently tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Publisher-provided PS4 store package. Other files in this release are PS5-specific; this is the PS4-named package. PS4 launch not independently tested. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:apps:e7d20bd130742364039620f9"
     },
     {
       "id": "github-publisher:alechurri/shipofharkinian-ps4:v0.2.0:IV0000-SOHP00001_00-SHIPOFHARKINIAN0_pkg",
@@ -5108,7 +5110,8 @@
         "https://github.com/alechurri/shipofharkinian-ps4/releases/download/v0.2.0/IV0000-SOHP00001_00-SHIPOFHARKINIAN0.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Experimental game engine/port. Requires user-provided legally obtained original game data; no ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Experimental game engine/port. Requires user-provided legally obtained original game data; no ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:games:5bc783ed5a8a5441de8478e7"
     },
     {
       "id": "github-publisher:alechurri/2ship2harkinian-ps4:v0.1.0:IV0000-TSHP00001_00-TWOSHIPHARKINIAN_pkg",
@@ -5126,7 +5129,8 @@
         "https://github.com/alechurri/2ship2harkinian-ps4/releases/download/v0.1.0/IV0000-TSHP00001_00-TWOSHIPHARKINIAN.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Prerelease experimental port, requires your own legitimately obtained original game data. No ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Prerelease experimental port, requires your own legitimately obtained original game data. No ROM included. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:games:fb5d5fedeb571d475d778e87"
     },
     {
       "id": "github-publisher:asp11edgr/XCloud4:v1.2.1-beta:XCloud4-1_2_1-beta-publico_pkg",
@@ -5142,7 +5146,8 @@
         "https://github.com/asp11edgr/XCloud4/releases/download/v1.2.1-beta/XCloud4-1.2.1-beta-publico.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Unofficial PS4 Xbox Cloud Gaming client. Requires internet access and an eligible provider account; service and firmware compatibility untested. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Unofficial PS4 Xbox Cloud Gaming client. Requires internet access and an eligible provider account; service and firmware compatibility untested. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:apps:2d7f76d244abd0e67e55c371"
     },
     {
       "id": "github-publisher:thcolin/gamepad-media-center-aggregator:v1.4.0:IV0001-GMCA00000_00-GMCA000000003000_pkg",
@@ -5160,7 +5165,8 @@
         "https://github.com/thcolin/gamepad-media-center-aggregator/releases/download/v1.4.0/IV0001-GMCA00000_00-GMCA000000003000.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Creator-published media aggregator (Jellyfin/Plex/etc.). Requires your own service credentials where applicable. Console launch not tested. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Creator-published media aggregator (Jellyfin/Plex/etc.). Requires your own service credentials where applicable. Console launch not tested. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:apps:acfe892d70377900895b2647"
     },
     {
       "id": "github-publisher:iHaiDeeZ/G-Diffuser-PS4:Release:G-Diffuser-PS4-v01_20_pkg",
@@ -5176,7 +5182,8 @@
         "https://github.com/iHaiDeeZ/G-Diffuser-PS4/releases/download/Release/G-Diffuser-PS4-v01.20.pkg"
       ],
       "compatibility": "Unverified: publisher asset metadata confirmed; byte-range PKG header and PS4 installation not checked.",
-      "note": "Experimental game-data-dependent port; bring your own legally obtained required game files. Publisher license not declared in repo metadata. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored."
+      "note": "Experimental game-data-dependent port; bring your own legally obtained required game files. Publisher license not declared in repo metadata. Console test pending. Direct source is the publisher's GitHub release; no binary is mirrored.",
+      "linked_source_id": "source:games:1083663040bb873cfc9638fb"
     },
     {
       "id": "github-publisher:gen04177/rarch-ps4:rarch-v1.22.2-15:IV0000-BGEN00070_00-RARCH00000000000_pkg",
