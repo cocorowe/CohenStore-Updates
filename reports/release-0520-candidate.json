@@ -1,0 +1,17 @@
+{
+  "status": "pending_signature_and_pkg_hosting",
+  "version": "0.5.20",
+  "version_code": 520,
+  "revision": 13,
+  "channel": "testing",
+  "package": "CohenStore-0.5.20-DEV-TEST.pkg",
+  "size_bytes": 45154304,
+  "sha256": "f0b3e9fa550ee37cd896b6e44934ef09cb308e584932607d5a2d74a3f0692cf9",
+  "title_id": "CHST00001",
+  "content_id": "IV0000-CHST00001_00-COHENSTORE000000",
+  "package_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.20-DEV-TEST.pkg",
+  "signed_release_available": false,
+  "package_hosted": false,
+  "physical_ps4_tested": false,
+  "ai_functionality": "local mod project planner only"
+}
