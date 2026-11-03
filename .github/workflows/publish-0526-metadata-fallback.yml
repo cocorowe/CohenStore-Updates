@@ -1,0 +1,48 @@
+name: Publish CohenStore 0.5.26 signed test update
+on:
+  push:
+    branches: [main]
+    paths: ['update/staging/0.5.26/import-request.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-package-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install verification dependencies
+        run: python3 -m pip install cryptography==46.0.3 gdown==5.2.0
+      - name: Download exact verified package
+        run: |
+          python3 -m gdown --id 1XixUw1zUsSQvXEeiUeZTij-tmRRnaYpe -O /tmp/cohenstore-0526-verified.pkg
+          echo '22a8312c8f4df87c11ddb83181a8c1c2202847987366507ec9889c236184c3be  /tmp/cohenstore-0526-verified.pkg' | sha256sum -c -
+          test "$(stat -c %s /tmp/cohenstore-0526-verified.pkg)" -eq 46006272
+      - name: Validate signed release and catalogs
+        run: |
+          python3 tools/publish_0526_metadata_fallback.py
+          python3 tools/validate_feed.py
+      - name: Publish only verified update and rollback metadata
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add update/packages/CohenStore-0.5.26-Metadata-Fallback-TEST.pkg update/recovery/release.json update/recovery/manifest.json update/recovery/history/0.5.25-release.json update/recovery/history/0.5.25-manifest.json
+          git commit -m 'Publish signed CohenStore 0.5.26 testing recovery update'
+          git fetch origin main
+          python3 - <<'PY'
+          import json, subprocess
+          def remote(path):
+              return json.loads(subprocess.check_output(['git','show','origin/main:'+path]))
+          legacy=json.loads(remote('update/release.json')['signed_payload'])
+          recovery=json.loads(remote('update/recovery/release.json')['signed_payload'])
+          assert (legacy['version_code'], legacy['revision']) == (517,12)
+          assert (recovery['version_code'], recovery['revision']) == (525,15)
+          PY
+          git push origin HEAD:main
