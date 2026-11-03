@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":17,\"schema\":1,\"sha256\":\"1fd0b0712c56a1c084aed9f3c060efdbde6d8ee052bcb7d6193c5f9e13b76e2c\",\"size_bytes\":46006272,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.27-Installed-PKG-SFO-TEST.pkg\",\"version\":\"0.5.27\",\"version_code\":527}",
+  "signature": "d3ff8927689cf570b547bc7b6afaab687fe5b3463d4a8fe2ecfb883f00524458f1877ff1ec02a36c99a2cb0301fb3e20eac635e5d689d7dad49cdf987e1d7b03"
+}
