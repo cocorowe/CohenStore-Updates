@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "channel": "testing",
-  "content_version": 29,
-  "app_version": "0.5.29",
+  "content_version": 30,
+  "app_version": "0.5.30",
   "app_update": {
-    "version": "0.5.29",
-    "version_code": 529,
+    "version": "0.5.30",
+    "version_code": 530,
     "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"
   },
   "announcements": [
-    "CohenStore 0.5.29 TEST: Read-only localhost GoldHEN FTP metadata fallback with exact CUSA/version/patch checks; disable FTP afterward. Physical console testing pending. Physical PS4 test pending; keep a known-working installer."
+    "CohenStore 0.5.30 TEST: Safer PS4 FTP socket timeout negotiation (4/8/16-byte layouts) while retaining localhost-only read-only CUSA/version checks. Console testing pending; disable FTP when done."
   ]
 }

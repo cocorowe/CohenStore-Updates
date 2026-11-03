@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":19,\"schema\":1,\"sha256\":\"f3bce8f72374d7a10ff60e2050d16401094deaabaddd9bc2a0710374e10c2cf0\",\"size_bytes\":46071808,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.29-GoldHEN-FTP-Metadata-Fix-PS4-TEST.pkg\",\"version\":\"0.5.29\",\"version_code\":529}",
-  "signature": "cce3c9ca150b96ecda6dc94ef5109dff514165d7bceec070f1a91f02a2a96c177cd36900c74f24c0a6a88d5d72013823f364cea6ee241d06874310a8d8b30d05"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":20,\"schema\":1,\"sha256\":\"759bc4a2957382da2944a0180c4316bc5134a9183de7c0a9b4a67d5b35b7e7b5\",\"size_bytes\":46071808,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.30-FTP-Timeout-Fix-TEST.pkg\",\"version\":\"0.5.30\",\"version_code\":530}",
+  "signature": "64ea7b9bee1636d0977cc6665f9f081ee5fbac64ea42e39ea23a541d0d6287d16d2e3bed34ecb3a27cde2e538cd4924447a1a66aca7854276cf67151a03ae808"
 }
