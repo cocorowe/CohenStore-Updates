@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "channel": "testing",
+  "content_version": 27,
+  "app_version": "0.5.27",
+  "app_update": {
+    "version": "0.5.27",
+    "version_code": 527,
+    "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"
+  },
+  "announcements": [
+    "CohenStore 0.5.27 TEST: Read-only SFO verification inside installed app.pkg; fails closed for wrong CUSA, version or installed patch. Physical PS4 test pending; keep a known-working installer."
+  ]
+}
