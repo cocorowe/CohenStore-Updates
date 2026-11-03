@@ -15,7 +15,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --location --retry 3 --output libssl1.1.deb https://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+          curl --fail --location --retry 3 --output libssl1.1.deb https://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.24_amd64.deb
           dpkg-deb -x libssl1.1.deb compat
           test -s compat/usr/lib/x86_64-linux-gnu/libssl.so.1.1
           test -s compat/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
