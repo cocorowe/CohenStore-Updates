@@ -1,0 +1,49 @@
+name: Publish CohenStore 0.5.25 signed test update
+on:
+  push:
+    branches: [main]
+    paths: ['update/staging/0.5.25/import-request.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-package-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install verification dependencies
+        run: python3 -m pip install cryptography==46.0.3 gdown==5.2.0
+      - name: Download exact verified package
+        run: |
+          python3 -m gdown --id 1XixUw1zUsSQvXEeiUeZTij-tmRRnaYpe -O /tmp/cohenstore-0524-verified.pkg
+          mv /tmp/cohenstore-0524-verified.pkg /tmp/cohenstore-0525-verified.pkg
+          cp /tmp/cohenstore-0525-verified.pkg /tmp/cohenstore-0524-verified.pkg
+          echo '2572789e8bece2b865bdc94d5b43b3f68957e78e7506705a5eac00d59955e1ce  /tmp/cohenstore-0524-verified.pkg' | sha256sum -c -
+      - name: Validate signed release and catalogs
+        run: |
+          python3 tools/publish_0525_appmeta_fix.py
+          python3 tools/validate_feed.py
+      - name: Publish only verified update and rollback metadata
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add update/packages/CohenStore-0.5.25-Appmeta-Read-Fix-PS4-TEST.pkg update/recovery/release.json update/recovery/manifest.json update/recovery/history/0.5.24-release.json update/recovery/history/0.5.24-manifest.json
+          git commit -m 'Publish signed CohenStore 0.5.25 testing recovery update'
+          git fetch origin main
+          python3 - <<'PY'
+          import json, subprocess
+          def remote(path):
+              return json.loads(subprocess.check_output(['git','show','origin/main:'+path]))
+          legacy=json.loads(remote('update/release.json')['signed_payload'])
+          recovery=json.loads(remote('update/recovery/release.json')['signed_payload'])
+          assert (legacy['version_code'], legacy['revision']) == (517,12)
+          assert (recovery['version_code'], recovery['revision']) == (524,14)
+          PY
+          git push origin HEAD:main
