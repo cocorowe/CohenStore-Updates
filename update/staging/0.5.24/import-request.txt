@@ -1,0 +1,1 @@
+Publish signed CohenStore 0.5.24 TEST mod-menu fix through existing recovery updater. Source: Google Drive staging, package SHA-256 ce4148dccf36f9429f6685a400ae45f32e04184b335fac1fa7602ebcae11f107. Requires full workflow checks; leave legacy feed untouched.
