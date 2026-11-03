@@ -1,5 +1,6 @@
 name: Publish verified CohenStore 0.5.22 recovery feed
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
