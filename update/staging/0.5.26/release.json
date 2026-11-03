@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":16,\"schema\":1,\"sha256\":\"22a8312c8f4df87c11ddb83181a8c1c2202847987366507ec9889c236184c3be\",\"size_bytes\":46006272,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.26-Metadata-Fallback-TEST.pkg\",\"version\":\"0.5.26\",\"version_code\":526}",
+  "signature": "953ba3d4f84286d6b32df93f646424c4140f27cb46e8717353dcff7db8a320bec391506fb1e944a3bc93ecd8861e079d8cf39ab792f39558d5a4da86b0709907"
+}
