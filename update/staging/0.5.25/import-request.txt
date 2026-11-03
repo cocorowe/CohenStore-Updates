@@ -1,0 +1,1 @@
+Publish the separately signed and verified 0.5.25 test PKG. Preserve 0.5.24 as rollback; require SHA-256, package identity, Ed25519 signature, catalog floors and feed guard checks before publication.
