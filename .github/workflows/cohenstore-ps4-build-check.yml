@@ -44,6 +44,13 @@ jobs:
           test -f "$OO_PS4_TOOLCHAIN/samples/_common/graphics.h"
           printf 'Verified OpenOrbis v0.5.4 (LLVM 18) SDK; compiler: ' | tee toolchain-result.txt
           /usr/bin/clang++-18 --version | head -n 1 | tee -a toolchain-result.txt
+      - name: Export verified public SDK archive for isolated local build
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-openorbis-sdk-v0.5.4
+          path: ${{ runner.temp }}/openorbis.tar.gz
+          if-no-files-found: error
+          retention-days: 1
       - name: Compile official PS4 graphics sample
         shell: bash
         run: |
