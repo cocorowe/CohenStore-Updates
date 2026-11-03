@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "channel": "testing",
+  "content_version": 28,
+  "app_version": "0.5.28",
+  "app_update": {
+    "version": "0.5.28",
+    "version_code": 528,
+    "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"
+  },
+  "announcements": [
+    "CohenStore 0.5.28 TEST: Internal version 0.5.28 matches PKG APP_VER 01.28; retains installed-game app.pkg SFO verification. Physical console testing pending. Physical PS4 test pending; keep a known-working installer."
+  ]
+}

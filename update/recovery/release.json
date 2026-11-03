@@ -1,4 +1,4 @@
 {
-  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":18,\"schema\":1,\"sha256\":\"9962b995a59928a4f6f073ad1867f4e5eb3947e5651cdaf1fff7aef068228ac4\",\"size_bytes\":46006272,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.28-Updater-Loop-Fix-TEST.pkg\",\"version\":\"0.5.28\",\"version_code\":528}",
-  "signature": "ea05f2af1ffad36f79adbf0cb0c44355281aa9e24d7814c29b9cbe626a9198be60ded2bdb930c9ff730aacfd9c9d6d9ffa09319bf95e9b0d1cf149a1168f270b"
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":19,\"schema\":1,\"sha256\":\"f3bce8f72374d7a10ff60e2050d16401094deaabaddd9bc2a0710374e10c2cf0\",\"size_bytes\":46071808,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.29-GoldHEN-FTP-Metadata-Fix-PS4-TEST.pkg\",\"version\":\"0.5.29\",\"version_code\":529}",
+  "signature": "cce3c9ca150b96ecda6dc94ef5109dff514165d7bceec070f1a91f02a2a96c177cd36900c74f24c0a6a88d5d72013823f364cea6ee241d06874310a8d8b30d05"
 }
