@@ -1,0 +1,66 @@
+name: Import verified CohenStore recovery PKG from Google Drive
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'update/staging/0.5.22/import-request.txt'
+permissions:
+  contents: write
+concurrency:
+  group: cohenstore-package-publication
+  cancel-in-progress: false
+jobs:
+  import-verify-publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned verification and Google Drive download tools
+        run: python3 -m pip install cryptography==46.0.3 gdown==5.2.0
+      - name: Fetch uploaded four-part package from Drive
+        env:
+          GOOGLE_DRIVE_FILE_ID: 1XROm49cRBm21rWeAZjcYetfZNCZ3s1JM
+        run: |
+          python3 -m gdown "https://drive.google.com/uc?id=${GOOGLE_DRIVE_FILE_ID}" -O /tmp/cohenstore-0522-parts.zip
+          python3 - <<'PY'
+          import hashlib,json,zipfile
+          from pathlib import Path
+          stage=Path('update/staging/0.5.22')
+          expected=json.loads((stage/'parts.json').read_text())['parts']
+          names={i['name'] for i in expected}
+          with zipfile.ZipFile('/tmp/cohenstore-0522-parts.zip') as z:
+              actual=set(z.namelist())
+              assert actual==names, f"Unexpected ZIP files: {actual^names}"
+              for p in expected:
+                  data=z.read(p['name'])
+                  assert len(data)==p['bytes'], f"Unexpected size: {p['name']}"
+                  assert hashlib.sha256(data).hexdigest()==p['sha256'], f"Unexpected hash: {p['name']}"
+                  (stage/p['name']).write_bytes(data)
+          print('PASS: all package parts independently verified')
+          PY
+      - name: Verify old release, signed new release, catalog floors, and full PKG
+        run: |
+          python3 tools/publish_0522_recovery.py
+          python3 tools/validate_feed.py
+      - name: Publish only the recovery package and its separate signed feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add update/packages/CohenStore-0.5.22-SIGNED-UPDATE-TEST.pkg update/recovery/release.json update/recovery/manifest.json
+          git rm -r update/staging/0.5.22
+          git commit -m "Publish owner-approved signed CohenStore 0.5.22 recovery update"
+          git fetch origin main
+          python3 - <<'PY'
+          import json,subprocess
+          old=json.loads(subprocess.check_output(['git','show','origin/main:update/release.json']))
+          payload=json.loads(old['signed_payload'])
+          assert (payload['version_code'],payload['revision'])==(517,12), 'Legacy feed changed'
+          assert subprocess.run(['git','cat-file','-e','origin/main:update/recovery/release.json'],capture_output=True).returncode!=0,'Recovery feed already exists'
+          PY
+          git push origin HEAD:main
