@@ -1,0 +1,80 @@
+name: CohenStore PS4 Toolchain Check (Development)
+
+on:
+  push:
+    branches:
+      - dev/cohenstore-0524-handoff
+    paths:
+      - .github/workflows/cohenstore-ps4-build-check.yml
+      - CohenStore/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-sdk-and-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      OO_PS4_TOOLCHAIN: ${{ runner.temp }}/OpenOrbisSDK
+      TOOLCHAIN_URL: https://github.com/OpenOrbis/OpenOrbis-PS4-Toolchain/releases/download/v0.5.4/toolchain-llvm-18.tar.gz
+      TOOLCHAIN_SHA256: 3c7cd5bb593ca74fa1c13fd59f3938dc0fc07985167f7275063019e63abe4526
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: '1'
+    steps:
+      - name: Checkout development branch
+        uses: actions/checkout@v4
+      - name: Install LLVM 18 and runtime libraries
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y clang-18 lld-18 libicu74
+      - name: Download and verify official OpenOrbis v0.5.4 SDK
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --retry-delay 3 --output "${RUNNER_TEMP}/openorbis.tar.gz" "$TOOLCHAIN_URL"
+          printf '%s  %s\n' "$TOOLCHAIN_SHA256" "${RUNNER_TEMP}/openorbis.tar.gz" | sha256sum --check
+          mkdir -p "$OO_PS4_TOOLCHAIN"
+          tar -xzf "${RUNNER_TEMP}/openorbis.tar.gz" --strip-components=2 -C "$OO_PS4_TOOLCHAIN"
+          chmod +x "$OO_PS4_TOOLCHAIN/bin/linux/create-fself" "$OO_PS4_TOOLCHAIN/bin/linux/PkgTool.Core" "$OO_PS4_TOOLCHAIN/bin/linux/create-gp4"
+          test -f "$OO_PS4_TOOLCHAIN/include/orbis/Http.h"
+          test -f "$OO_PS4_TOOLCHAIN/lib/crt1.o"
+          test -f "$OO_PS4_TOOLCHAIN/samples/graphics/Makefile"
+          test -f "$OO_PS4_TOOLCHAIN/samples/_common/graphics.cpp"
+          test -f "$OO_PS4_TOOLCHAIN/samples/_common/graphics.h"
+          printf 'Verified OpenOrbis v0.5.4 (LLVM 18) SDK; compiler: ' | tee toolchain-result.txt
+          /usr/bin/clang++-18 --version | head -n 1 | tee -a toolchain-result.txt
+      - name: Compile official PS4 graphics sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="/usr/lib/llvm-18/bin:$OO_PS4_TOOLCHAIN/bin/linux:$PATH"
+          make -C "$OO_PS4_TOOLCHAIN/samples/graphics" eboot.bin sce_sys/param.sfo
+          test -s "$OO_PS4_TOOLCHAIN/samples/graphics/eboot.bin"
+          echo 'Native OpenOrbis graphics sample compiled.' | tee -a toolchain-result.txt
+      - name: Build CohenStore only when full source is committed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f CohenStore/tools/build_ps4.py ]; then
+            export PATH="/usr/lib/llvm-18/bin:$OO_PS4_TOOLCHAIN/bin/linux:$PATH"
+            python3 CohenStore/tools/build_ps4.py --sdk "$OO_PS4_TOOLCHAIN" --check
+            python3 CohenStore/tools/build_ps4.py --sdk "$OO_PS4_TOOLCHAIN"
+            echo 'CohenStore development PKG created (not console-tested).' | tee -a toolchain-result.txt
+          else
+            echo 'Toolchain ready; CohenStore source is not yet present in this GitHub branch. No CohenStore PKG was built.' | tee -a toolchain-result.txt
+          fi
+      - name: Upload check result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cohenstore-ps4-toolchain-check
+          path: toolchain-result.txt
+          if-no-files-found: warn
+      - name: Upload development PKG if built
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cohenstore-ps4-development-pkg
+          path: CohenStore/dist/*.pkg
+          if-no-files-found: ignore
