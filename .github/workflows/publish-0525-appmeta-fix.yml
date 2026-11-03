@@ -22,10 +22,9 @@ jobs:
         run: python3 -m pip install cryptography==46.0.3 gdown==5.2.0
       - name: Download exact verified package
         run: |
-          python3 -m gdown --id 1XixUw1zUsSQvXEeiUeZTij-tmRRnaYpe -O /tmp/cohenstore-0524-verified.pkg
-          mv /tmp/cohenstore-0524-verified.pkg /tmp/cohenstore-0525-verified.pkg
-          cp /tmp/cohenstore-0525-verified.pkg /tmp/cohenstore-0524-verified.pkg
-          echo '2572789e8bece2b865bdc94d5b43b3f68957e78e7506705a5eac00d59955e1ce  /tmp/cohenstore-0524-verified.pkg' | sha256sum -c -
+          python3 -m gdown --id 1XixUw1zUsSQvXEeiUeZTij-tmRRnaYpe -O /tmp/cohenstore-0525-verified.pkg
+          echo '2572789e8bece2b865bdc94d5b43b3f68957e78e7506705a5eac00d59955e1ce  /tmp/cohenstore-0525-verified.pkg' | sha256sum -c -
+          test "$(stat -c %s /tmp/cohenstore-0525-verified.pkg)" -eq 46006272
       - name: Validate signed release and catalogs
         run: |
           python3 tools/publish_0525_appmeta_fix.py
