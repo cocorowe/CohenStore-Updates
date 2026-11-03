@@ -45,7 +45,7 @@ def main():
                   size_bytes=EXPECTED_BYTES,sha256=EXPECTED_SHA256,url=PKG_URL)
     assert new == expected, "signed payload differs from target package or version"
     assert not PKG.is_file(), "target PKG already published; refusing overwrite"
-    candidate=Path("/tmp/cohenstore-0524-verified.pkg")
+    candidate=Path("/tmp/cohenstore-0525-verified.pkg")
     assert candidate.is_file() and candidate.stat().st_size==EXPECTED_BYTES,"wrong package bytes"
     h=hashlib.sha256()
     with candidate.open("rb") as f:
