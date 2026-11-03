@@ -1,0 +1,32 @@
+name: CohenStore legacy build-runtime compatibility (Development)
+on:
+  push:
+    branches: [dev/cohenstore-0524-handoff]
+    paths: [.github/workflows/cohenstore-libssl-compat.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export-openssl11:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Get legacy OpenSSL 1.1 for SDK packaging tool only
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --output libssl1.1.deb https://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.23_amd64.deb
+          dpkg-deb -x libssl1.1.deb compat
+          test -s compat/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+          test -s compat/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+          sha256sum libssl1.1.deb > package-SHA256SUMS.txt
+      - name: Export only the two compatibility libraries
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-openssl11-for-openorbis-packager
+          path: |
+            compat/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+            compat/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+            package-SHA256SUMS.txt
+          retention-days: 1
+          if-no-files-found: error
