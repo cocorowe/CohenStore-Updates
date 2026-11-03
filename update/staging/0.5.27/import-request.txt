@@ -1,0 +1,1 @@
+Owner-requested CohenStore 0.5.27 testing recovery release: inspect installed PS4 app.pkg metadata to verify RDR2 CUSA and APP_VER. Publish only after package SHA256, Ed25519 signature, app identity, catalog floors, and current recovery-feed guard checks pass. Preserve 0.5.26 package and signed rollback history.
