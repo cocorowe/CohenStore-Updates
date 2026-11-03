@@ -1,0 +1,1 @@
+Owner-requested CohenStore 0.5.26 TEST recovery release of installed-game metadata fallback. Only publish if all package, signature, catalog, and old feed guards pass. Keep previous package and release history.
