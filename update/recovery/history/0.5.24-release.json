@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":14,\"schema\":1,\"sha256\":\"ce4148dccf36f9429f6685a400ae45f32e04184b335fac1fa7602ebcae11f107\",\"size_bytes\":46006272,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.24-Mod-Menu-Fix-PS4-TEST.pkg\",\"version\":\"0.5.24\",\"version_code\":524}",
+  "signature": "1cb4ba993e4838b539d7f53fe454ad0f3e6e0bfb078bfda948c507bb1aba3815e369dcaa7f0015dd0589050d40cf194a30b777ee40c0d42695f3d32df3850e00"
+}
