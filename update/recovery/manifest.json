@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "channel": "testing",
-  "content_version": 22,
-  "app_version": "0.5.22",
+  "content_version": 24,
+  "app_version": "0.5.24",
   "app_update": {
-    "version": "0.5.22",
-    "version_code": 522,
+    "version": "0.5.24",
+    "version_code": 524,
     "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"
   },
   "announcements": [
-    "0.5.22 signed recovery update; install 0.5.21 trust bridge once before using this feed."
+    "CohenStore 0.5.24 TEST: Mod Menu Touchpad and plugins.ini inspection fixes. Physical PS4 test pending; keep a known-working installer."
   ]
 }

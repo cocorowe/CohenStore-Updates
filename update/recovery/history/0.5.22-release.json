@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":13,\"schema\":1,\"sha256\":\"12068575c8771e0ae23a805a0769d75afbe5675d5285a3c49fa64b3becd5b71d\",\"size_bytes\":45154304,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.22-SIGNED-UPDATE-TEST.pkg\",\"version\":\"0.5.22\",\"version_code\":522}",
+  "signature": "bd54b9e75f4d880db0fd31babc9050fd932b81d42941b2a85eec85ffde1b16df7711c8b8ffc16b9ad41c51fced59390cdaae294e1a63fa73938e927f64b4af02"
+}
