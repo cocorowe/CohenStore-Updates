@@ -1,0 +1,23 @@
+name: Verify 0.5.24 Package Transfer (Development Only)
+on:
+  push:
+    branches: [dev/cohenstore-0524-handoff]
+    paths:
+      - .github/workflows/verify-0524-drive-transfer.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-transfer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Install downloader
+        run: python3 -m pip install --disable-pip-version-check gdown==5.2.0
+      - name: Check package staging accessibility and exact SHA-256
+        run: |
+          set -euo pipefail
+          python3 -m gdown --id 1XixUw1zUsSQvXEeiUeZTij-tmRRnaYpe -O cohenstore-0524.pkg
+          echo 'ce4148dccf36f9429f6685a400ae45f32e04184b335fac1fa7602ebcae11f107  cohenstore-0524.pkg' | sha256sum -c -
+          test "$(stat -c %s cohenstore-0524.pkg)" -eq 46006272
+          echo "PASS: Exact 0.5.24 update package accessible and verified"
