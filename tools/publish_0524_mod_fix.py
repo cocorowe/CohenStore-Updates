@@ -54,7 +54,7 @@ def main():
         for chunk in iter(lambda:f.read(1024*1024),b""):
             h.update(chunk)
     assert h.hexdigest()==EXPECTED_SHA256,"package SHA-256 mismatch"
-    assert header[:4]==b"\\x7fCNT".decode("unicode_escape").encode("latin1") and header[0x40:0x64]==CONTENT_ID.encode(), "wrong PS4 package ID"
+    assert header[:4]==bytes.fromhex("7f434e54") and header[0x40:0x64]==CONTENT_ID.encode(), "wrong PS4 package ID"
     PKG.parent.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(candidate,PKG)
     HISTORY.mkdir(parents=True,exist_ok=True)
@@ -69,7 +69,7 @@ def main():
       "app_update":{"version":"0.5.24","version_code":524,
                     "release_manifest_url":"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"},
       "announcements":["CohenStore 0.5.24 TEST: Mod Menu Touchpad and plugins.ini inspection fixes. Physical PS4 test pending; keep a known-working installer."]
-    },indent=2)+"\\n",encoding="utf8")
+    },indent=2)+chr(10),encoding="utf8")
     assert verified_envelope(RECOVERY,RECOVERY_KEY)==expected
     assert verified_envelope(previous_release,RECOVERY_KEY)==recovery
     print("PASS: 0.5.24 package hash/size/identity and signed recovery feed; history saved; old feed unchanged")
