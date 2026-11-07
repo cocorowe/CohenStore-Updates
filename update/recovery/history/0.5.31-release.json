@@ -1,0 +1,4 @@
+{
+  "signed_payload": "{\"channel\":\"testing\",\"content_id\":\"IV0000-CHST00001_00-COHENSTORE000000\",\"revision\":21,\"schema\":1,\"sha256\":\"4dfaf961e39ca2ff8c2192d3129639be3f52f5cf15160e492a6aafbbc037c408\",\"size_bytes\":46071808,\"title_id\":\"CHST00001\",\"url\":\"https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/packages/CohenStore-0.5.31-Patch-PKG-SFO-Fix-PS4-TEST.pkg\",\"version\":\"0.5.31\",\"version_code\":531}",
+  "signature": "e080142cc7ed17186cd4825bdcf3fb4ddf6c298257015f21fa4dec3a92a6d0fd57416c5f5c3c170384b2f9083446a62f27e19430a269b3633dcfded36fcca102"
+}

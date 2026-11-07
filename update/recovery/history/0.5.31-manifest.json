@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "channel": "testing",
+  "content_version": 31,
+  "app_version": "0.5.31",
+  "app_update": {
+    "version": "0.5.31",
+    "version_code": 531,
+    "release_manifest_url": "https://raw.githubusercontent.com/cocorowe/CohenStore-Updates/main/update/recovery/release.json"
+  },
+  "announcements": [
+    "CohenStore 0.5.31 TEST: Read-only localhost FTP fallback extracts SFO from installed patch.pkg and distinguishes patch APP_VER from base APP_VER. Requires REST; exact CUSA/version must match. Console test pending; disable FTP afterward."
+  ]
+}
